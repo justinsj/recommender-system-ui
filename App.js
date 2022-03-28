@@ -11,14 +11,25 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen
-          name="Home"
+          name="Amason"
           component={HomeScreen}
-          options={{ tabBarIcon: makeIconRender("home") }}
+          options={{ 
+            tabBarIcon: makeIconRender("home"),
+            headerStyle: {
+              backgroundColor: '#232f3e',
+            },
+            headerTintColor: '#fff',
+          }}
         />
         <Tab.Screen
           name="Settings"
           component={SettingsScreen}
-          options={{ tabBarIcon: makeIconRender("cog") }}
+          options={{ tabBarIcon: makeIconRender("cog"),
+          headerStyle: {
+            backgroundColor: '#232f3e',
+          },
+          headerTintColor: '#fff',
+         }}
         />
       </Tab.Navigator>
     </NavigationContainer>
