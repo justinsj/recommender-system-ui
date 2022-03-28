@@ -1,4 +1,5 @@
-# Tab navigation example
+# Recommender System UI
+This project is a prototype for evaluating the effects different explainability interfaces in recommender systems 
 
 <p>
   <!-- iOS -->
