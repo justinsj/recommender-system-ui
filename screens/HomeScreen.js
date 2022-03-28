@@ -12,7 +12,7 @@ export function HomeScreen() {
       <FlatList 
         data={[
           data.refrigerator,
-          data.refrigerator,
+          data.refrigerator2,
         ]}
         renderItem={({item})=>(<Entry 
           style={styles.entry}

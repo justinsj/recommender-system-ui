@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import { Rating as StarRating} from 'react-native-ratings';
+import { FORMAT } from './../helpers/format.helpers';
 
 export function Rating(props){
     const {rating, count} = props;
@@ -12,7 +13,7 @@ export function Rating(props){
                 readonly={true}
                 style={{ paddingVertical: 2, margin: 0, paddingRight: 4, }}
             />
-            <Text styles={styles.count}>{count}</Text>
+            <Text styles={styles.count}>{FORMAT.commaFormat(count)}</Text>
         </View>
     )
 }
