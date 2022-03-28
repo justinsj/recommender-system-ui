@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeScreen } from "./screens/HomeScreen";
 import { SettingsScreen } from "./screens/SettingsScreen";
+import { constants } from './components/data/constants';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,7 +12,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen
-          name="Amason"
+          name={constants.companyName}
           component={HomeScreen}
           options={{ 
             tabBarIcon: makeIconRender("home"),

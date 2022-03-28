@@ -1,8 +1,9 @@
 import { Text, View } from "react-native";
+import { constants } from './data/constants';
 
 export function FreeShipping(props){
     return (
-        <Text style={styles.text}>FREE Shipping by Amazon</Text>
+        <Text style={styles.text}>FREE Shipping by {constants.companyName}</Text>
     )
 }
 
