@@ -11,6 +11,8 @@ export const data = {
         freeShipping: true,
         // temporarilyOutOfStock: true,
         imageSrc: require('../../assets/items/refrigerator.jpg'),
+        storeText: "Visit the COMFEE' Store",
+        details: '',
     },
     refrigerator2: {
         sponsored: true,
@@ -24,5 +26,7 @@ export const data = {
         freeShipping: true,
         // temporarilyOutOfStock: true,
         imageSrc: require('../../assets/items/refrigerator2.jpg'),
+        storeText: "Visit the COMFEE' Store",
+        details: '',
     }
 }
