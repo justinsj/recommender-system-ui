@@ -1,11 +1,11 @@
 import { Text, View } from "react-native";
 
 export function BigPrice(props){
-    const {price} = props;
+    const {style, price} = props;
     
     const [whole, decimal] = price.toString().split(".")
     return (
-        <View style={styles.ctr}>
+        <View style={[styles.ctr, style]}>
             <Text style={styles.dollar}>$</Text>
             <Text style={styles.whole}>{whole}</Text>
             <Text style={styles.decimal}>{decimal}</Text>

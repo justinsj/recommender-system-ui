@@ -26,7 +26,7 @@ export const data = {
         freeShipping: true,
         // temporarilyOutOfStock: true,
         imageSrc: require('../../assets/items/refrigerator2.jpg'),
-        storeText: "Visit the COMFEE' Store",
+        storeText: "Visit the AstroAI Store",
         details: '',
     }
 }

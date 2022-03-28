@@ -5,19 +5,23 @@ import { AntDesign } from '@expo/vector-icons';
 
 
 export function QuantitySelect(props){
-  const {price, temporarilyOutOfStock} = props
+  const {style, price, temporarilyOutOfStock} = props
   return (
-    <View style={styles.ctr}>
+    <View style={[styles.ctr, style]}>
       <Text style={styles.text}>
         Qty: 1
       </Text>
-      <AntDesign name="down" size={13} color="black" />
+      <View style={styles.iconCtr}>
+        <AntDesign name="down" size={13} color="black" />
+      </View>
     </View>
   )
 }
 
 const styles = {
     ctr: {
+      borderColor: '#d5d9d9',
+      borderWidth: 1,
       flexDirection: 'row',
       justifyContent: 'space-between',
       borderRadius: 7,
@@ -26,6 +30,11 @@ const styles = {
       elevation: 2,
       padding: 7,
       paddingLeft: 13,
+    },
+    iconCtr: {
+      paddingLeft: 4,
+      alignItems: 'center',
+      justifyContent: 'center',
     },
     text: {
         color: '#0f1111',

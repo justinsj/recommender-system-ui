@@ -4,7 +4,7 @@ export function Prime(props){
     return (
         <Image 
             style={styles.img}
-            source={require('../assets/prime.png')}
+            source={require('../../assets/prime.png')}
         />
     )
 }

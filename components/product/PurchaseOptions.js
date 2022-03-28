@@ -4,9 +4,9 @@ import { BigPrice } from './BigPrice';
 
 
 export function PurchaseOptions(props){
-    const {price, temporarilyOutOfStock} = props
+    const {style, price, temporarilyOutOfStock} = props
     return (
-        <View style={styles.ctr}>
+        <View style={[styles.ctr, style]}>
             <View
                 style={[styles.button, styles.primaryButton]}
             >
@@ -41,6 +41,9 @@ const styles = {
         lineHeight: 21.6,
     },
     button: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
         borderRadius: 8,
         borderWidth: 1,
 
@@ -50,6 +53,7 @@ const styles = {
     primaryButton: {
         borderColor: '#fcd200',
         backgroundColor: '#ffd814',
+        flexGrow: 1.2,
     },
     secondaryButton: {
         borderColor: '#ff8f00',

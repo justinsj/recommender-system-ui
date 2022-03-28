@@ -1,8 +1,11 @@
 import { Text, View } from "react-native";
 
 export function FreeDelivery(props){
+    const {style} = props;
     return (
-        <Text style={styles.text}>FREE delivery</Text>
+        <View style={[style]}>
+            <Text style={styles.text}>FREE delivery</Text>
+        </View>
     )
 }
 

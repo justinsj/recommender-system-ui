@@ -2,9 +2,9 @@ import { Text } from 'react-native';
 
 
 export function ProductTitle(props){
-    const {children} = props
+    const {children, style} = props
     return (
-        <Text style={styles.text}>{children}</Text>
+        <Text style={[styles.text, style]}>{children}</Text>
     )
 }
 

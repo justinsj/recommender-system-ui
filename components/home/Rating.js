@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 import { Rating as StarRating} from 'react-native-ratings';
-import { FORMAT } from './../helpers/format.helpers';
+import { FORMAT } from './../../helpers/format.helpers';
 
 export function Rating(props){
     const {rating, count} = props;
@@ -20,10 +20,9 @@ export function Rating(props){
 
 const styles = {
     ctr: {
-        flex: 1, 
         flexDirection: "row",
-        marginTop: 4,
-        marginBottom: -4,
+        marginVertical: 4,
+        
     },
     count: {
         color: '#0F1111',

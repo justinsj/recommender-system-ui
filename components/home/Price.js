@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import { FORMAT } from './../../helpers/format.helpers';
 
 export function Price(props){
     const {price} = props;
@@ -7,7 +8,7 @@ export function Price(props){
     return (
         <View style={styles.ctr}>
             <Text style={styles.dollar}>$</Text>
-            <Text style={styles.whole}>{whole}</Text>
+            <Text style={styles.whole}>{FORMAT.commaFormat(whole)}</Text>
             <Text style={styles.decimal}>{decimal}</Text>
         </View>
     )
