@@ -1,20 +1,28 @@
-import { View, Text, Button } from 'react-native';
+import { View, Text, TouchableHighlight } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { TemporarilyOutOfStock } from './TemporarilyOutOfStock';
 import { BigPrice } from './BigPrice';
 
 
 export function PurchaseOptions(props){
-    const {style, price, temporarilyOutOfStock} = props
+    const {style, price, temporarilyOutOfStock} = props;
+    const navigation = useNavigation();
     return (
         <View style={[styles.ctr, style]}>
-            <View
+            <TouchableHighlight
+                activeOpacity={0.5}
+                underlayColor={styles.primaryButton.backgroundColor}
+                onPress={()=>{navigation.goBack();}}
                 style={[styles.button, styles.primaryButton]}
             >
                 <Text style={styles.text}>
                     Add to Cart
                 </Text>
-            </View>
-            <View
+            </TouchableHighlight>
+            <TouchableHighlight
+                activeOpacity={0.5}
+                underlayColor={styles.secondaryButton.backgroundColor}
+                onPress={()=>{navigation.goBack();}}
                 style={[
                     styles.button, 
                     styles.secondaryButton,
@@ -24,7 +32,7 @@ export function PurchaseOptions(props){
                 <Text style={styles.text}>
                     Buy Now
                 </Text>
-            </View>
+            </TouchableHighlight>
         </View>
     )
 }

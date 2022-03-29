@@ -1,4 +1,4 @@
-import { ScrollView, View, Image } from "react-native";
+import { ScrollView, View, Image, Text } from "react-native";
 import { Rating } from './../components/home/Rating';
 import { Details } from './../components/product/Details';
 import { useRoute } from "@react-navigation/native";
@@ -19,10 +19,25 @@ export function ProductScreen(props) {
     price, temporarilyOutOfStock,
     imageSrc, details,
   } = entry;
-
+  // const arr = new Array(100).fill(      <View style={styles.card}>
+  //       <View style={styles.row}>
+  //         <VisitStore>{storeText}</VisitStore>
+  //         <Rating {...rating}/>
+  //       </View>
+  //       <ProductTitle
+  //         style={styles.title}
+  //       >{title}</ProductTitle>
+  //       <View style={styles.imgCtr}>
+  //         <Image
+  //           style={styles.img}
+  //           resizeMode={'contain'}
+  //           source={imageSrc}
+  //         />
+  //       </View>
+  //     </View>);
   return (
-    
-    <ScrollView style={styles.ctr}>
+
+    <ScrollView>
       <View style={styles.card}>
         <View style={styles.row}>
           <VisitStore>{storeText}</VisitStore>
@@ -39,22 +54,31 @@ export function ProductScreen(props) {
           />
         </View>
       </View>
-      {/* <ProductOptions options={options}/> */}
-      <View style={styles.card}>
-        <ProductInformation
-          style={styles.ProductInformation}
-          price={price}
-          temporarilyOutOfStock={temporarilyOutOfStock}
-        />
-        <View style={[styles.QuantitySelect, styles.row]}>
-          <QuantitySelect/>
-          <View style={{flex: 1}}/>
-        </View>
-        <PurchaseOptions style={styles.PurchaseOptions}/>
-        <Details>{details}</Details>
 
-      </View>
       
+    {/* <ProductOptions options={options}/> */}
+    <View style={styles.card}>
+      <ProductInformation
+        style={styles.ProductInformation}
+        price={price}
+        temporarilyOutOfStock={temporarilyOutOfStock}
+      />
+      
+      <View style={[styles.QuantitySelect, styles.row]}>
+        <QuantitySelect/>
+        <View style={{flex: 1}}/>
+      </View>
+      <PurchaseOptions style={styles.PurchaseOptions}/>
+    </View>
+    { 
+      Object.keys(details).length > 0 ?
+      <View style={styles.card}>
+        <Details details={details}></Details>
+      </View> :
+      null
+    }
+    
+  
       
       {/* <Recommendations/> */}
       {/* <ProductImageGallery/> */}
@@ -82,7 +106,8 @@ const styles = {
   ctr: {
     // padding: 14,
     background: '#e3e6e6',
-    flex: 1,
+    // flex: 1,
+    flexGrow: 1,
   },
   imgCtr: {
     flexGrow: 1,

@@ -20,6 +20,8 @@ export function Entry(props){
             onPress={(e)=>{
                 navigation.navigate("Product", {entry})
             }}  
+            underlayColor={"#fff"}
+            activeOpacity={0.5}
         >
             <View             
                 style={[styles.row, styles.ctr, style]}

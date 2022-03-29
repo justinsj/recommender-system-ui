@@ -12,7 +12,18 @@ export const data = {
         // temporarilyOutOfStock: true,
         imageSrc: require('../../assets/items/refrigerator.jpg'),
         storeText: "Visit the COMFEE' Store",
-        details: '',
+        details: {
+            'Colour': 'Red',
+            'Finish type': 'Metallic',
+            'Brand': 'COMFEE\'',
+            'Model name': 'CRR33S3ARD',
+            'Form factor': 'Compact',
+            'Cooling method': 'Compressor',
+            'Energy star': '5 Star',
+            'Item dimensions L x W x H': '48.8 x 43.9 x 83.6 centimeters',
+            'Lock type': 'Electronic',
+            'Specification met': 'Energy Star, 5 Star',
+        },
     },
     refrigerator2: {
         sponsored: true,
@@ -27,6 +38,6 @@ export const data = {
         // temporarilyOutOfStock: true,
         imageSrc: require('../../assets/items/refrigerator2.jpg'),
         storeText: "Visit the AstroAI Store",
-        details: '',
+        details: {},
     }
 }

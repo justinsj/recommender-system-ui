@@ -19,10 +19,11 @@ const styles = {
         flexDirection: 'row',
     },
     dollar: {
+        position: 'relative',
         color: '#0F1111',
         fontFamily: '"Amazon Ember", Arial, sans-serif',
         fontSize: 15,
-        top: -15,
+        top: 7,
     },
     whole: {
         color: '#0F1111',
@@ -30,9 +31,10 @@ const styles = {
         fontSize: 38,
     },
     decimal: {
+        position: 'relative',
         color: '#0F1111',
         fontFamily: '"Amazon Ember", Arial, sans-serif',
         fontSize: 15,
-        top: -15,
+        top: 7,
     },
 }
