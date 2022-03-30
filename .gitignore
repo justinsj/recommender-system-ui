@@ -14,4 +14,4 @@ web-report/
 # macOS
 .DS_Store
 
-constants/secrets.js
+secrets.js
