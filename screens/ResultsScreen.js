@@ -1,7 +1,7 @@
 import { Text, View, FlatList } from "react-native";
-import { data } from "../components/data/data";
-import { Entry } from "../components/home/Entry";
-import { Results } from '../components/home/Results';
+import { data } from "../data/data";
+import { Entry } from "../components/results/Entry";
+import { Results } from '../components/results/Results';
 
 export function ResultsScreen() {
   return (

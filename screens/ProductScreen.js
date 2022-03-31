@@ -7,36 +7,36 @@ import { ProductTitle } from './../components/product/ProductTitle';
 import { ProductInformation } from './../components/product/ProductInformation';
 import { QuantitySelect } from './../components/product/QuantitySelect';
 import { PurchaseOptions } from './../components/product/PurchaseOptions';
-import { data } from './../components/data/data';
+import { data } from '../data/data';
+import { LogAPI } from "../wrappers/LogAPI";
+import { AppContext } from './../context/AppContext';
+import { Actions } from './../constants/Actions';
+import { useEffect } from 'react';
 
 //https://www.sitepoint.com/amazon-product-api-exploration-lets-build-a-product-search/
 //https://rapidapi.com/ZombieBest/api/amazon-products1/
 export function ProductScreen(props) {
+  const { userId, taskId } = useContext(AppContext);
   const route = useRoute();
   const {entry} = route && route.params ? route.params : { entry: data.refrigerator};
   const {
     storeText, title, rating,
     price, temporarilyOutOfStock,
-    imageSrc, details,
+    imageSrc, details, productId,
   } = entry;
-  // const arr = new Array(100).fill(      <View style={styles.card}>
-  //       <View style={styles.row}>
-  //         <VisitStore>{storeText}</VisitStore>
-  //         <Rating {...rating}/>
-  //       </View>
-  //       <ProductTitle
-  //         style={styles.title}
-  //       >{title}</ProductTitle>
-  //       <View style={styles.imgCtr}>
-  //         <Image
-  //           style={styles.img}
-  //           resizeMode={'contain'}
-  //           source={imageSrc}
-  //         />
-  //       </View>
-  //     </View>);
-  return (
 
+  useEffect(()=>{
+    return () => {
+      LogAPI.put({
+        userId,
+        ts: new Date().toISOString(),
+        taskId,
+        productId,
+        action: Actions.clickedBack,
+      })
+    }
+  })
+  return (
     <ScrollView>
       <View style={styles.card}>
         <View style={styles.row}>
@@ -68,7 +68,28 @@ export function ProductScreen(props) {
         <QuantitySelect/>
         <View style={{flex: 1}}/>
       </View>
-      <PurchaseOptions style={styles.PurchaseOptions}/>
+      <PurchaseOptions 
+        onAddToCart={()=>{
+          LogAPI.put({
+            userId,
+            ts: new Date().toISOString(),
+            taskId,
+            productId,
+            action: Actions.addToCart,
+          })
+        }}
+        onBuyNow={()=>{
+          LogAPI.put({
+            userId,
+            ts: new Date().toISOString(),
+            taskId,
+            productId,
+            action: Actions.buyNow,
+          })
+        }}
+        style={styles.PurchaseOptions}
+        
+      />
     </View>
     { 
       Object.keys(details).length > 0 ?

@@ -24,6 +24,7 @@ export const data = {
             'Lock type': 'Electronic',
             'Specification met': 'Energy Star, 5 Star',
         },
+        productId: 'a',
     },
     refrigerator2: {
         sponsored: true,
@@ -39,5 +40,6 @@ export const data = {
         imageSrc: require('../../assets/items/refrigerator2.jpg'),
         storeText: "Visit the AstroAI Store",
         details: {},
+        productId: 'b',
     }
 }

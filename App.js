@@ -1,36 +1,46 @@
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeScreen } from "./screens/HomeScreen";
 import { SettingsScreen } from "./screens/SettingsScreen";
-import { constants } from './components/data/constants';
+import { constants } from './constants/constants';
 import { ProductScreen } from './screens/ProductScreen';
-import { Button } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { TouchableHighlight } from 'react-native';
 import { ResultsScreen } from './screens/ResultsScreen';
 import {createStackNavigator} from "@react-navigation/stack";
+import { SecretButton } from "./components/home/SecretButton";
+import { AppContext } from './context/AppContext';
+import { createId } from "./helpers/data.helpers";
+import { useState } from 'react';
 
-const Tab = createBottomTabNavigator();
 
 const Stack = createStackNavigator();
 
+
 export default function App() {
+  const [userId, setUserId] = useState(createId());
+  const [taskId, setTaskId] = useState('no task');
   return (
+    <AppContext.Provider value={{
+      userId, setUserId,
+      taskId, setTaskId,
+    }}>
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
           name={'Home'}
           component={HomeScreen}
-          options={{ 
+          options={({navigation})=>({ 
             tabBarIcon: makeIconRender("home"),
-            headerTitle: constants.companyName,
+            headerTitle: ()=>(<SecretButton
+              onPress={()=>{navigation.navigate('Setup')}}
+            >{constants.companyName}</SecretButton>),
             headerStyle: {
               backgroundColor: '#232f3e',
               borderBottomWidth: 0,
             },
             headerTintColor: '#fff',
-          }}
+          })}
         />
         <Stack.Screen
           name={'Results'}
@@ -92,6 +102,7 @@ export default function App() {
         />
       </Stack.Navigator>
     </NavigationContainer>
+    </AppContext.Provider>
   );
 }
 

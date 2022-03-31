@@ -5,14 +5,20 @@ import { BigPrice } from './BigPrice';
 
 
 export function PurchaseOptions(props){
-    const {style, price, temporarilyOutOfStock} = props;
+    if (!props.onBuyNow) console.error("onBuyNow not defined");
+    if (!props.onAddToCart) console.error("onAddToCart not defined");
+
+    const {style, price, temporarilyOutOfStock, onBuyNow, onAddToCart } = props;
     const navigation = useNavigation();
     return (
         <View style={[styles.ctr, style]}>
             <TouchableHighlight
                 activeOpacity={0.5}
                 underlayColor={styles.primaryButton.backgroundColor}
-                onPress={()=>{navigation.goBack();}}
+                onPress={()=>{
+                    onAddToCart();    
+                    navigation.goBack();
+                }}
                 style={[styles.button, styles.primaryButton]}
             >
                 <Text style={styles.text}>
@@ -22,7 +28,10 @@ export function PurchaseOptions(props){
             <TouchableHighlight
                 activeOpacity={0.5}
                 underlayColor={styles.secondaryButton.backgroundColor}
-                onPress={()=>{navigation.goBack();}}
+                onPress={()=>{
+                    onBuyNow();
+                    navigation.goBack();
+                }}
                 style={[
                     styles.button, 
                     styles.secondaryButton,

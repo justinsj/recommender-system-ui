@@ -7,18 +7,43 @@ import { FreeShipping } from './FreeShipping';
 import { TemporarilyOutOfStock } from './TemporarilyOutOfStock';
 import { Sponsored } from './Sponsored';
 import { useNavigation } from "@react-navigation/native";
+import { LogAPI } from "../../wrappers/LogAPI";
+import { Actions } from "../../constants/constants";
 
 
 export function Entry(props){
+    const { userId, taskId } = useContext(AppContext);
+
     const navigation = useNavigation();
     const { entry, style, } = props;
     const { sponsored, title, rating, price, 
         prime, freeShipping, temporarilyOutOfStock, 
-        imageSrc } = entry;
+        imageSrc, productId } = entry;
+
+    useEffect(() => {
+      // triggered on mount
+      LogAPI.put({
+        userId,
+        ts: new Date().toISOString(),
+        taskId,
+        productId,
+        action: Actions.viewed,
+      })
+      return () => {}
+    }, [])
+    
+    
     return (
         <TouchableHighlight
             onPress={(e)=>{
-                navigation.navigate("Product", {entry})
+                LogAPI.put({
+                    userId,
+                    ts: new Date().toISOString(),
+                    taskId,
+                    productId,
+                    action: Actions.clicked,
+                })
+                navigation.navigate("Product", {entry});
             }}  
             underlayColor={"#fff"}
             activeOpacity={0.5}

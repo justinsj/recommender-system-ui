@@ -1,9 +1,9 @@
 import { Text, View, FlatList, TouchableHighlight } from "react-native";
 import { useRef, useState } from 'react';
-import { data } from "../components/data/data";
+import { data } from "../data/data";
 import { Entry } from "../components/home/Entry";
 import { Results } from './../components/home/Results';
-import { SearchBar } from './../components/SearchBar';
+import { SearchBar } from '../components/home/SearchBar';
 import { AntDesign } from '@expo/vector-icons';
 
 const DEFAULT_PROMPT = 'Click the search bar to begin!';
