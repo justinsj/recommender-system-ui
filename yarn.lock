@@ -4542,6 +4542,11 @@ react-native-gesture-handler@~2.1.0:
     lodash "^4.17.21"
     prop-types "^15.7.2"
 
+react-native-inviewport@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-inviewport/-/react-native-inviewport-1.1.0.tgz#36776b09f00354dddbb4b07099f49149440da567"
+  integrity sha1-NndrCfADVN3btLBwmfSRSUQNpWc=
+
 react-native-ratings@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-native-ratings/-/react-native-ratings-8.1.0.tgz#3fa9ad29128dc3a88e59518ba151e61c59dd0647"

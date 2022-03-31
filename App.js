@@ -12,6 +12,8 @@ import { SecretButton } from "./components/home/SecretButton";
 import { AppContext } from './context/AppContext';
 import { createId } from "./helpers/data.helpers";
 import { useState } from 'react';
+import { LogAPI } from "./wrappers/LogAPI";
+import { Actions } from './components/data/constants/Actions';
 
 
 const Stack = createStackNavigator();
@@ -69,10 +71,20 @@ export default function App() {
         <Stack.Screen
           name={'Product'}
           component={ProductScreen}
-          options={({navigation})=>({ 
+          options={({route, navigation})=>({ 
             headerLeft: ()=>(
               <TouchableHighlight
                 onPress={()=>{
+                  const { userId, taskId } = useContext(AppContext);
+                  const {entry} = route && route.params ? route.params : { entry: data.refrigerator};
+                  const { productId } = entry;
+                  LogAPI.put({
+                    userId,
+                    ts: new Date().toISOString(),
+                    taskId,
+                    productId,
+                    action: Actions.clickedReverse,
+                  });
                   navigation.goBack();
                 }}
                 activeOpacity={0.5}

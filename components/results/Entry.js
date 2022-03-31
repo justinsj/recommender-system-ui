@@ -8,8 +8,8 @@ import { TemporarilyOutOfStock } from './TemporarilyOutOfStock';
 import { Sponsored } from './Sponsored';
 import { useNavigation } from "@react-navigation/native";
 import { LogAPI } from "../../wrappers/LogAPI";
-import { Actions } from "../../constants/constants";
-
+import { Actions } from "../../constants/Actions";
+import { InViewPort } from 'react-native-inviewport';
 
 export function Entry(props){
     const { userId, taskId } = useContext(AppContext);
@@ -19,18 +19,27 @@ export function Entry(props){
     const { sponsored, title, rating, price, 
         prime, freeShipping, temporarilyOutOfStock, 
         imageSrc, productId } = entry;
-
-    useEffect(() => {
-      // triggered on mount
-      LogAPI.put({
-        userId,
-        ts: new Date().toISOString(),
-        taskId,
-        productId,
-        action: Actions.viewed,
-      })
-      return () => {}
-    }, [])
+    
+    let checkVisible = (isVisible)=>{
+        if (isVisible) {
+            LogAPI.put({
+                userId,
+                ts: new Date().toISOString(),
+                taskId,
+                productId,
+                action: Actions.viewed,
+            })
+        }
+        else {
+            LogAPI.put({
+                userId,
+                ts: new Date().toISOString(),
+                taskId,
+                productId,
+                action: Actions.viewedReverse,
+            })
+        }
+    }
     
     
     return (
@@ -48,26 +57,28 @@ export function Entry(props){
             underlayColor={"#fff"}
             activeOpacity={0.5}
         >
-            <View             
-                style={[styles.row, styles.ctr, style]}
-            >
-                <View style={styles.imgCtr}>
-                    <Image 
-                        style={styles.img}
-                        resizeMode={'contain'}
-                        source={imageSrc}
-                    />
+            <InViewPort onChange={checkVisible}>
+                <View             
+                    style={[styles.row, styles.ctr, style]}
+                >
+                    <View style={styles.imgCtr}>
+                        <Image 
+                            style={styles.img}
+                            resizeMode={'contain'}
+                            source={imageSrc}
+                        />
+                    </View>
+                    <View style={styles.contentCtr}>
+                        { sponsored ? <Sponsored/> : null }
+                        <Title>{title}</Title>
+                        <Rating {...rating}/>
+                        <Price price={price}/>
+                        { prime ? <Prime/> : null }
+                        { freeShipping ? <FreeShipping/> : null }
+                        { temporarilyOutOfStock ? <TemporarilyOutOfStock/> : null }
+                    </View>
                 </View>
-                <View style={styles.contentCtr}>
-                    { sponsored ? <Sponsored/> : null }
-                    <Title>{title}</Title>
-                    <Rating {...rating}/>
-                    <Price price={price}/>
-                    { prime ? <Prime/> : null }
-                    { freeShipping ? <FreeShipping/> : null }
-                    { temporarilyOutOfStock ? <TemporarilyOutOfStock/> : null }
-                </View>
-            </View>
+            </InViewPort>
         </TouchableHighlight>
     )
 }

@@ -24,18 +24,7 @@ export function ProductScreen(props) {
     price, temporarilyOutOfStock,
     imageSrc, details, productId,
   } = entry;
-
-  useEffect(()=>{
-    return () => {
-      LogAPI.put({
-        userId,
-        ts: new Date().toISOString(),
-        taskId,
-        productId,
-        action: Actions.clickedBack,
-      })
-    }
-  })
+  
   return (
     <ScrollView>
       <View style={styles.card}>

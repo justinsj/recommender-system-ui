@@ -1,7 +1,8 @@
 export const Actions = {
   viewed: 'viewed',
+  viewedReverse: 'viewed-r',
   clicked: 'clicked',
-  clickedBack: 'clicked-r',
+  clickedReverse: 'clicked-r',
   addToCart: 'addToCart',
   buyNow: 'buyNow',
 }
