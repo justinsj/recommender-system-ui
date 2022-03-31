@@ -13,7 +13,7 @@ import { useContext } from 'react';
 import { AppContext } from './../../context/AppContext';
 
 export function Entry(props){
-    const { userId, taskId } = useContext(AppContext);
+    const { userId, taskId, sessionId } = useContext(AppContext);
 
     const navigation = useNavigation();
     const { entry, style, } = props;
@@ -28,6 +28,7 @@ export function Entry(props){
                     userId,
                     ts: new Date().toISOString(),
                     taskId,
+                    sessionId,
                     productId,
                     action: Actions.clicked,
                 })

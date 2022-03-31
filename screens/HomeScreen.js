@@ -42,6 +42,7 @@ const styles = {
   searchCtr: {
     paddingHorizontal: 12,
     backgroundColor: '#232f3e',
+    paddingTop: 4,
     paddingBottom: 12,
 
   },

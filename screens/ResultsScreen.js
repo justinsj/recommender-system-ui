@@ -7,7 +7,7 @@ import { AppContext } from "../context/AppContext";
 import { LogAPI } from './../wrappers/LogAPI';
 import { Actions } from './../constants/Actions';
 export function ResultsScreen() {
-  const { userId, taskId } = useContext(AppContext);
+  const { userId, taskId, sessionId } = useContext(AppContext);
 
   const onViewableItemsChanged = useCallback(({ viewableItems, changed }) => {
     console.log("Visible items are", viewableItems);
@@ -19,6 +19,7 @@ export function ResultsScreen() {
           userId,
           ts: new Date().toISOString(),
           taskId,
+          sessionId,
           productId,
           action: Actions.viewed,
         })
@@ -28,6 +29,7 @@ export function ResultsScreen() {
           userId,
           ts: new Date().toISOString(),
           taskId,
+          sessionId,
           productId,
           action: Actions.viewedReverse,
         })

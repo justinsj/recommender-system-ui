@@ -85,6 +85,7 @@ export default function App() {
                     userId,
                     ts: new Date().toISOString(),
                     taskId,
+                    sessionId,
                     productId,
                     action: Actions.clickedReverse,
                   });
