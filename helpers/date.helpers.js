@@ -1,5 +1,3 @@
 Date.prototype.addSeconds = function (seconds) {
-  const timestamp = this.getTime()
-  timestamp += seconds;
-  return new Date(timestamp);
+  return new Date(this.getTime() + seconds * 1000);
 }

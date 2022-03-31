@@ -11,9 +11,11 @@ import {createStackNavigator} from "@react-navigation/stack";
 import { SecretButton } from "./components/home/SecretButton";
 import { AppContext } from './context/AppContext';
 import { createId } from "./helpers/data.helpers";
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { LogAPI } from "./wrappers/LogAPI";
-import { Actions } from './components/data/constants/Actions';
+import { Actions } from './constants/Actions';
+import { Text } from 'react-native';
+import { SetupScreen } from './screens/SetupScreen';
 
 
 const Stack = createStackNavigator();
@@ -22,10 +24,12 @@ const Stack = createStackNavigator();
 export default function App() {
   const [userId, setUserId] = useState(createId());
   const [taskId, setTaskId] = useState('no task');
+  const [sessionId, setSessionId] = useState(createId());
   return (
     <AppContext.Provider value={{
       userId, setUserId,
       taskId, setTaskId,
+      sessionId, setSessionId,
     }}>
     <NavigationContainer>
       <Stack.Navigator>
@@ -33,10 +37,11 @@ export default function App() {
           name={'Home'}
           component={HomeScreen}
           options={({navigation})=>({ 
-            tabBarIcon: makeIconRender("home"),
             headerTitle: ()=>(<SecretButton
+              minTouches={6}
+              durationThresholdSeconds={2}
               onPress={()=>{navigation.navigate('Setup')}}
-            >{constants.companyName}</SecretButton>),
+            ><Text style={styles.title}>{constants.companyName}</Text></SecretButton>),
             headerStyle: {
               backgroundColor: '#232f3e',
               borderBottomWidth: 0,
@@ -60,7 +65,6 @@ export default function App() {
                 <AntDesign name="arrowleft" size={24} color="white" />
               </TouchableHighlight>
             ),
-            tabBarIcon: null,
             headerTitle: constants.companyName,
             headerStyle: {
               backgroundColor: '#232f3e',
@@ -75,7 +79,6 @@ export default function App() {
             headerLeft: ()=>(
               <TouchableHighlight
                 onPress={()=>{
-                  const { userId, taskId } = useContext(AppContext);
                   const {entry} = route && route.params ? route.params : { entry: data.refrigerator};
                   const { productId } = entry;
                   LogAPI.put({
@@ -94,7 +97,6 @@ export default function App() {
                 <AntDesign name="arrowleft" size={24} color="white" />
               </TouchableHighlight>
             ),
-            tabBarIcon: null,
             headerTitle: constants.companyName,
             headerStyle: {
               backgroundColor: '#232f3e',
@@ -105,7 +107,19 @@ export default function App() {
         <Stack.Screen
           name="Settings"
           component={SettingsScreen}
-          options={{ tabBarIcon: makeIconRender("cog"),
+          options={{ 
+          headerStyle: {
+            backgroundColor: '#232f3e',
+          },
+          headerTintColor: '#fff',
+         }}
+        />
+        <Stack.Screen
+          name="Setup"
+          component={SetupScreen}
+          options={{ 
+
+          headerLeft:()=>{},
           headerStyle: {
             backgroundColor: '#232f3e',
           },
@@ -126,6 +140,11 @@ function makeIconRender(name) {
 
 
 const styles = {
+  title: {
+    color: '#fff',
+    fontWeight: 500,
+    fontSize: 18,
+  },
   button: {
     padding: 12,
   }

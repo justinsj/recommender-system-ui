@@ -1,8 +1,5 @@
 import { Text, View, FlatList, TouchableHighlight } from "react-native";
 import { useRef, useState } from 'react';
-import { data } from "../data/data";
-import { Entry } from "../components/home/Entry";
-import { Results } from './../components/home/Results';
 import { SearchBar } from '../components/home/SearchBar';
 import { AntDesign } from '@expo/vector-icons';
 
@@ -45,7 +42,7 @@ const styles = {
   searchCtr: {
     paddingHorizontal: 12,
     backgroundColor: '#232f3e',
-    paddingVertical: 4,
+    paddingBottom: 12,
 
   },
   ctr: {

@@ -1,35 +1,31 @@
-import { Text, View, FlatList, TouchableHighlight } from "react-native";
-import { useRef, useState } from 'react';
-import { data } from "../data/data";
-import { Entry } from "../components/home/Entry";
-import { Results } from '../components/home/Results';
-import { SearchBar } from '../components/home/SearchBar';
-import { AntDesign } from '@expo/vector-icons';
+import { Text, View, FlatList, TouchableHighlight, TextInput } from "react-native";
+import { useRef, useState, useContext } from 'react';
 import { AppContext } from './../context/AppContext';
+import { createId } from "../helpers/data.helpers";
+import { useNavigation } from '@react-navigation/native';
 
 const DEFAULT_PROMPT = 'Randomize';
 
 export function SetupScreen() {
+  const navigation = useNavigation();
   const { userId, setUserId,
-          taskId, setTaskId, } = useContext(AppContext);
+          taskId, setTaskId,
+          sessionId, setSessionId, } = useContext(AppContext);
   const [ prompt, setPrompt ] = useState(DEFAULT_PROMPT);
 
   return (
     
     <View style={styles.ctr}>
       <View style={styles.inputCtr}>
-        <View>userId</View>
+        <View><Text style={styles.title}>userId</Text></View>
         <TextInput
-          ref={myref}
           style={styles.textInput}
           placeholder="Set user id"
-          onChangeText={(text)=>{
-              setUserId(text);
-          }}
+          onChangeText={setUserId}
           onSubmitEditing={()=>{
               
           }}
-          defaultValue={userId}
+          value={userId}
         />
       </View>
       <TouchableHighlight 
@@ -47,20 +43,50 @@ export function SetupScreen() {
       </TouchableHighlight>
 
       <View style={styles.inputCtr}>
-        <View>taskId</View>
+        <View><Text style={styles.title}>taskId</Text></View>
         <TextInput
-          ref={myref}
           style={styles.textInput}
-          placeholder="Set user id"
-          onChangeText={(text)=>{
-              setTaskId(text);
-          }}
+          placeholder="Set task id"
+          onChangeText={setTaskId}
           onSubmitEditing={()=>{
               
           }}
-          defaultValue={taskId}
+          value={taskId}
         />
       </View>
+      <View style={styles.inputCtr}>
+        <View><Text style={styles.title}>sessionId</Text></View>
+        <TextInput
+          style={styles.textInput}
+          placeholder="Set user id"
+          onChangeText={setSessionId}
+          onSubmitEditing={()=>{
+              
+          }}
+          value={sessionId}
+        />
+      </View>
+      <TouchableHighlight 
+        style={styles.button}
+        underlayColor={'#fff'}
+        activeOpacity={0.5}
+        onPress={()=>{setSessionId(createId())}}
+      >
+        <View style={styles.main}>
+          <Text style={styles.prompt}>{prompt}</Text>
+        </View>
+      </TouchableHighlight>
+
+      <TouchableHighlight 
+        style={styles.button}
+        underlayColor={'#fff'}
+        activeOpacity={0.5}
+        onPress={()=>{navigation.navigate('Home')}}
+      >
+        <View style={styles.main}>
+          <Text style={styles.prompt}>Start</Text>
+        </View>
+      </TouchableHighlight>
     </View>
   );
 }
@@ -68,7 +94,7 @@ export function SetupScreen() {
 const styles = {
   inputCtr: {
     paddingHorizontal: 12,
-    backgroundColor: '#232f3e',
+    backgroundColor: '#fff',
     paddingVertical: 4,
 
   },
@@ -78,8 +104,9 @@ const styles = {
   },
   button: {
     padding: 14,
-    backgroundColor: '#232f3e',
-    borderRadiu: 8,
+    backgroundColor: '#fcbb6a',
+    borderRadius: 8,
+    margin: 12,
   },
   main: {
     // flex: 1,
@@ -87,9 +114,20 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  textInput: {
+    borderWidth: 1,
+    borderColor: '#0F1111',
+    borderRadius: 8,
+    padding: 8,
+    fontSize: 16,
+  },
   prompt: {
     textAlign: 'center',
-    fontSize: 30,
+    fontSize: 16,
     paddingHorizontal: 24,
+  },
+  title: {
+    paddingTop: 16,
+    paddingBottom: 8,
   },
 }

@@ -10,7 +10,7 @@ export const data = {
         prime: true,
         freeShipping: true,
         // temporarilyOutOfStock: true,
-        imageSrc: require('../../assets/items/refrigerator.jpg'),
+        imageSrc: require('../assets/items/refrigerator.jpg'),
         storeText: "Visit the COMFEE' Store",
         details: {
             'Colour': 'Red',
@@ -37,7 +37,7 @@ export const data = {
         prime: true,
         freeShipping: true,
         // temporarilyOutOfStock: true,
-        imageSrc: require('../../assets/items/refrigerator2.jpg'),
+        imageSrc: require('../assets/items/refrigerator2.jpg'),
         storeText: "Visit the AstroAI Store",
         details: {},
         productId: 'b',

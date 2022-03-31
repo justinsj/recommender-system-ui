@@ -1,12 +1,5 @@
 import { Text, View, Image, TouchableHighlight, TextInput } from "react-native";
 import { useState } from 'react';
-import { Title } from './home/Title';
-import { Rating } from './home/Rating';
-import { Price } from './home/Price';
-import { Prime } from './home/Prime';
-import { FreeShipping } from './home/FreeShipping';
-import { TemporarilyOutOfStock } from './home/TemporarilyOutOfStock';
-import { Sponsored } from './home/Sponsored';
 import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from '@expo/vector-icons';
 

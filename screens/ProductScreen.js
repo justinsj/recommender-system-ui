@@ -1,5 +1,5 @@
-import { ScrollView, View, Image, Text } from "react-native";
-import { Rating } from './../components/home/Rating';
+import { ScrollView, View, Image } from "react-native";
+import { Rating } from './../components/common/Rating';
 import { Details } from './../components/product/Details';
 import { useRoute } from "@react-navigation/native";
 import { VisitStore } from './../components/product/VisitStore';
@@ -11,7 +11,7 @@ import { data } from '../data/data';
 import { LogAPI } from "../wrappers/LogAPI";
 import { AppContext } from './../context/AppContext';
 import { Actions } from './../constants/Actions';
-import { useEffect } from 'react';
+import { useContext } from 'react';
 
 //https://www.sitepoint.com/amazon-product-api-exploration-lets-build-a-product-search/
 //https://rapidapi.com/ZombieBest/api/amazon-products1/
