@@ -1,30 +1,30 @@
-import { ScrollView, View, Image } from "react-native";
-import { Rating } from './../components/common/Rating';
-import { Details } from './../components/product/Details';
-import { useRoute } from "@react-navigation/native";
-import { VisitStore } from './../components/product/VisitStore';
-import { ProductTitle } from './../components/product/ProductTitle';
-import { ProductInformation } from './../components/product/ProductInformation';
-import { QuantitySelect } from './../components/product/QuantitySelect';
-import { PurchaseOptions } from './../components/product/PurchaseOptions';
-import { data } from '../data/data';
-import { LogAPI } from "../wrappers/LogAPI";
-import { AppContext } from './../context/AppContext';
-import { Actions } from './../constants/Actions';
-import { useContext } from 'react';
+import {Image, ScrollView, View} from "react-native";
+import {Rating} from './../components/common/Rating';
+import {Details} from './../components/product/Details';
+import {useRoute} from "@react-navigation/native";
+import {VisitStore} from './../components/product/VisitStore';
+import {ProductTitle} from './../components/product/ProductTitle';
+import {ProductInformation} from './../components/product/ProductInformation';
+import {QuantitySelect} from './../components/product/QuantitySelect';
+import {PurchaseOptions} from './../components/product/PurchaseOptions';
+import {data} from '../data/data';
+import {LogAPI} from "../wrappers/LogAPI";
+import {AppContext} from './../context/AppContext';
+import {Actions} from './../constants/Actions';
+import {useContext} from 'react';
 
 //https://www.sitepoint.com/amazon-product-api-exploration-lets-build-a-product-search/
 //https://rapidapi.com/ZombieBest/api/amazon-products1/
 export function ProductScreen(props) {
-  const { userId, taskId, sessionId } = useContext(AppContext);
+  const {userId, taskId, sessionId} = useContext(AppContext);
   const route = useRoute();
-  const {entry} = route && route.params ? route.params : { entry: data.refrigerator};
+  const {entry} = route && route.params ? route.params : {entry: data.refrigerator};
   const {
     storeText, title, rating,
     price, temporarilyOutOfStock,
     imageSrc, details, productId,
   } = entry;
-  
+
   return (
     <ScrollView>
       <View style={styles.card}>
@@ -44,54 +44,53 @@ export function ProductScreen(props) {
         </View>
       </View>
 
-      
-    {/* <ProductOptions options={options}/> */}
-    <View style={styles.card}>
-      <ProductInformation
-        style={styles.ProductInformation}
-        price={price}
-        temporarilyOutOfStock={temporarilyOutOfStock}
-      />
-      
-      <View style={[styles.QuantitySelect, styles.row]}>
-        <QuantitySelect/>
-        <View style={{flex: 1}}/>
-      </View>
-      <PurchaseOptions 
-        onAddToCart={()=>{
-          LogAPI.put({
-            userId,
-            ts: new Date().toISOString(),
-            taskId,
-            sessionId,
-            productId,
-            action: Actions.addToCart,
-          })
-        }}
-        onBuyNow={()=>{
-          LogAPI.put({
-            userId,
-            ts: new Date().toISOString(),
-            taskId,
-            sessionId,
-            productId,
-            action: Actions.buyNow,
-          })
-        }}
-        style={styles.PurchaseOptions}
-        
-      />
-    </View>
-    { 
-      Object.keys(details).length > 0 ?
+
+      {/* <ProductOptions options={options}/> */}
       <View style={styles.card}>
-        <Details details={details}></Details>
-      </View> :
-      null
-    }
-    
-  
-      
+        <ProductInformation
+          style={styles.ProductInformation}
+          price={price}
+          temporarilyOutOfStock={temporarilyOutOfStock}
+        />
+
+        <View style={[styles.QuantitySelect, styles.row]}>
+          <QuantitySelect/>
+          <View style={{flex: 1}}/>
+        </View>
+        <PurchaseOptions
+          onAddToCart={() => {
+            LogAPI.put({
+              userId,
+              ts: new Date().toISOString(),
+              taskId,
+              sessionId,
+              productId,
+              action: Actions.addToCart,
+            })
+          }}
+          onBuyNow={() => {
+            LogAPI.put({
+              userId,
+              ts: new Date().toISOString(),
+              taskId,
+              sessionId,
+              productId,
+              action: Actions.buyNow,
+            })
+          }}
+          style={styles.PurchaseOptions}
+
+        />
+      </View>
+      {
+        Object.keys(details).length > 0 ?
+          <View style={styles.card}>
+            <Details details={details}></Details>
+          </View> :
+          null
+      }
+
+
       {/* <Recommendations/> */}
       {/* <ProductImageGallery/> */}
       {/* <FromTheManufacturer/> */}
@@ -130,8 +129,8 @@ const styles = {
     maxHeight: 300,
   },
   img: {
-      flex: 1,
-      // maxHeight: 170,
+    flex: 1,
+    // maxHeight: 170,
 
   },
   ProductInformation: {
@@ -144,5 +143,5 @@ const styles = {
   PurchaseOptions: {
     // paddingHorizontal: 14,
   },
-  
+
 }

@@ -1,15 +1,14 @@
-import { SECRETS } from './../secrets/secrets';
-
 export class LogAPI {
   static instance;
-  constructor(){
+
+  constructor() {
 
   }
 
-  static async put(data){
-    console.log({productId:data.productId, action:data.action})
+  static async put(data) {
+    console.log({productId: data.productId, action: data.action})
 
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject) => {
 
       let requestOptions = {
         method: 'POST',
@@ -17,14 +16,14 @@ export class LogAPI {
       };
 
       //(
-        // fetch(
-        //   SECRETS.logUrl,
-        //   requestOptions
-        // )
-        // .then(resp => resolve(resp))
-        // .catch(err => reject(err))
+      // fetch(
+      //   SECRETS.logUrl,
+      //   requestOptions
+      // )
+      // .then(resp => resolve(resp))
+      // .catch(err => reject(err))
       //)
     })
-    
+
   }
 }

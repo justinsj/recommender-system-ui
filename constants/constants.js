@@ -1,4 +1,4 @@
 export const constants = {
-    companyName: 'Amason'
+  companyName: 'Amason'
 }
 

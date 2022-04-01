@@ -1,20 +1,22 @@
-import { Text, View, FlatList, TouchableHighlight, TextInput } from "react-native";
-import { useRef, useState, useContext } from 'react';
-import { AppContext } from './../context/AppContext';
-import { createId } from "../helpers/data.helpers";
-import { useNavigation } from '@react-navigation/native';
+import {Text, TextInput, TouchableHighlight, View} from "react-native";
+import {useContext, useState} from 'react';
+import {AppContext} from './../context/AppContext';
+import {createId} from "../helpers/data.helpers";
+import {useNavigation} from '@react-navigation/native';
 
 const DEFAULT_PROMPT = 'Randomize';
 
 export function SetupScreen() {
   const navigation = useNavigation();
-  const { userId, setUserId,
-          taskId, setTaskId,
-          sessionId, setSessionId, } = useContext(AppContext);
-  const [ prompt, setPrompt ] = useState(DEFAULT_PROMPT);
+  const {
+    userId, setUserId,
+    taskId, setTaskId,
+    sessionId, setSessionId,
+  } = useContext(AppContext);
+  const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
 
   return (
-    
+
     <View style={styles.ctr}>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>userId</Text></View>
@@ -22,17 +24,17 @@ export function SetupScreen() {
           style={styles.textInput}
           placeholder="Set user id"
           onChangeText={setUserId}
-          onSubmitEditing={()=>{
-              
+          onSubmitEditing={() => {
+
           }}
           value={userId}
         />
       </View>
-      <TouchableHighlight 
+      <TouchableHighlight
         style={styles.button}
         underlayColor={'#fff'}
         activeOpacity={0.5}
-        onPress={()=>{
+        onPress={() => {
           console.log("randomized userId");
           setUserId(createId())
         }}
@@ -48,8 +50,8 @@ export function SetupScreen() {
           style={styles.textInput}
           placeholder="Set task id"
           onChangeText={setTaskId}
-          onSubmitEditing={()=>{
-              
+          onSubmitEditing={() => {
+
           }}
           value={taskId}
         />
@@ -60,28 +62,32 @@ export function SetupScreen() {
           style={styles.textInput}
           placeholder="Set user id"
           onChangeText={setSessionId}
-          onSubmitEditing={()=>{
-              
+          onSubmitEditing={() => {
+
           }}
           value={sessionId}
         />
       </View>
-      <TouchableHighlight 
+      <TouchableHighlight
         style={styles.button}
         underlayColor={'#fff'}
         activeOpacity={0.5}
-        onPress={()=>{setSessionId(createId())}}
+        onPress={() => {
+          setSessionId(createId())
+        }}
       >
         <View style={styles.main}>
           <Text style={styles.prompt}>{prompt}</Text>
         </View>
       </TouchableHighlight>
 
-      <TouchableHighlight 
+      <TouchableHighlight
         style={styles.button}
         underlayColor={'#fff'}
         activeOpacity={0.5}
-        onPress={()=>{navigation.navigate('Home')}}
+        onPress={() => {
+          navigation.navigate('Home')
+        }}
       >
         <View style={styles.main}>
           <Text style={styles.prompt}>Start</Text>

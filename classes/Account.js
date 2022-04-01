@@ -1,7 +1,7 @@
 /**
  * Account is responsible for holding anonymized user data
  */
-import {Memento}  from "../classes/Memento";
+import {Memento} from "../classes/Memento";
 import {createId} from "../helpers/data.helpers";
 
 // TODO support Observer pattern if needed
@@ -13,19 +13,8 @@ export class Account extends Memento {
     this.load();
   }
 
-  setUTM(params, callback=()=>{}){
-    this.setState(params,callback);
-  }
-  getUTM(){
-    const { utm_source, utm_medium, utm_campaign } = this.state;
-    return {
-      utm_source,
-      utm_medium,
-      utm_campaign
-    }
-  }
   static getInstance() {
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (resolve, reject) => {
       if (!Account.instance) {
         Account.instance = new Account();
         await Account.instance.load(Account.instance.onLoadFinished);
@@ -35,9 +24,23 @@ export class Account extends Memento {
 
   }
 
-  onLoadFinished(){
+  setUTM(params, callback = () => {
+  }) {
+    this.setState(params, callback);
+  }
 
-    const { utm_source, utm_medium, utm_campaign } = this.getUTM();
+  getUTM() {
+    const {utm_source, utm_medium, utm_campaign} = this.state;
+    return {
+      utm_source,
+      utm_medium,
+      utm_campaign
+    }
+  }
+
+  onLoadFinished() {
+
+    const {utm_source, utm_medium, utm_campaign} = this.getUTM();
 
   }
 
