@@ -1,10 +1,7 @@
-import { Text, View, FlatList, TouchableHighlight } from "react-native";
-import { useRef, useState } from 'react';
-import { data } from "../components/data/data";
-import { Entry } from "../components/home/Entry";
-import { Results } from './../components/home/Results';
-import { SearchBar } from './../components/SearchBar';
-import { AntDesign } from '@expo/vector-icons';
+import {Text, TouchableHighlight, View} from "react-native";
+import {useRef, useState} from 'react';
+import {SearchBar} from '../components/home/SearchBar';
+import {AntDesign} from '@expo/vector-icons';
 
 const DEFAULT_PROMPT = 'Click the search bar to begin!';
 
@@ -13,27 +10,29 @@ export function HomeScreen() {
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
 
   return (
-    
+
     <View style={styles.ctr}>
       <View style={styles.searchCtr}>
-        <SearchBar 
-          myref={textInputRef} 
-          onFail={()=>{
+        <SearchBar
+          myref={textInputRef}
+          onFail={() => {
             setPrompt('No results!\nTry searching for: refrigerator');
           }}
-          onSucceed={()=>{
+          onSucceed={() => {
             setPrompt(DEFAULT_PROMPT);
           }}
         />
       </View>
-      <TouchableHighlight 
+      <TouchableHighlight
         style={styles.main}
         underlayColor={'#fff'}
         activeOpacity={0.5}
-        onPress={()=>{textInputRef.current.focus()}}
+        onPress={() => {
+          textInputRef.current.focus()
+        }}
       >
         <View style={styles.main}>
-          <AntDesign name="arrowup" size={80} color="black" />
+          <AntDesign name="arrowup" size={80} color="black"/>
           <Text style={styles.prompt}>{prompt}</Text>
         </View>
       </TouchableHighlight>
@@ -43,9 +42,12 @@ export function HomeScreen() {
 
 const styles = {
   searchCtr: {
+    // flex: 1,
+    flexDirection: 'row',
     paddingHorizontal: 12,
     backgroundColor: '#232f3e',
-    paddingVertical: 4,
+    paddingTop: 4,
+    paddingBottom: 12,
 
   },
   ctr: {

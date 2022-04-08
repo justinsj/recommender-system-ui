@@ -1,0 +1,60 @@
+import {TouchableHighlight} from "react-native";
+
+import {useNavigation} from "@react-navigation/native";
+import {LogAPI} from "../../wrappers/LogAPI";
+import {Actions} from "../../constants/Actions";
+import {useContext} from 'react';
+import {AppContext} from './../../context/AppContext';
+import { Interfaces } from './../../constants/Interfaces';
+
+export function Entry(props) {
+  const {userId, taskId, interfaceId, sessionId} = useContext(AppContext);
+
+  const navigation = useNavigation();
+  const {entry, style,} = props;
+  const { productId } = entry;
+
+  return (
+    <TouchableHighlight
+      onPress={(e) => {
+        LogAPI.put({
+          logs: [{
+            userId,
+            ts: new Date().toISOString(),
+            taskId,
+            interfaceId,
+            sessionId,
+            productId,
+            action: Actions.clicked,
+          }],
+        })
+        navigation.navigate("Product", {entry});
+      }}
+      underlayColor={"#fff"}
+      activeOpacity={0.5}
+    >
+      <InterfaceWrapper 
+        interfaceId={interfaceId}
+        entry={entry}
+        style={style}
+      />
+    </TouchableHighlight>
+  )
+}
+
+function InterfaceWrapper(props){
+  const { interfaceId } = props;
+  switch (interfaceId){
+    case (Interfaces.control):
+      return <ControlEntry {...props}/>
+    case (Interfaces.small):
+      return <SmallEntry {...props}/>
+    case (Interfaces.medium):
+      return <MediumEntry {...props}/>
+    case (Interfaces.large):
+      return <LargeEntry {...props}/>
+    default:
+      console.error("No such interfaceId: " + interfaceId)
+      return null
+  }
+}

@@ -1,25 +1,73 @@
-import { Text, View, FlatList } from "react-native";
-import { data } from "../components/data/data";
-import { Entry } from "../components/home/Entry";
-import { Results } from '../components/home/Results';
+import {FlatList, Text, View} from "react-native";
+import {data} from "../data/data";
+import {Entry} from "../components/results/Entry";
+import {Results} from '../components/results/Results';
+import {useCallback, useContext} from 'react';
+import {AppContext} from "../context/AppContext";
+import {LogAPI} from './../wrappers/LogAPI';
+import {Actions} from './../constants/Actions';
+import { convertStringToInt } from './../helpers/char.helpers';
+import { constants } from './../constants/constants';
+import { getInterfaceIndex } from './../helpers/interface.helpers';
 
 export function ResultsScreen() {
-  return (
-    
-    <View style={styles.listCtr}>
-      <Results/>
+  const {userId, taskId, sessionId, interfaceId} = useContext(AppContext);
 
-      <FlatList 
-        data={[
-          data.refrigerator,
-          data.refrigerator2,
-        ]}
-        renderItem={({item})=>(<Entry 
-          style={styles.entry}
-          entry={item}
-        />)}
-      />
-    </View>
+  const onViewableItemsChanged = ({viewableItems, changed}) => {
+    for (const {item, isViewable} of changed) {
+      const {productId} = item;
+      if (isViewable) {
+        LogAPI.put({
+          logs: [{
+            userId,
+            ts: new Date().toISOString(),
+            taskId,
+            interfaceId,
+            sessionId,
+            productId,
+            action: Actions.viewed,
+          }]
+        })
+      } else {
+        LogAPI.put({
+          logs: [{
+            userId,
+            ts: new Date().toISOString(),
+            taskId,
+            interfaceId,
+            sessionId,
+            productId,
+            action: Actions.viewedReverse,
+          }]
+        })
+      }
+    }
+  };
+
+  const results = getSlice(
+    Object.values(data), 
+    ( convertStringToInt(sessionId) + getInterfaceIndex(interfaceId) ) % constants.numInterfaces, 
+    constants.numInterfaces,
+  );
+
+  return (
+    <FlatList
+      style={styles.listCtr}
+      // contentContainerStyle={{flex: 1}}
+      ListHeaderComponent={<Results/>}
+      data={results}
+      keyExtractor={(item, index) => index}
+      renderItem={({item, index})=> (<Entry
+        style={styles.entry}
+        entry={item}
+        index={index}
+      />)}
+      onViewableItemsChanged={onViewableItemsChanged}
+      viewabilityConfig={{
+        itemVisiblePercentThreshold: 1,
+        waitForInteraction: false,
+      }}
+    />
   );
 }
 
@@ -27,7 +75,9 @@ const styles = {
   listCtr: {
     paddingVertical: 4,
     background: '#fff',
-    flex: 1,
+    // position: 'fixed',
+    flexGrow: 1,
+    // flex: 1,
   },
   entry: {
     marginHorizontal: 8,
