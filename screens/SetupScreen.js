@@ -4,6 +4,7 @@ import {AppContext} from './../context/AppContext';
 import {createId} from "../helpers/data.helpers";
 import {useNavigation} from '@react-navigation/native';
 import RNPickerSelect from 'react-native-picker-select';
+import { Interfaces } from './../constants/Interfaces';
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -12,6 +13,7 @@ export function SetupScreen() {
   const {
     userId, setUserId,
     taskId, setTaskId,
+    interfaceId, setInterfaceId,
     sessionId, setSessionId,
   } = useContext(AppContext);
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
@@ -56,7 +58,21 @@ export function SetupScreen() {
             ]}
             value={taskId}
         />
-
+      </View>
+      <View style={styles.inputCtr}>
+        <View><Text style={styles.title}>interfaceId</Text></View>
+        <RNPickerSelect
+            style={styles.textInput}
+            placeholder="Set interface id"
+            onValueChange={setInterfaceId}
+            items={[
+                { label: 'Control', value: Interfaces.control },
+                { label: 'Large Image', value: Interfaces.large },
+                { label: 'Medium Image', value: Interfaces.medium },
+                { label: 'Small Image', value: Interfaces.small },
+            ]}
+            value={taskId}
+        />
       </View>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>sessionId</Text></View>

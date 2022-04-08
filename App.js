@@ -14,6 +14,7 @@ import {useState} from 'react';
 import {LogAPI} from "./wrappers/LogAPI";
 import {Actions} from './constants/Actions';
 import {SetupScreen} from './screens/SetupScreen';
+import { Interfaces } from './constants/Interfaces';
 
 
 const Stack = createStackNavigator();
@@ -22,11 +23,13 @@ const Stack = createStackNavigator();
 export default function App() {
   const [userId, setUserId] = useState(createId());
   const [taskId, setTaskId] = useState('no task');
+  const [interfaceId, setInterfaceId] = useState(Interfaces.control);
   const [sessionId, setSessionId] = useState(createId());
   return (
     <AppContext.Provider value={{
       userId, setUserId,
       taskId, setTaskId,
+      interfaceId, setInterfaceId,
       sessionId, setSessionId,
     }}>
       <NavigationContainer>
@@ -35,7 +38,6 @@ export default function App() {
             name="Setup"
             component={SetupScreen}
             options={{
-
               headerLeft: () => {
               },
               headerStyle: {
@@ -99,6 +101,7 @@ export default function App() {
                         userId,
                         ts: new Date().toISOString(),
                         taskId,
+                        interfaceId,
                         sessionId,
                         productId,
                         action: Actions.clickedReverse,

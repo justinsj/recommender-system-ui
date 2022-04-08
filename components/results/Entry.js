@@ -1,27 +1,18 @@
-import {Image, TouchableHighlight, View} from "react-native";
-import {Title} from './Title';
-import {Rating} from '../common/Rating';
-import {Price} from './Price';
-import {Prime} from './Prime';
-import {FreeShipping} from './FreeShipping';
-import {TemporarilyOutOfStock} from './TemporarilyOutOfStock';
-import {Sponsored} from './Sponsored';
+import {TouchableHighlight} from "react-native";
+
 import {useNavigation} from "@react-navigation/native";
 import {LogAPI} from "../../wrappers/LogAPI";
 import {Actions} from "../../constants/Actions";
 import {useContext} from 'react';
 import {AppContext} from './../../context/AppContext';
+import { Interfaces } from './../../constants/Interfaces';
 
 export function Entry(props) {
-  const {userId, taskId, sessionId} = useContext(AppContext);
+  const {userId, taskId, interfaceId, sessionId} = useContext(AppContext);
 
   const navigation = useNavigation();
   const {entry, style,} = props;
-  const {
-    sponsored, title, rating, price,
-    prime, freeShipping, temporarilyOutOfStock,
-    imageSrc, productId
-  } = entry;
+  const { productId } = entry;
 
   return (
     <TouchableHighlight
@@ -31,6 +22,7 @@ export function Entry(props) {
             userId,
             ts: new Date().toISOString(),
             taskId,
+            interfaceId,
             sessionId,
             productId,
             action: Actions.clicked,
@@ -41,60 +33,28 @@ export function Entry(props) {
       underlayColor={"#fff"}
       activeOpacity={0.5}
     >
-      <View
-        style={[styles.row, styles.ctr, style]}
-      >
-        <View style={styles.imgCtr}>
-          <Image
-            style={styles.img}
-            resizeMode={'contain'}
-            source={imageSrc}
-          />
-        </View>
-        <View style={styles.contentCtr}>
-          {sponsored ? <Sponsored/> : null}
-          <Title>{title}</Title>
-          {rating ? <Rating {...rating}/> : null}
-          <Price price={price}/>
-          {prime ? <Prime/> : null}
-          {freeShipping ? <FreeShipping/> : null}
-          {temporarilyOutOfStock ? <TemporarilyOutOfStock/> : null}
-        </View>
-      </View>
+      <InterfaceWrapper 
+        interfaceId={interfaceId}
+        entry={entry}
+        style={style}
+      />
     </TouchableHighlight>
   )
 }
 
-const styles = {
-  ctr: {
-    borderRadius: 4,
-    backgroundColor: '#fff',
-    borderColor: '#f5f5f5',
-    borderWidth: 1,
-    minHeight: 209,
-  },
-  row: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  imgCtr: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    flexGrow: 0.7,
-    paddingHorizontal: 8,
-    backgroundColor: '#f8f8f8',
-    justifyContent: 'center',
-  },
-  img: {
-    flex: 1,
-    maxHeight: 170,
-
-  },
-  contentCtr: {
-    flex: 1,
-    flexGrow: 1,
-    padding: 8,
-
-  },
+function InterfaceWrapper(props){
+  const { interfaceId } = props;
+  switch (interfaceId){
+    case (Interfaces.control):
+      return <ControlEntry {...props}/>
+    case (Interfaces.small):
+      return <SmallEntry {...props}/>
+    case (Interfaces.medium):
+      return <MediumEntry {...props}/>
+    case (Interfaces.large):
+      return <LargeEntry {...props}/>
+    default:
+      console.error("No such interfaceId: " + interfaceId)
+      return null
+  }
 }

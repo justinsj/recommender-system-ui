@@ -8,9 +8,10 @@ import {LogAPI} from './../wrappers/LogAPI';
 import {Actions} from './../constants/Actions';
 import { convertStringToInt } from './../helpers/char.helpers';
 import { constants } from './../constants/constants';
+import { getInterfaceIndex } from './../helpers/interface.helpers';
 
 export function ResultsScreen() {
-  const {userId, taskId, sessionId} = useContext(AppContext);
+  const {userId, taskId, sessionId, interfaceId} = useContext(AppContext);
 
   const onViewableItemsChanged = ({viewableItems, changed}) => {
     for (const {item, isViewable} of changed) {
@@ -21,6 +22,7 @@ export function ResultsScreen() {
             userId,
             ts: new Date().toISOString(),
             taskId,
+            interfaceId,
             sessionId,
             productId,
             action: Actions.viewed,
@@ -32,6 +34,7 @@ export function ResultsScreen() {
             userId,
             ts: new Date().toISOString(),
             taskId,
+            interfaceId,
             sessionId,
             productId,
             action: Actions.viewedReverse,
@@ -43,7 +46,7 @@ export function ResultsScreen() {
 
   const results = getSlice(
     Object.values(data), 
-    convertStringToInt(sessionId) % constants.numInterfaces, 
+    ( convertStringToInt(sessionId) + getInterfaceIndex(interfaceId) ) % constants.numInterfaces, 
     constants.numInterfaces,
   );
 
@@ -65,24 +68,6 @@ export function ResultsScreen() {
         waitForInteraction: false,
       }}
     />
-    // <FlatList
-    //   style={styles.listCtr}
-    //   contentContainerStyle={{flex: 1}}
-    //   ListHeaderComponent={<Results/>}
-    //   data={results}
-    //   renderItem={({item, index}) => (<Entry
-    //     style={styles.entry}
-    //     entry={item}
-    //     index={index}
-    //   />)}
-    //   keyExtractor={(item, index) => index}
-    //   onViewableItemsChanged={onViewableItemsChanged}
-    //   viewabilityConfig={{
-    //     itemVisiblePercentThreshold: 1,
-    //     waitForInteraction: false,
-
-    //   }}
-    // />
   );
 }
 
