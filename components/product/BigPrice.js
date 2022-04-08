@@ -21,19 +21,19 @@ const styles = {
   dollar: {
     position: 'relative',
     color: '#0F1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 15,
     top: 7,
   },
   whole: {
     color: '#0F1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 38,
   },
   decimal: {
     position: 'relative',
     color: '#0F1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 15,
     top: 7,
   },

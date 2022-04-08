@@ -40,22 +40,22 @@ const styles = {
   },
   key: {
     color: '#565959',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 15,
     lineHeight: 20.25,
   },
   value: {
     textAlign: 'left',
     color: '#0f1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 15,
     lineHeight: 20.25,
   },
   title: {
     color: '#0f1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 18,
-    fontWeight: 700,
+    fontWeight: '700',
     lineHeight: 23.4,
   }
 }

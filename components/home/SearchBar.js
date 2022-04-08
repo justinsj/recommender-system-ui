@@ -25,7 +25,7 @@ export function SearchBar(props) {
           setText(text);
         }}
         onSubmitEditing={() => {
-          if (text.includes('ref')) {
+          if (text.toLowerCase().includes('ref')) {
             navigation.navigate('Results');
             onSucceed();
           } else {

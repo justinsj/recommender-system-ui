@@ -1,4 +1,5 @@
 export const constants = {
-  companyName: 'Amason'
+  companyName: 'Amason',
+  numInterfaces: 4
 }
 

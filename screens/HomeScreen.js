@@ -42,6 +42,8 @@ export function HomeScreen() {
 
 const styles = {
   searchCtr: {
+    // flex: 1,
+    flexDirection: 'row',
     paddingHorizontal: 12,
     backgroundColor: '#232f3e',
     paddingTop: 4,

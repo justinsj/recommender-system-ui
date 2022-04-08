@@ -51,7 +51,7 @@ const styles = {
   },
   text: {
     color: '#0f1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 16,
     lineHeight: 21.6,
   },

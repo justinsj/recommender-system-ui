@@ -16,14 +16,14 @@ const styles = {
   },
   title: {
     color: '#0F1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 16,
-    fontWeight: 500,
+    fontWeight: '500',
     lineHeight: 24,
   },
   text: {
     color: '#0F1111',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 12,
     lineHeight: 16,
   },

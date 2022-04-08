@@ -60,22 +60,26 @@ export function ProductScreen(props) {
         <PurchaseOptions
           onAddToCart={() => {
             LogAPI.put({
-              userId,
-              ts: new Date().toISOString(),
-              taskId,
-              sessionId,
-              productId,
-              action: Actions.addToCart,
+              logs: [{
+                userId,
+                ts: new Date().toISOString(),
+                taskId,
+                sessionId,
+                productId,
+                action: Actions.addToCart,
+              }],
             })
           }}
           onBuyNow={() => {
             LogAPI.put({
-              userId,
-              ts: new Date().toISOString(),
-              taskId,
-              sessionId,
-              productId,
-              action: Actions.buyNow,
+              logs: [{
+                userId,
+                ts: new Date().toISOString(),
+                taskId,
+                sessionId,
+                productId,
+                action: Actions.buyNow,
+              }],
             })
           }}
           style={styles.PurchaseOptions}

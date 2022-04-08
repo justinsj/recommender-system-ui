@@ -31,6 +31,19 @@ export default function App() {
     }}>
       <NavigationContainer>
         <Stack.Navigator>
+        <Stack.Screen
+            name="Setup"
+            component={SetupScreen}
+            options={{
+
+              headerLeft: () => {
+              },
+              headerStyle: {
+                backgroundColor: '#232f3e',
+              },
+              headerTintColor: '#fff',
+            }}
+          />
           <Stack.Screen
             name={'Home'}
             component={HomeScreen}
@@ -82,12 +95,14 @@ export default function App() {
                     const {entry} = route && route.params ? route.params : {entry: data.refrigerator};
                     const {productId} = entry;
                     LogAPI.put({
-                      userId,
-                      ts: new Date().toISOString(),
-                      taskId,
-                      sessionId,
-                      productId,
-                      action: Actions.clickedReverse,
+                      logs: [{
+                        userId,
+                        ts: new Date().toISOString(),
+                        taskId,
+                        sessionId,
+                        productId,
+                        action: Actions.clickedReverse,
+                      }],
                     });
                     navigation.goBack();
                   }}
@@ -115,19 +130,6 @@ export default function App() {
               headerTintColor: '#fff',
             }}
           />
-          <Stack.Screen
-            name="Setup"
-            component={SetupScreen}
-            options={{
-
-              headerLeft: () => {
-              },
-              headerStyle: {
-                backgroundColor: '#232f3e',
-              },
-              headerTintColor: '#fff',
-            }}
-          />
         </Stack.Navigator>
       </NavigationContainer>
     </AppContext.Provider>
@@ -144,7 +146,7 @@ function makeIconRender(name) {
 const styles = {
   title: {
     color: '#fff',
-    fontWeight: 500,
+    fontWeight: '500',
     fontSize: 18,
   },
   button: {

@@ -11,7 +11,7 @@ export function VisitStore(props) {
 const styles = {
   text: {
     color: '#007185',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 13,
     lineHeight: 18.2,
   }

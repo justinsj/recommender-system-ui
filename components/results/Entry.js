@@ -27,12 +27,14 @@ export function Entry(props) {
     <TouchableHighlight
       onPress={(e) => {
         LogAPI.put({
-          userId,
-          ts: new Date().toISOString(),
-          taskId,
-          sessionId,
-          productId,
-          action: Actions.clicked,
+          logs: [{
+            userId,
+            ts: new Date().toISOString(),
+            taskId,
+            sessionId,
+            productId,
+            action: Actions.clicked,
+          }],
         })
         navigation.navigate("Product", {entry});
       }}
@@ -52,7 +54,7 @@ export function Entry(props) {
         <View style={styles.contentCtr}>
           {sponsored ? <Sponsored/> : null}
           <Title>{title}</Title>
-          <Rating {...rating}/>
+          {rating ? <Rating {...rating}/> : null}
           <Price price={price}/>
           {prime ? <Prime/> : null}
           {freeShipping ? <FreeShipping/> : null}
@@ -76,6 +78,9 @@ const styles = {
     flexDirection: 'row',
   },
   imgCtr: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
     flexGrow: 0.7,
     paddingHorizontal: 8,
     backgroundColor: '#f8f8f8',
@@ -88,6 +93,7 @@ const styles = {
   },
   contentCtr: {
     flex: 1,
+    flexGrow: 1,
     padding: 8,
 
   },

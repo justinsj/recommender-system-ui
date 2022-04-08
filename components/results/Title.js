@@ -16,7 +16,7 @@ const styles = {
     color: '#0F1111',
     lineHeight: 20,
     fontSize: 14,
-    fontWeight: 400,
-    fontFamily: '"Amazon Ember",Arial,sans-serif',
+    fontWeight: '400',
+    fontFamily: '',
   }
 }

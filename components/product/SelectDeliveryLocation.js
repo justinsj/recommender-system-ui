@@ -21,6 +21,6 @@ const styles = {
     color: '#565959',
     fontSize: 15,
     lineHeight: 20.25,
-    fontFamily: '"Amazon Ember",Arial,sans-serif',
+    fontFamily: '',
   },
 }

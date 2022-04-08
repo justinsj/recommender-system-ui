@@ -11,9 +11,9 @@ export function ProductTitle(props) {
 const styles = {
   text: {
     color: '#565959',
-    fontFamily: '"Amazon Ember", Arial, sans-serif',
+    fontFamily: '',
     fontSize: 13,
-    fontWeight: 400,
+    fontWeight: '400',
     lineHeight: 18.2,
   }
 }

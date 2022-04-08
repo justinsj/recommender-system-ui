@@ -9,9 +9,9 @@ export function Sponsored(props) {
 const styles = {
   font: {
     color: '#565959',
-    fontFamily: '"Amazon Ember",Arial,sans-serif',
+    fontFamily: '',
     fontSize: 11,
-    fontWeight: 400,
+    fontWeight: '400',
     lineHeight: 14.85,
   }
 }

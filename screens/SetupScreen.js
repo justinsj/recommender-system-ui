@@ -3,6 +3,7 @@ import {useContext, useState} from 'react';
 import {AppContext} from './../context/AppContext';
 import {createId} from "../helpers/data.helpers";
 import {useNavigation} from '@react-navigation/native';
+import RNPickerSelect from 'react-native-picker-select';
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -46,15 +47,16 @@ export function SetupScreen() {
 
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>taskId</Text></View>
-        <TextInput
-          style={styles.textInput}
-          placeholder="Set task id"
-          onChangeText={setTaskId}
-          onSubmitEditing={() => {
-
-          }}
-          value={taskId}
+        <RNPickerSelect
+            style={styles.textInput}
+            placeholder="Set task id"
+            onValueChange={setTaskId}
+            items={[
+                { label: 'Refrigerator', value: 'refrigerator' },
+            ]}
+            value={taskId}
         />
+
       </View>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>sessionId</Text></View>
