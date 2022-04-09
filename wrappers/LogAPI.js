@@ -22,16 +22,16 @@ export class LogAPI {
       };
 
       const url = SECRETS.logUrl;
-      // fetch(
-      //   url,
-      //   requestOptions,
-      // ).then(resp => {
-      //   console.log(resp)
-      //   resolve(resp)}
-      // ).catch(err => {
-      //   console.error(err)
-      //   reject(err)
-      // })
+      fetch(
+        url,
+        requestOptions,
+      ).then(resp => {
+        console.log(resp)
+        resolve(resp)}
+      ).catch(err => {
+        console.error(err)
+        reject(err)
+      })
       
     })
 

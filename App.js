@@ -36,7 +36,7 @@ export default function App() {
     }}>
       <NavigationContainer>
         <Stack.Navigator>
-          {/* <Stack.Screen
+          <Stack.Screen
             name="Setup"
             component={SetupScreen}
             options={{
@@ -77,7 +77,7 @@ export default function App() {
               ), 
               headerTintColor: '#fff',
             })}
-          /> */}
+          />
           <Stack.Screen
             name={'Results'}
             component={ResultsScreen}
