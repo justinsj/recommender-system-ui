@@ -15,6 +15,7 @@ export function SetupScreen() {
     taskId, setTaskId,
     interfaceId, setInterfaceId,
     sessionId, setSessionId,
+    setAddedItemsCount,
   } = useContext(AppContext);
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
 
@@ -87,7 +88,7 @@ export function SetupScreen() {
         />
       </View>
       <TouchableHighlight
-        style={styles.button}
+        style={[styles.button, styles.spacerDown]}
         underlayColor={'#fff'}
         activeOpacity={0.5}
         onPress={() => {
@@ -99,6 +100,18 @@ export function SetupScreen() {
         </View>
       </TouchableHighlight>
 
+      <TouchableHighlight
+        style={[styles.button, styles.spacerDown]}
+        underlayColor={'#fff'}
+        activeOpacity={0.5}
+        onPress={() => {
+          setAddedItemsCount(0);
+        }}
+      >
+        <View style={styles.main}>
+          <Text style={styles.prompt}>Reset Added Items</Text>
+        </View>
+      </TouchableHighlight>
       <TouchableHighlight
         style={styles.button}
         underlayColor={'#fff'}
@@ -121,6 +134,9 @@ const styles = {
     backgroundColor: '#fff',
     paddingVertical: 4,
 
+  },
+  spacerDown: {
+    marignBottom: 24,
   },
   ctr: {
     background: '#fff',

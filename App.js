@@ -1,7 +1,6 @@
 import {AntDesign, MaterialCommunityIcons} from "@expo/vector-icons";
 import {NavigationContainer} from "@react-navigation/native";
 import {HomeScreen} from "./screens/HomeScreen";
-import {SettingsScreen} from "./screens/SettingsScreen";
 import {constants} from './constants/constants';
 import {ProductScreen} from './screens/ProductScreen';
 import {Text, TouchableHighlight} from 'react-native';
@@ -15,6 +14,7 @@ import {LogAPI} from "./wrappers/LogAPI";
 import {Actions} from './constants/Actions';
 import {SetupScreen} from './screens/SetupScreen';
 import { Interfaces } from './constants/Interfaces';
+import { AddedItemsCount } from "./components/common/AddedItemsCount";
 
 
 const Stack = createStackNavigator();
@@ -25,12 +25,14 @@ export default function App() {
   const [taskId, setTaskId] = useState('no task');
   const [interfaceId, setInterfaceId] = useState(Interfaces.control);
   const [sessionId, setSessionId] = useState(createId());
+  const [addedItemsCount, setAddedItemsCount] = useState(0);
   return (
     <AppContext.Provider value={{
       userId, setUserId,
       taskId, setTaskId,
       interfaceId, setInterfaceId,
       sessionId, setSessionId,
+      addedItemsCount, setAddedItemsCount
     }}>
       <NavigationContainer>
         <Stack.Navigator>
@@ -43,6 +45,12 @@ export default function App() {
               headerStyle: {
                 backgroundColor: '#232f3e',
               },
+              headerRight: ()=>(
+                <AddedItemsCount
+                  style={styles.headerRight}
+                  count={addedItemsCount}
+                />
+              ),  
               headerTintColor: '#fff',
             }}
           />
@@ -61,6 +69,11 @@ export default function App() {
                 backgroundColor: '#232f3e',
                 borderBottomWidth: 0,
               },
+              headerRight: ()=>(
+                <AddedItemsCount
+                  count={addedItemsCount}
+                />
+              ), 
               headerTintColor: '#fff',
             })}
           />
@@ -84,6 +97,11 @@ export default function App() {
               headerStyle: {
                 backgroundColor: '#232f3e',
               },
+              headerRight: ()=>(
+                <AddedItemsCount
+                  count={addedItemsCount}
+                />
+              ), 
               headerTintColor: '#fff',
             })}
           />
@@ -120,18 +138,13 @@ export default function App() {
               headerStyle: {
                 backgroundColor: '#232f3e',
               },
+              headerRight: ()=>(
+                <AddedItemsCount
+                  count={addedItemsCount}
+                />
+              ), 
               headerTintColor: '#fff',
             })}
-          />
-          <Stack.Screen
-            name="Settings"
-            component={SettingsScreen}
-            options={{
-              headerStyle: {
-                backgroundColor: '#232f3e',
-              },
-              headerTintColor: '#fff',
-            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
@@ -154,5 +167,8 @@ const styles = {
   },
   button: {
     padding: 12,
-  }
+  },
+  headerRight: {
+    marginRight: 12,
+  },
 }

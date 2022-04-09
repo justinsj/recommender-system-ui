@@ -17,5 +17,5 @@ This project is a prototype for evaluating the effects different explainability 
 
 ## 📝 Notes
 
-- This is a very basic example from the [react navigation](https://reactnavigation.org/) docs.
-- [Tab navigation documentation](https://reactnavigation.org/docs/tab-based-navigation).
+This app logs interactions to an AWS DynamoDB.
+Press the title in the header `6 times in 2 seconds` to enter the `Setup Screen`.
