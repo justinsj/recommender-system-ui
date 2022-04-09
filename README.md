@@ -14,8 +14,10 @@ This project is a prototype for evaluating the effects different explainability 
 
 - Install with `yarn` or `npm install`.
 - Run `expo start` to try it out.
+- Install `expo go` on your phone and then use the QR code to load the app. You may need to use Connection: Tunnel.
 
 ## 📝 Notes
 
 This app logs interactions to an AWS DynamoDB.
 Press the title in the header `6 times in 2 seconds` to enter the `Setup Screen`.
+
