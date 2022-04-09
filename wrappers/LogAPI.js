@@ -15,6 +15,7 @@ export class LogAPI {
 
       let requestOptions = {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -26,7 +27,7 @@ export class LogAPI {
         url,
         requestOptions,
       ).then(resp => {
-        console.log(resp)
+        // console.log(resp)
         resolve(resp)}
       ).catch(err => {
         console.error(err)
