@@ -8,7 +8,7 @@ import {AppContext} from './../../context/AppContext';
 import { InterfaceWrapper } from './entries/InterfaceWrapper';
 
 export function Entry(props) {
-  const {userId, taskId, interfaceId, sessionId} = useContext(AppContext);
+  const {userId, taskId, interfaceId, sessionId, addedItemsCount} = useContext(AppContext);
 
   const navigation = useNavigation();
   const {entry, style,} = props;
@@ -25,6 +25,7 @@ export function Entry(props) {
             interfaceId,
             sessionId,
             productId,
+            addedItemsCount,
             action: Actions.clicked,
           }],
         })

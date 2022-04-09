@@ -1,4 +1,5 @@
 import {FlatList, Text, View} from "react-native";
+import { useRef } from 'react';
 import {data} from "../data/data";
 import {Entry} from "../components/results/Entry";
 import {Results} from '../components/results/Results';
@@ -12,9 +13,14 @@ import { getInterfaceIndex } from './../helpers/interface.helpers';
 import { getSlice } from '../helpers/list.helpers';
 
 export function ResultsScreen() {
-  const {userId, taskId, sessionId, interfaceId} = useContext(AppContext);
+  const {userId, taskId, sessionId, interfaceId, addedItemsCount} = useContext(AppContext);
 
-  const onViewableItemsChanged = ({viewableItems, changed}) => {
+  const viewConfigRef = useRef({
+    itemVisiblePercentThreshold: 1,
+    waitForInteraction: false,
+  })
+
+  const onViewableItemsChangedRef =  useRef(({viewableItems, changed}) => {
     for (const {item, isViewable} of changed) {
       const {productId} = item;
       if (isViewable) {
@@ -26,6 +32,7 @@ export function ResultsScreen() {
             interfaceId,
             sessionId,
             productId,
+            addedItemsCount,
             action: Actions.viewed,
           }]
         })
@@ -38,12 +45,13 @@ export function ResultsScreen() {
             interfaceId,
             sessionId,
             productId,
+            addedItemsCount,
             action: Actions.viewedReverse,
           }]
         })
       }
     }
-  };
+  });
 
   const results = getSlice(
     Object.values(data), 
@@ -63,11 +71,8 @@ export function ResultsScreen() {
         entry={item}
         index={index}
       />)}
-      onViewableItemsChanged={onViewableItemsChanged}
-      viewabilityConfig={{
-        itemVisiblePercentThreshold: 1,
-        waitForInteraction: false,
-      }}
+      onViewableItemsChanged={onViewableItemsChangedRef.current}
+      viewabilityConfig={viewConfigRef.current}
     />
   );
 }

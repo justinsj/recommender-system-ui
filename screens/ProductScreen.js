@@ -68,6 +68,7 @@ export function ProductScreen(props) {
                 interfaceId,
                 sessionId,
                 productId,
+                addedItemsCount: addedItemsCount + 1,
                 action: Actions.addToCart,
               }],
             });
@@ -82,6 +83,7 @@ export function ProductScreen(props) {
                 interfaceId,
                 sessionId,
                 productId,
+                addedItemsCount: addedItemsCount + 1,
                 action: Actions.buyNow,
               }],
             });
@@ -129,6 +131,7 @@ const styles = {
     flexGrow: 1,
   },
   imgCtr: {
+    alignItems: 'center',
     flexGrow: 1,
     // paddingHorizontal: 8,
     backgroundColor: '#f8f8f8',

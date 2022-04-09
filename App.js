@@ -124,6 +124,7 @@ export default function App() {
                         interfaceId,
                         sessionId,
                         productId,
+                        addedItemsCount,
                         action: Actions.clickedReverse,
                       }],
                     });

@@ -50,22 +50,29 @@ export function SetupScreen() {
 
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>taskId</Text></View>
-        <RNPickerSelect
-            style={styles.textInput}
-            placeholder={"Set task id"}
-            onValueChange={setTaskId}
-            itemKey={'value'}
-            items={[
-                { label: 'Refrigerator', value: 'refrigerator' },
-            ]}
-            value={taskId}
-        />
+        <View
+          style={styles.picker}
+        >
+          <RNPickerSelect
+              style={styles.pickerInput}
+              placeholder={{ label: "Set task id", value: null}}
+              onValueChange={setTaskId}
+              itemKey={'value'}
+              items={[
+                  { label: 'Refrigerator', value: 'refrigerator' },
+              ]}
+              value={taskId}
+          />
+        </View>
       </View>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>interfaceId</Text></View>
-        <RNPickerSelect
-            style={styles.textInput}
-            placeholder={"Set interface id"}
+        <View
+          style={styles.picker}
+        >
+          <RNPickerSelect
+            style={styles.pickerInput}
+            placeholder={{ label: "Set interface id", value: null}}
             onValueChange={setInterfaceId}
             itemKey={'value'}
             items={[
@@ -75,7 +82,8 @@ export function SetupScreen() {
                 { label: 'Small Image', value: Interfaces.small },
             ]}
             value={interfaceId}
-        />
+          />
+        </View>
       </View>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>sessionId</Text></View>
@@ -138,10 +146,10 @@ const styles = {
 
   },
   spacerDown: {
-    marignBottom: 24,
+    marignBottom: 48,
   },
   ctr: {
-    background: '#fff',
+    backgroundColor: '#fff',
     flex: 1,
   },
   button: {
@@ -161,6 +169,15 @@ const styles = {
     borderColor: '#0F1111',
     borderRadius: 8,
     padding: 8,
+    fontSize: 16,
+  },
+  picker: {
+    borderWidth: 1,
+    borderColor: '#0F1111',
+    borderRadius: 8,
+  },
+  pickerInput: {
+    padding: 6,
     fontSize: 16,
   },
   prompt: {
