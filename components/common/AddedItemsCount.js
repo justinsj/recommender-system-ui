@@ -11,9 +11,12 @@ export function AddedItemsCount(props){
 
 const styles = {
   ctr: {
-    borderRadius: 100,
+    borderRadius: 200,
     backgroundColor: '#fcbb6a',
     padding: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 38,
   },
   text: {
     color: '#fff',

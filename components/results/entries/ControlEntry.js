@@ -56,6 +56,7 @@ const styles = {
   },
   img: {
     flex: 1,
+    minHeight: 170,
     maxHeight: 170,
 
   },

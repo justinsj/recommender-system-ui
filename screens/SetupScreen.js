@@ -54,6 +54,7 @@ export function SetupScreen() {
             style={styles.textInput}
             placeholder={"Set task id"}
             onValueChange={setTaskId}
+            itemKey={'value'}
             items={[
                 { label: 'Refrigerator', value: 'refrigerator' },
             ]}
@@ -66,6 +67,7 @@ export function SetupScreen() {
             style={styles.textInput}
             placeholder={"Set interface id"}
             onValueChange={setInterfaceId}
+            itemKey={'value'}
             items={[
                 { label: 'Control', value: Interfaces.control },
                 { label: 'Large Image', value: Interfaces.large },
