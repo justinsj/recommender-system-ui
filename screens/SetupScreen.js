@@ -88,7 +88,7 @@ export function SetupScreen() {
         />
       </View>
       <TouchableHighlight
-        style={styles.button}
+        style={[styles.button, styles.spacerDown]}
         underlayColor={'#fff'}
         activeOpacity={0.5}
         onPress={() => {
@@ -101,7 +101,7 @@ export function SetupScreen() {
       </TouchableHighlight>
 
       <TouchableHighlight
-        style={styles.button}
+        style={[styles.button, styles.spacerDown]}
         underlayColor={'#fff'}
         activeOpacity={0.5}
         onPress={() => {
@@ -134,6 +134,9 @@ const styles = {
     backgroundColor: '#fff',
     paddingVertical: 4,
 
+  },
+  spacerDown: {
+    marignBottom: 24,
   },
   ctr: {
     background: '#fff',
