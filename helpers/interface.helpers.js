@@ -1,5 +1,5 @@
-import { InterfacesOrdering } from './../constants/Interfaces';
+import { InterfaceOrdering } from './../constants/Interfaces';
 
 export function getInterfaceIndex(interfaceId){
-  return InterfacesOrdering.indexOf(interfaceId)
+  return InterfaceOrdering.indexOf(interfaceId)
 }

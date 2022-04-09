@@ -16,7 +16,8 @@ import {useContext} from 'react';
 //https://www.sitepoint.com/amazon-product-api-exploration-lets-build-a-product-search/
 //https://rapidapi.com/ZombieBest/api/amazon-products1/
 export function ProductScreen(props) {
-  const {userId, taskId, interfaceId, sessionId} = useContext(AppContext);
+  const {userId, taskId, interfaceId, sessionId,
+  addedItemsCount, setAddedItemsCount } = useContext(AppContext);
   const route = useRoute();
   const {entry} = route && route.params ? route.params : {entry: data.refrigerator};
   const {
@@ -69,7 +70,8 @@ export function ProductScreen(props) {
                 productId,
                 action: Actions.addToCart,
               }],
-            })
+            });
+            setAddedItemsCount(addedItemsCount + 1);
           }}
           onBuyNow={() => {
             LogAPI.put({
@@ -82,7 +84,8 @@ export function ProductScreen(props) {
                 productId,
                 action: Actions.buyNow,
               }],
-            })
+            });
+            setAddedItemsCount(addedItemsCount + 1);
           }}
           style={styles.PurchaseOptions}
 
@@ -95,7 +98,6 @@ export function ProductScreen(props) {
           </View> :
           null
       }
-
 
       {/* <Recommendations/> */}
       {/* <ProductImageGallery/> */}
