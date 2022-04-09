@@ -5,7 +5,7 @@ import {LogAPI} from "../../wrappers/LogAPI";
 import {Actions} from "../../constants/Actions";
 import {useContext} from 'react';
 import {AppContext} from './../../context/AppContext';
-import { Interfaces } from './../../constants/Interfaces';
+import { InterfaceWrapper } from './entries/InterfaceWrapper';
 
 export function Entry(props) {
   const {userId, taskId, interfaceId, sessionId} = useContext(AppContext);
@@ -33,7 +33,7 @@ export function Entry(props) {
       underlayColor={"#fff"}
       activeOpacity={0.5}
     >
-      <InterfaceWrapper 
+      <InterfaceWrapper
         interfaceId={interfaceId}
         entry={entry}
         style={style}
@@ -42,19 +42,3 @@ export function Entry(props) {
   )
 }
 
-function InterfaceWrapper(props){
-  const { interfaceId } = props;
-  switch (interfaceId){
-    case (Interfaces.control):
-      return <ControlEntry {...props}/>
-    case (Interfaces.small):
-      return <SmallEntry {...props}/>
-    case (Interfaces.medium):
-      return <MediumEntry {...props}/>
-    case (Interfaces.large):
-      return <LargeEntry {...props}/>
-    default:
-      console.error("No such interfaceId: " + interfaceId)
-      return null
-  }
-}

@@ -52,7 +52,7 @@ export function SetupScreen() {
         <View><Text style={styles.title}>taskId</Text></View>
         <RNPickerSelect
             style={styles.textInput}
-            placeholder="Set task id"
+            placeholder={"Set task id"}
             onValueChange={setTaskId}
             items={[
                 { label: 'Refrigerator', value: 'refrigerator' },
@@ -64,7 +64,7 @@ export function SetupScreen() {
         <View><Text style={styles.title}>interfaceId</Text></View>
         <RNPickerSelect
             style={styles.textInput}
-            placeholder="Set interface id"
+            placeholder={"Set interface id"}
             onValueChange={setInterfaceId}
             items={[
                 { label: 'Control', value: Interfaces.control },
@@ -72,7 +72,7 @@ export function SetupScreen() {
                 { label: 'Medium Image', value: Interfaces.medium },
                 { label: 'Small Image', value: Interfaces.small },
             ]}
-            value={taskId}
+            value={interfaceId}
         />
       </View>
       <View style={styles.inputCtr}>

@@ -22,7 +22,7 @@ const Stack = createStackNavigator();
 
 export default function App() {
   const [userId, setUserId] = useState(createId());
-  const [taskId, setTaskId] = useState('no task');
+  const [taskId, setTaskId] = useState('refrigerator');
   const [interfaceId, setInterfaceId] = useState(Interfaces.control);
   const [sessionId, setSessionId] = useState(createId());
   const [addedItemsCount, setAddedItemsCount] = useState(0);
@@ -71,6 +71,7 @@ export default function App() {
               },
               headerRight: ()=>(
                 <AddedItemsCount
+                  style={styles.headerRight}
                   count={addedItemsCount}
                 />
               ), 
@@ -99,6 +100,7 @@ export default function App() {
               },
               headerRight: ()=>(
                 <AddedItemsCount
+                  style={styles.headerRight}
                   count={addedItemsCount}
                 />
               ), 
@@ -140,6 +142,7 @@ export default function App() {
               },
               headerRight: ()=>(
                 <AddedItemsCount
+                  style={styles.headerRight}
                   count={addedItemsCount}
                 />
               ), 

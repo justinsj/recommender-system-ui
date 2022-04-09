@@ -21,9 +21,9 @@ export class LogAPI {
         body: JSON.stringify(data),
       };
 
-      url = SECRETS.logUrl;
+      const url = SECRETS.logUrl;
       fetch(
-        SECRETS.logUrl,
+        url,
         requestOptions,
       ).then(resp => {
         console.log(resp)

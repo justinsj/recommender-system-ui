@@ -9,6 +9,7 @@ import {Actions} from './../constants/Actions';
 import { convertStringToInt } from './../helpers/char.helpers';
 import { constants } from './../constants/constants';
 import { getInterfaceIndex } from './../helpers/interface.helpers';
+import { getSlice } from '../helpers/list.helpers';
 
 export function ResultsScreen() {
   const {userId, taskId, sessionId, interfaceId} = useContext(AppContext);

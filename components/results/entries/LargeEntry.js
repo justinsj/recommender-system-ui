@@ -1,12 +1,13 @@
 import {Image, View} from "react-native";
 
-import {Title} from './Title';
-import {Rating} from '../common/Rating';
-import {Price} from './Price';
-import {Prime} from './Prime';
-import {FreeShipping} from './FreeShipping';
-import {TemporarilyOutOfStock} from './TemporarilyOutOfStock';
-import {Sponsored} from './Sponsored';
+import { Title } from './../Title';
+import { Rating } from './../../common/Rating';
+import { Price } from './../Price';
+import { Prime } from './../Prime';
+import { FreeShipping } from './../FreeShipping';
+import { TemporarilyOutOfStock } from './../TemporarilyOutOfStock';
+import { Sponsored } from './../Sponsored';
+
 
 export function LargeEntry(props) {
   const {entry, style} = props;
@@ -25,7 +26,7 @@ export function LargeEntry(props) {
       {sponsored ? <Sponsored /> : null}
       <Title>{title}</Title>
       {rating ? <Rating {...rating} /> : null}
-      <Price price={price} />
+      {price ? <Price price={price} /> : null}
       {prime ? <Prime /> : null}
       {freeShipping ? <FreeShipping /> : null}
       {temporarilyOutOfStock ? <TemporarilyOutOfStock /> : null}
