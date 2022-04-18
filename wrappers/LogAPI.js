@@ -1,5 +1,4 @@
-
-import { SECRETS } from './../secrets/secrets';
+import {SECRETS} from './../secrets/secrets';
 
 export class LogAPI {
   static instance;
@@ -27,13 +26,14 @@ export class LogAPI {
         url,
         requestOptions,
       ).then(resp => {
-        // console.log(resp)
-        resolve(resp)}
+          // console.log(resp)
+          resolve(resp)
+        }
       ).catch(err => {
         console.error(err)
         reject(err)
       })
-      
+
     })
 
   }

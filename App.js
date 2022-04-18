@@ -13,8 +13,8 @@ import {useState} from 'react';
 import {LogAPI} from "./wrappers/LogAPI";
 import {Actions} from './constants/Actions';
 import {SetupScreen} from './screens/SetupScreen';
-import { Interfaces } from './constants/Interfaces';
-import { AddedItemsCount } from "./components/common/AddedItemsCount";
+import {Interfaces} from './constants/Interfaces';
+import {AddedItemsCount} from "./components/common/AddedItemsCount";
 
 
 const Stack = createStackNavigator();
@@ -47,12 +47,12 @@ export default function App() {
               headerStyle: {
                 backgroundColor: '#232f3e',
               },
-              headerRight: ()=>(
+              headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
                   count={addedItemsCount}
                 />
-              ),  
+              ),
               headerTintColor: '#fff',
             }}
           />
@@ -73,12 +73,12 @@ export default function App() {
                 backgroundColor: '#232f3e',
                 borderBottomWidth: 0,
               },
-              headerRight: ()=>(
+              headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
                   count={addedItemsCount}
                 />
-              ), 
+              ),
               headerTintColor: '#fff',
             })}
           />
@@ -102,12 +102,12 @@ export default function App() {
               headerStyle: {
                 backgroundColor: '#232f3e',
               },
-              headerRight: ()=>(
+              headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
                   count={addedItemsCount}
                 />
-              ), 
+              ),
               headerTintColor: '#fff',
             })}
           />
@@ -145,12 +145,12 @@ export default function App() {
               headerStyle: {
                 backgroundColor: '#232f3e',
               },
-              headerRight: ()=>(
+              headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
                   count={addedItemsCount}
                 />
-              ), 
+              ),
               headerTintColor: '#fff',
             })}
           />

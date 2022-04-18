@@ -5,14 +5,14 @@ import {LogAPI} from "../../wrappers/LogAPI";
 import {Actions} from "../../constants/Actions";
 import {useContext} from 'react';
 import {AppContext} from './../../context/AppContext';
-import { InterfaceWrapper } from './entries/InterfaceWrapper';
+import {InterfaceWrapper} from './entries/InterfaceWrapper';
 
 export function Entry(props) {
   const {userId, taskId, interfaceId, sessionId, addedItemsCount} = useContext(AppContext);
 
   const navigation = useNavigation();
   const {entry, style,} = props;
-  const { productId } = entry;
+  const {productId} = entry;
 
   return (
     <TouchableHighlight

@@ -1,6 +1,7 @@
-import {View, Text} from 'react-native';
-export function AddedItemsCount(props){
-  const { count, style } = props;
+import {Text, View} from 'react-native';
+
+export function AddedItemsCount(props) {
+  const {count, style} = props;
   return (
     <View style={[styles.ctr, style]}>
       <Text style={styles.text}>{count}</Text>

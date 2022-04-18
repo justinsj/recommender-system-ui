@@ -4,7 +4,7 @@ import {AppContext} from './../context/AppContext';
 import {createId} from "../helpers/data.helpers";
 import {useNavigation} from '@react-navigation/native';
 import RNPickerSelect from 'react-native-picker-select';
-import { Interfaces } from './../constants/Interfaces';
+import {Interfaces} from './../constants/Interfaces';
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -54,14 +54,14 @@ export function SetupScreen() {
           style={styles.picker}
         >
           <RNPickerSelect
-              style={styles.pickerInput}
-              placeholder={{ label: "Set task id", value: ''}}
-              onValueChange={setTaskId}
-              itemKey={'value'}
-              items={[
-                  { label: 'Refrigerator', value: 'refrigerator' },
-              ]}
-              value={taskId}
+            style={styles.pickerInput}
+            placeholder={{label: "Set task id", value: ''}}
+            onValueChange={setTaskId}
+            itemKey={'value'}
+            items={[
+              {label: 'Refrigerator', value: 'refrigerator'},
+            ]}
+            value={taskId}
           />
         </View>
       </View>
@@ -72,15 +72,15 @@ export function SetupScreen() {
         >
           <RNPickerSelect
             style={styles.pickerInput}
-            placeholder={{ label: "Set interface id", value: ''}}
+            placeholder={{label: "Set interface id", value: ''}}
             onValueChange={setInterfaceId}
             itemKey={'value'}
             items={[
-                { label: 'Control', value: Interfaces.control },
-                { label: 'Small Image, Short Text', value: Interfaces.small_short },
-                { label: 'Small Image, Long Text', value: Interfaces.small_long },
-                { label: 'Large Image, Short Text', value: Interfaces.large_short },
-                { label: 'Large Image, Long Text', value: Interfaces.large_long },
+              {label: 'Control', value: Interfaces.control},
+              {label: 'Small Image, Short Text', value: Interfaces.small_short},
+              {label: 'Small Image, Long Text', value: Interfaces.small_long},
+              {label: 'Large Image, Short Text', value: Interfaces.large_short},
+              {label: 'Large Image, Long Text', value: Interfaces.large_long},
             ]}
             value={interfaceId}
           />

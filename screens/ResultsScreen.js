@@ -1,16 +1,15 @@
-import {FlatList, Text, View} from "react-native";
-import { useRef } from 'react';
+import {FlatList} from "react-native";
+import {useContext, useRef} from 'react';
 import {data} from "../data/data";
 import {Entry} from "../components/results/Entry";
 import {Results} from '../components/results/Results';
-import {useCallback, useContext} from 'react';
 import {AppContext} from "../context/AppContext";
 import {LogAPI} from './../wrappers/LogAPI';
 import {Actions} from './../constants/Actions';
-import { convertStringToInt } from './../helpers/char.helpers';
-import { constants } from './../constants/constants';
-import { getInterfaceIndex } from './../helpers/interface.helpers';
-import { getSlice } from '../helpers/list.helpers';
+import {convertStringToInt} from './../helpers/char.helpers';
+import {constants} from './../constants/constants';
+import {getInterfaceIndex} from './../helpers/interface.helpers';
+import {getSlice} from '../helpers/list.helpers';
 
 export function ResultsScreen() {
   const {userId, taskId, sessionId, interfaceId, addedItemsCount} = useContext(AppContext);
@@ -20,7 +19,7 @@ export function ResultsScreen() {
     waitForInteraction: false,
   })
 
-  const onViewableItemsChangedRef =  useRef(({viewableItems, changed}) => {
+  const onViewableItemsChangedRef = useRef(({viewableItems, changed}) => {
     for (const {item, isViewable} of changed) {
       const {productId} = item;
       if (isViewable) {
@@ -54,8 +53,8 @@ export function ResultsScreen() {
   });
 
   const results = getSlice(
-    Object.values(data), 
-    ( convertStringToInt(sessionId) + getInterfaceIndex(interfaceId) ) % constants.numInterfaces, 
+    Object.values(data),
+    (convertStringToInt(sessionId) + getInterfaceIndex(interfaceId)) % constants.numInterfaces,
     constants.numInterfaces,
   );
 
@@ -66,7 +65,7 @@ export function ResultsScreen() {
       ListHeaderComponent={<Results/>}
       data={results}
       keyExtractor={(item, index) => index}
-      renderItem={({item, index})=> (<Entry
+      renderItem={({item, index}) => (<Entry
         style={styles.entry}
         entry={item}
         index={index}

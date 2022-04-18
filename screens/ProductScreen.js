@@ -16,8 +16,10 @@ import {useContext} from 'react';
 //https://www.sitepoint.com/amazon-product-api-exploration-lets-build-a-product-search/
 //https://rapidapi.com/ZombieBest/api/amazon-products1/
 export function ProductScreen(props) {
-  const {userId, taskId, interfaceId, sessionId,
-  addedItemsCount, setAddedItemsCount } = useContext(AppContext);
+  const {
+    userId, taskId, interfaceId, sessionId,
+    addedItemsCount, setAddedItemsCount
+  } = useContext(AppContext);
   const route = useRoute();
   const {entry} = route && route.params ? route.params : {entry: data.refrigerator};
   const {

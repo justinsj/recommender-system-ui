@@ -1,17 +1,17 @@
 import {Image, View} from "react-native";
-import { Sponsored } from '../Sponsored';
-import { Title } from '../Title';
-import { Rating } from '../../common/Rating';
-import { Price } from '../Price';
-import { Prime } from '../Prime';
-import { FreeShipping } from '../FreeShipping';
-import { TemporarilyOutOfStock } from '../TemporarilyOutOfStock';
+import {Sponsored} from '../Sponsored';
+import {Title} from '../Title';
+import {Rating} from '../../common/Rating';
+import {Price} from '../Price';
+import {Prime} from '../Prime';
+import {FreeShipping} from '../FreeShipping';
+import {TemporarilyOutOfStock} from '../TemporarilyOutOfStock';
 
 
 export function SmallShortEntry(props) {
   const {entry, style} = props;
   const {imageSrc, sponsored, title, rating, price, prime, freeShipping, temporarilyOutOfStock} = entry;
-  
+
   return <View
     style={[styles.row, styles.ctr, style]}
   >
@@ -19,16 +19,16 @@ export function SmallShortEntry(props) {
       <Image
         style={styles.img}
         resizeMode={'contain'}
-        source={imageSrc} />
+        source={imageSrc}/>
     </View>
     <View style={styles.contentCtr}>
-      {sponsored ? <Sponsored /> : null}
+      {sponsored ? <Sponsored/> : null}
       <Title numberOfLines={2}>{title}</Title>
       {rating ? <Rating {...rating} /> : null}
-      {price ? <Price price={price} /> : null}
-      {prime ? <Prime /> : null}
-      {freeShipping ? <FreeShipping /> : null}
-      {temporarilyOutOfStock ? <TemporarilyOutOfStock /> : null}
+      {price ? <Price price={price}/> : null}
+      {prime ? <Prime/> : null}
+      {freeShipping ? <FreeShipping/> : null}
+      {temporarilyOutOfStock ? <TemporarilyOutOfStock/> : null}
     </View>
   </View>;
 }
