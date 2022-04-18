@@ -55,7 +55,7 @@ export function SetupScreen() {
         >
           <RNPickerSelect
               style={styles.pickerInput}
-              placeholder={{ label: "Set task id", value: null}}
+              placeholder={{ label: "Set task id", value: ''}}
               onValueChange={setTaskId}
               itemKey={'value'}
               items={[
@@ -72,14 +72,15 @@ export function SetupScreen() {
         >
           <RNPickerSelect
             style={styles.pickerInput}
-            placeholder={{ label: "Set interface id", value: null}}
+            placeholder={{ label: "Set interface id", value: ''}}
             onValueChange={setInterfaceId}
             itemKey={'value'}
             items={[
                 { label: 'Control', value: Interfaces.control },
-                { label: 'Large Image', value: Interfaces.large },
-                { label: 'Medium Image', value: Interfaces.medium },
-                { label: 'Small Image', value: Interfaces.small },
+                { label: 'Small Image, Short Text', value: Interfaces.small_short },
+                { label: 'Small Image, Long Text', value: Interfaces.small_long },
+                { label: 'Large Image, Short Text', value: Interfaces.large_short },
+                { label: 'Large Image, Long Text', value: Interfaces.large_long },
             ]}
             value={interfaceId}
           />

@@ -60,6 +60,8 @@ export default function App() {
             name={'Home'}
             component={HomeScreen}
             options={({navigation}) => ({
+              headerLeft: () => {
+              },
               headerTitle: () => (<SecretButton
                 minTouches={6}
                 durationThresholdSeconds={2}

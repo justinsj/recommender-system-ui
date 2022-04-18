@@ -1,5 +1,5 @@
-import {TextInput, View} from "react-native";
-import {useState} from 'react';
+import {TextInput, View, TouchableHighlight} from "react-native";
+import {useState, useEffect} from 'react';
 import {useNavigation} from "@react-navigation/native";
 import {AntDesign} from '@expo/vector-icons';
 
@@ -10,13 +10,18 @@ export function SearchBar(props) {
   if (!onSucceed) console.error('onSucceed not defined');
   const [text, setText] = useState('');
 
+  const onSubmit = ()=>{
+    const loweredText = text.toLowerCase();
+
+    if (loweredText.includes('ref') || loweredText.includes('fridge')) {
+      navigation.navigate('Results');
+      onSucceed();
+    } else {
+      onFail();
+    }
+  }
   return (
     <View style={[styles.row, styles.ctr, style]}>
-      <View
-        style={styles.button}
-      >
-        <AntDesign name="search1" size={24} color="black"/>
-      </View>
       <TextInput
         ref={myref}
         style={styles.textInput}
@@ -24,16 +29,19 @@ export function SearchBar(props) {
         onChangeText={(text) => {
           setText(text);
         }}
-        onSubmitEditing={() => {
-          if (text.toLowerCase().includes('ref')) {
-            navigation.navigate('Results');
-            onSucceed();
-          } else {
-            onFail();
-          }
-        }}
+        onSubmitEditing={onSubmit}
         defaultValue={text}
       />
+      <TouchableHighlight
+        activeOpacity={0.5}
+        underlayColor={'#fcbb6a'}
+        onPress={onSubmit}
+        style={styles.button}
+      >
+        <View>
+        <AntDesign name="search1" size={24} color="black"/>
+        </View>
+      </TouchableHighlight>
 
 
     </View>
@@ -56,12 +64,12 @@ const styles = {
     position: 'absolute',
     right: 0,
     top: 0,
-    zIndex: 2,
+    // zIndex: 2,
     width: 42,
     height: 42,
     justifyContent: 'center',
     alignItems: 'center',
-    pointerEvents: 'box-none',
+    // pointerEvents: 'box-none',
 
   },
   textInput: {
