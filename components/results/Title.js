@@ -1,11 +1,11 @@
 import {Text} from "react-native";
 
 export function Title(props) {
-  const {children} = props;
+  const {children, numberOfLines} = props;
   return (
     <Text
       style={styles.title}
-      numberOfLines={3}
+      numberOfLines={numberOfLines ? numberOfLines : 3}
     >{children}</Text>
   )
 }

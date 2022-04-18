@@ -7,7 +7,7 @@ export const data = {
     "count": 165
   },
   "price": 279.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator0.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_atf_aps_sr_pg1_1?ie=UTF8&adId=A091233718MHU5YN7CKDY&url=%2FCOMFEE-Refrigerator-Appearance-Adjustable-Temperature%2Fdp%2FB08T8Y5HK1%2Fref%3Dmp_s_a_1_1_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649134428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-1-spons%26psc%3D1&qualifier=1649134428&id=1722505555295421&widgetName=sp_phone_search_atf",
@@ -35,7 +35,7 @@ export const data = {
     "count": 466
   },
   "price": 299.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator1.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_atf_aps_sr_pg1_1?ie=UTF8&adId=A05845993RHPYBZXVO5V7&url=%2FAstroAI-Portable-Freezer-Refrigerator-Vehicle%2Fdp%2FB088FDTTY4%2Fref%3Dmp_s_a_1_2_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649134428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-2-spons%26psc%3D1&qualifier=1649134428&id=1722505555295421&widgetName=sp_phone_search_atf",
@@ -63,7 +63,7 @@ export const data = {
     "count": 1
   },
   "price": 401.37,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator2.jpg'),
   "link": "https://www.amazon.ca/Whynter-BR-130SB-Beverage-Refrigerator-Stainless/dp/B00P7QI4IM/ref=mp_s_a_1_3?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-3",
@@ -91,7 +91,7 @@ export const data = {
     "count": 4
   },
   "price": 173.25,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator3.jpg'),
   "link": "https://www.amazon.ca/1-6CF-SnglDoor-Comp-Fridge-Blk/dp/B00MVVI1FC/ref=mp_s_a_1_4?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-4",
@@ -119,7 +119,7 @@ export const data = {
     "count": 628
   },
   "price": 329.97,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator4.jpg'),
   "link": "https://www.amazon.ca/Danby-DBC026A1BSSDB-Beverage-Center-Black/dp/B075J2TL9N/ref=mp_s_a_1_5?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-5",
@@ -136,7 +136,7 @@ export const data = {
     "count": 313
   },
   "price": 156.38,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator5.jpg'),
   "link": "https://www.amazon.ca/CURTIS-INTERNATIONAL-EFR176-BLUE-Fridge-Bottle/dp/B07LDVXK4Q/ref=mp_s_a_1_6?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-6",
@@ -164,7 +164,7 @@ export const data = {
     "count": 25
   },
   "price": 67.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator6.jpg'),
   "link": "https://www.amazon.ca/AstroAI-Fridge-Portable-Powered-Offices/dp/B07S2RBCT5/ref=mp_s_a_1_7?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-7",
@@ -192,7 +192,7 @@ export const data = {
     "count": 2
   },
   "price": 399.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator7.jpg'),
   "link": "https://www.amazon.ca/3-2Cu-ft-Refrigerator-Reversible-Removable-Recessed/dp/B09GPCQ8WN/ref=mp_s_a_1_8?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-8",
@@ -218,7 +218,7 @@ export const data = {
     "count": 37
   },
   "price": 234,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator8.jpg'),
   "link": "https://www.amazon.ca/Royal-Sovereign-Refrigerator-Compartment-RMF-70W/dp/B00JH3J0F2/ref=mp_s_a_1_9?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-9",
@@ -243,7 +243,7 @@ export const data = {
     "count": 338
   },
   "price": 499.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator9.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg1_1?ie=UTF8&adId=A071845623MP1F44K90GS&url=%2FCostway-Compact-Refrigerator-Freezer-Cooler%2Fdp%2FB079QHNB3M%2Fref%3Dmp_s_a_1_10_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649134428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-10-spons%26psc%3D1&qualifier=1649134428&id=1722505555295421&widgetName=sp_phone_search_mtf",
@@ -271,7 +271,7 @@ export const data = {
     "count": 997
   },
   "price": 159.94,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator10.jpg'),
   "link": "https://www.amazon.ca/RCA-Cubic-Foot-Fridge-Black/dp/B00Q477YSE/ref=mp_s_a_1_11?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-11",
@@ -299,7 +299,7 @@ export const data = {
     "count": 5
   },
   "price": 287.24,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator11.jpg'),
   "link": "https://www.amazon.ca/Koolatron-Compact-Freezer-Capacity-Beverages/dp/B093Q2WXTJ/ref=mp_s_a_1_12?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-12",
@@ -327,7 +327,7 @@ export const data = {
     "count": 2
   },
   "price": 116.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator12.jpg'),
   "link": "https://www.amazon.ca/AstroAI-Portable-Thermoelectric-Medications-Cosmetics/dp/B0811NCDVJ/ref=mp_s_a_1_13?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-13",
@@ -355,7 +355,7 @@ export const data = {
     "count": 769
   },
   "price": 64.72,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator13.jpg'),
   "link": "https://www.amazon.ca/RCA-RMIS129-BLUE-Retro-Beverage-Refrigerator-Blue/dp/B01N9F38KS/ref=mp_s_a_1_14?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-14",
@@ -380,7 +380,7 @@ export const data = {
     "count": 354
   },
   "price": 158.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator14.jpg'),
   "link": "https://www.amazon.ca/AstroAI-Portable-Thermoelectric-Medications-Cosmetics/dp/B08P4V83RJ/ref=mp_s_a_1_15?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-15",
@@ -408,7 +408,7 @@ export const data = {
     "count": 17
   },
   "price": 319.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator15.jpg'),
   "link": "https://www.amazon.ca/DECKER-BCRK25V-Compact-Refrigerator-Freezer/dp/B01DZQI700/ref=mp_s_a_1_16?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-16",
@@ -436,7 +436,7 @@ export const data = {
     "count": 165
   },
   "price": 199.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator16.jpg'),
   "link": "https://www.amazon.ca/COMFEE-Refrigerator-Appearance-Adjustable-Temperature/dp/B08T8YRSMK/ref=mp_s_a_1_17?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649134428&sprefix=refrigerator%2Caps%2C114&sr=8-17",
@@ -464,7 +464,7 @@ export const data = {
     "count": 165
   },
   "price": 279.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator17.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_atf_next_aps_sr_pg2_1?ie=UTF8&adId=A091233718MHU5YN7CKDY&url=%2FCOMFEE-Refrigerator-Appearance-Adjustable-Temperature%2Fdp%2FB08T8Y5HK1%2Fref%3Dmp_s_a_1_15_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167034%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-15-spons%26psc%3D1&qualifier=1649167034&id=8116071215399582&widgetName=sp_phone_search_atf_next",
@@ -492,7 +492,7 @@ export const data = {
     "count": 165
   },
   "price": 199.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator18.jpg'),
   "link": "https://www.amazon.ca/COMFEE-Refrigerator-Appearance-Adjustable-Temperature/dp/B08T8YRSMK/ref=mp_s_a_1_16?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-16",
@@ -520,7 +520,7 @@ export const data = {
     "count": 383
   },
   "price": 389.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator19.jpg'),
   "link": "https://www.amazon.ca/COSTWAY-Refrigerator-Reversible-Removable-Mechanical/dp/B01NH9HD8M/ref=mp_s_a_1_17?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-17",
@@ -548,7 +548,7 @@ export const data = {
     "count": 3
   },
   "price": 207.32,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator20.jpg'),
   "link": "https://www.amazon.ca/Equator-Midea-87L-24SS-cu-Feet-Refrigerator-Stainless/dp/B00MMRFQR6/ref=mp_s_a_1_18?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-18",
@@ -576,7 +576,7 @@ export const data = {
     "count": 137
   },
   "price": 249.87,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator21.jpg'),
   "link": "https://www.amazon.ca/Curtis-Retro-Fridge-Bottle-Opener/dp/B07MXZ1TYH/ref=mp_s_a_1_19?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-19",
@@ -604,7 +604,7 @@ export const data = {
     "count": 320
   },
   "price": 235.87,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator22.jpg'),
   "link": "https://www.amazon.ca/Danby-Mini-Fridge-CuFt-White/dp/B00XW8P89A/ref=mp_s_a_1_20?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-20",
@@ -632,7 +632,7 @@ export const data = {
     "count": 11
   },
   "price": 389.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator23.jpg'),
   "link": "https://www.amazon.ca/DORTALA-Refrigerator-Separate-Refrigeration-Operation/dp/B095LHRT4W/ref=mp_s_a_1_21?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-21",
@@ -660,7 +660,7 @@ export const data = {
     "count": 86
   },
   "price": 499.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator24.jpg'),
   "link": "https://www.amazon.ca/Marshall-2019-Black-Capacity-Fridge/dp/B07SDLMSD5/ref=mp_s_a_1_22?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-22",
@@ -688,7 +688,7 @@ export const data = {
     "count": 338
   },
   "price": 499.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator25.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg2_1?ie=UTF8&adId=A071845623MP1F44K90GS&url=%2FCostway-Compact-Refrigerator-Freezer-Cooler%2Fdp%2FB079QHNB3M%2Fref%3Dmp_s_a_1_23_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167034%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-23-spons%26psc%3D1&qualifier=1649167034&id=8116071215399582&widgetName=sp_phone_search_mtf",
@@ -716,7 +716,7 @@ export const data = {
     "count": 1
   },
   "price": 21.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator26.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg2_1?ie=UTF8&adId=A07667113PSF0M1P4L9HX&url=%2FInstallation-Adjustable-Appliance-Magnetic-Diameter%2Fdp%2FB07J4Z1SVN%2Fref%3Dmp_s_a_1_24_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167034%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-24-spons%26psc%3D1&qualifier=1649167034&id=8116071215399582&widgetName=sp_phone_search_mtf",
@@ -734,7 +734,7 @@ export const data = {
   "title": "Galanz Mini Retro Fridge/Refrigerator with Chiller Adjustable Mechanical Thermostat Control 2.5 Cubic Feet White GLR25MWER27",
   "rating": null,
   "price": 244.88,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator27.jpg'),
   "link": "https://www.amazon.ca/Galanz-Refrigerator-Adjustable-Mechanical-GLR25MWER27/dp/B09VH1Y6BN/ref=mp_s_a_1_25?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-25",
@@ -762,7 +762,7 @@ export const data = {
     "count": 11
   },
   "price": 309.62,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator28.jpg'),
   "link": "https://www.amazon.ca/3-2-Cubic-Foot-Fridge-White/dp/B00P84EVFS/ref=mp_s_a_1_26?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-26",
@@ -790,7 +790,7 @@ export const data = {
     "count": 258
   },
   "price": 153.86,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator29.jpg'),
   "link": "https://www.amazon.ca/Igloo-FR176-RED-Fridge-Bottle-Opener/dp/B019MQT6T8/ref=mp_s_a_1_27?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-27",
@@ -818,7 +818,7 @@ export const data = {
     "count": 69
   },
   "price": 99.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator30.jpg'),
   "link": "https://www.amazon.ca/AstroAI-Skincare-Thermoelectric-Christmas-Cosmetics/dp/B095Y4ZFS7/ref=mp_s_a_1_28?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-28",
@@ -844,7 +844,7 @@ export const data = {
     "count": 1
   },
   "price": 299.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator31.jpg'),
   "link": "https://www.amazon.ca/Antarctic-Star-Refrigerators-Refigerator-Freestanding/dp/B07DC5H7F1/ref=mp_s_a_1_29?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-29",
@@ -869,7 +869,7 @@ export const data = {
   "title": "Reusable Hanging Storage Mesh Bag in Refrigerator, Washable Refrigerator Hanging Mesh Bag, Hygiene Fridge Side Door Organizer Bag for Home Kitchen Dorm Small Items Storage(White)",
   "rating": null,
   "price": 3.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator32.jpg'),
   "link": "https://www.amazon.ca/Reusable-Hanging-Refrigerator-Washable-Organizer/dp/B09TVZ8485/ref=mp_s_a_1_30?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-30",
@@ -886,7 +886,7 @@ export const data = {
     "count": 320
   },
   "price": 298.98,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator33.jpg'),
   "link": "https://www.amazon.ca/Frigidaire-EFR391-Freezer-Platinum-Stainless/dp/B088GVQX34/ref=mp_s_a_1_31?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167034&sprefix=refrigerator%2Caps%2C114&sr=8-31",
@@ -908,7 +908,7 @@ export const data = {
   "title": "SAMMUA W10295370a Refrigerator Water Filter, Compatible with Water Filter Drop 1, W10295370, P4RFWB, EDR1RXD1, 46-9081, 46-9930, 3 Filters",
   "rating": null,
   "price": 35.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator34.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg2_1?ie=UTF8&adId=A05373632GGN0REFIAFMW&url=%2FSAMMUA-W10295370a-Refrigerator-Compatible-W10295370%2Fdp%2FB09MW1C3LW%2Fref%3Dmp_s_a_1_32_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167034%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-32-spons%26psc%3D1&qualifier=1649167034&id=8116071215399582&widgetName=sp_phone_search_btf",
@@ -927,7 +927,7 @@ export const data = {
   "title": "24\" Professional Style All Gas Range with Battery Spark",
   "rating": null,
   "price": 2.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator35.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg2_1?ie=UTF8&adId=A01365112P3MU00JC6USL&url=%2FProfessional-Style-Range-Battery-Spark%2Fdp%2FB08VJK1RVS%2Fref%3Dmp_s_a_1_33_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167034%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-33-spons%26psc%3D1&qualifier=1649167034&id=8116071215399582&widgetName=sp_phone_search_btf",
@@ -948,7 +948,7 @@ export const data = {
     "count": 165
   },
   "price": 189.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator36.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_atf_next_aps_sr_pg3_1?ie=UTF8&adId=A09124613IEID8ZQ7FJ8M&url=%2FCOMFEE-Refrigerator-Appearance-Adjustable-Temperature%2Fdp%2FB08T8YW757%2Fref%3Dmp_s_a_1_29_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167282%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-29-spons%26psc%3D1&qualifier=1649167282&id=2612748457333496&widgetName=sp_phone_search_atf_next",
@@ -976,7 +976,7 @@ export const data = {
     "count": 724
   },
   "price": 77.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator37.jpg'),
   "link": "https://www.amazon.ca/Coca-Cola-KWC-4-Personal-Fridge/dp/B000JLNBW4/ref=mp_s_a_1_30?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-30",
@@ -1004,7 +1004,7 @@ export const data = {
     "count": 563
   },
   "price": 158.18,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator38.jpg'),
   "link": "https://www.amazon.ca/RCA-Fridge-1-6-Cubic-Feet/dp/B00P84F738/ref=mp_s_a_1_31?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-31",
@@ -1032,7 +1032,7 @@ export const data = {
     "count": 34
   },
   "price": 69.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator39.jpg'),
   "link": "https://www.amazon.ca/Refridgrator-Thermoelectric-Lightweight-Essentials-Accessories/dp/B093P7WLX1/ref=mp_s_a_1_32?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-32",
@@ -1060,7 +1060,7 @@ export const data = {
     "count": 67
   },
   "price": null,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator40.jpg'),
   "link": "https://www.amazon.ca/Danby-DFF070B1BSLDB-6-Cubic-Mid-Size-Refrigerator/dp/B07Q2H4BWW/ref=mp_s_a_1_33?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-33",
@@ -1088,7 +1088,7 @@ export const data = {
     "count": 284
   },
   "price": 80.08,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator41.jpg'),
   "link": "https://www.amazon.ca/Frigidaire-EFMIS462-PINK-Portable-Personal-Fridge/dp/B07K6ZFV17/ref=mp_s_a_1_34?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-34",
@@ -1113,7 +1113,7 @@ export const data = {
     "count": 175
   },
   "price": 309.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator42.jpg'),
   "link": "https://www.amazon.ca/Danby-DAR026A1BDD-6-Cu-Ft-Fridge-Black/dp/B07TGXWD7D/ref=mp_s_a_1_35?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-35",
@@ -1141,7 +1141,7 @@ export const data = {
     "count": 2
   },
   "price": 73.94,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator43.jpg'),
   "link": "https://www.amazon.ca/AstroAI-Fridge-Skincare-Temperature-Control/dp/B089GJ975H/ref=mp_s_a_1_36?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&smid=A2NOFZGOKNP3PJ&sprefix=refrigerator%2Caps%2C114&sr=8-36",
@@ -1169,7 +1169,7 @@ export const data = {
     "count": 1
   },
   "price": 32.85,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator44.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg3_1?ie=UTF8&adId=A06408851HOXH4JCAZTXO&url=%2FOrganizer-Refrigerator-Stackable-Reusable-White%2Fdp%2FB09LLTH215%2Fref%3Dmp_s_a_1_37_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167282%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-37-spons%26psc%3D1&qualifier=1649167282&id=2612748457333496&widgetName=sp_phone_search_mtf",
@@ -1186,7 +1186,7 @@ export const data = {
     "count": 34
   },
   "price": 44.96,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator45.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg3_1?ie=UTF8&adId=A00713103BCRV6GO3426I&url=%2FAimacro-Stackable-Refrigerator-Organizer-Sealing%2Fdp%2FB094WXGMP9%2Fref%3Dmp_s_a_1_38_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167282%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-38-spons%26psc%3D1&qualifier=1649167282&id=2612748457333496&widgetName=sp_phone_search_mtf",
@@ -1203,7 +1203,7 @@ export const data = {
     "count": 905
   },
   "price": 505.62,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator46.jpg'),
   "link": "https://www.amazon.ca/Danby-Designer-Fridge-Stainless-Steel/dp/B00O2N4LDS/ref=mp_s_a_1_39?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-39",
@@ -1228,7 +1228,7 @@ export const data = {
     "count": 86
   },
   "price": 447.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator47.jpg'),
   "link": "https://www.amazon.ca/VBENLEM-Compressor-Portable-Refrigerator-110-240V/dp/B07SHSH95J/ref=mp_s_a_1_40?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-40",
@@ -1253,7 +1253,7 @@ export const data = {
   "title": "XLEVE 20-Liter Compact Cooler/Warmer Mini Fridge/Wine Cooler with Digital Thermostat + Dual-Core Cooling for Cars, Road Trips, Homes, Offices & Dorms",
   "rating": null,
   "price": 92.02,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator48.jpg'),
   "link": "https://www.amazon.ca/XLEVE-20-Liter-Compact-Thermostat-Dual-Core/dp/B08CSDWRCK/ref=mp_s_a_1_41?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-41",
@@ -1274,7 +1274,7 @@ export const data = {
     "count": 156
   },
   "price": 539.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator49.jpg'),
   "link": "https://www.amazon.ca/Alpicool-Portable-Refrigerator-Vehicle-Freezer/dp/B073WTNRJ2/ref=mp_s_a_1_42?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-42",
@@ -1299,7 +1299,7 @@ export const data = {
     "count": 3
   },
   "price": 399.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator50.jpg'),
   "link": "https://www.amazon.ca/KOTEK-Refrigerator-Reversible-Removable-Apartment/dp/B0972PX2C5/ref=mp_s_a_1_43?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-43",
@@ -1327,7 +1327,7 @@ export const data = {
     "count": 643
   },
   "price": 242.71,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator51.jpg'),
   "link": "https://www.amazon.ca/Cooluli-Vibe-Black-Liter-Fridge/dp/B07Y8V6SXD/ref=mp_s_a_1_44?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-44",
@@ -1352,7 +1352,7 @@ export const data = {
     "count": 31
   },
   "price": 99.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator52.jpg'),
   "link": "https://www.amazon.ca/Coca-Cola-Portable-Bluetooth-Capacity-Accessory/dp/B08ZJK9Y7X/ref=mp_s_a_1_45?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167282&sprefix=refrigerator%2Caps%2C114&sr=8-45",
@@ -1380,7 +1380,7 @@ export const data = {
     "count": 68
   },
   "price": 29.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator53.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg3_1?ie=UTF8&adId=A01497802OQ4U63WZ6T8I&url=%2FRefrigerator-Replacement-UKF8001AXX-200-UKF8001AXX-750-Bringpure%2Fdp%2FB08F9SM3PN%2Fref%3Dmp_s_a_1_46_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167282%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-46-spons%26psc%3D1%26smid%3DA3OFZ3ESNMV1WC&qualifier=1649167282&id=2612748457333496&widgetName=sp_phone_search_btf",
@@ -1403,7 +1403,7 @@ export const data = {
     "count": 1
   },
   "price": 29.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator54.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg3_1?ie=UTF8&adId=A00350198A9F6WUBJ93B&url=%2FAQUACREST-Electrolux-Frigidaire-Refrigerator-Replacement%2Fdp%2FB01G4WLQ2I%2Fref%3Dmp_s_a_1_47_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167282%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-47-spons%26psc%3D1&qualifier=1649167282&id=2612748457333496&widgetName=sp_phone_search_btf",
@@ -1426,7 +1426,7 @@ export const data = {
     "count": 165
   },
   "price": 199.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator55.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_atf_next_aps_sr_pg4_1?ie=UTF8&adId=A0912617897RWIN67MXT&url=%2FCOMFEE-Refrigerator-Appearance-Adjustable-Temperature%2Fdp%2FB08T8YRSMK%2Fref%3Dmp_s_a_1_43_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-43-spons%26psc%3D1&qualifier=1649167428&id=3421079867947206&widgetName=sp_phone_search_atf_next",
@@ -1454,7 +1454,7 @@ export const data = {
     "count": 3
   },
   "price": 66.46,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator56.jpg'),
   "link": "https://www.amazon.ca/Chefman-Portable-Personal-Capacity-Freon-Free/dp/B076X7HF7F/ref=mp_s_a_1_44?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-44",
@@ -1479,7 +1479,7 @@ export const data = {
     "count": 113
   },
   "price": 121.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator57.jpg'),
   "link": "https://www.amazon.ca/Fridge-Electric-Cooler-Warmer-12Liter/dp/B089SRN784/ref=mp_s_a_1_45?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-45",
@@ -1504,7 +1504,7 @@ export const data = {
     "count": 26
   },
   "price": null,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator58.jpg'),
   "link": "https://www.amazon.ca/Koolatron-KBC-70-Compressor-Refrigerator-Multicolor/dp/B01MS4I4VQ/ref=mp_s_a_1_46?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-46",
@@ -1532,7 +1532,7 @@ export const data = {
     "count": 29
   },
   "price": 56.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator59.jpg'),
   "link": "https://www.amazon.ca/DA97-12650A-Refrigerator-RF260BEAESR-RF263BEAESG-RF263TEAESG/dp/B09CYDT8GY/ref=mp_s_a_1_43?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-43",
@@ -1549,7 +1549,7 @@ export const data = {
     "count": 110
   },
   "price": 170.57,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator60.jpg'),
   "link": "https://www.amazon.ca/CURTIS-INTERNATIONAL-EFR176-CORAL-Fridge-Bottle/dp/B07LDWLMFY/ref=mp_s_a_1_44?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-44",
@@ -1577,7 +1577,7 @@ export const data = {
     "count": 1
   },
   "price": 339.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator61.jpg'),
   "link": "https://www.amazon.ca/Alpicool-C20-Portable-Refrigerator-Vehicle/dp/B075R1LH8D/ref=mp_s_a_1_45?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-45",
@@ -1602,7 +1602,7 @@ export const data = {
     "count": 3
   },
   "price": 39.97,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator62.jpg'),
   "link": "https://www.amazon.ca/Simple-Houseware-Freezer-Storage-Organizer/dp/B07M718XB3/ref=mp_s_a_1_46?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-46",
@@ -1619,7 +1619,7 @@ export const data = {
     "count": 8
   },
   "price": 51.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator63.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg4_1?ie=UTF8&adId=A0493882949P3LQVO5IM&url=%2FDRINKCLEAR-Refrigerator-Replacement-Frigidaire-FPBC2277RF%2Fdp%2FB09CGVVBY7%2Fref%3Dmp_s_a_1_47_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-47-spons%26psc%3D1&qualifier=1649167428&id=3421079867947206&widgetName=sp_phone_search_mtf",
@@ -1639,7 +1639,7 @@ export const data = {
     "count": 2
   },
   "price": 33.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator64.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg4_1?ie=UTF8&adId=A09096341KOX0WO0LWM46&url=%2FDA29-00020B-Refrigerator-Replacement-DA29-00020A-DA97-08006A%2Fdp%2FB07K1G1GD3%2Fref%3Dmp_s_a_1_48_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-48-spons%26psc%3D1&qualifier=1649167428&id=3421079867947206&widgetName=sp_phone_search_mtf",
@@ -1662,7 +1662,7 @@ export const data = {
     "count": 443
   },
   "price": 485.45,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator65.jpg'),
   "link": "https://www.amazon.ca/NutriChef-PKCWC18-Cooler-Bottles-Black/dp/B085DX3RGH/ref=mp_s_a_1_49?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-49",
@@ -1690,7 +1690,7 @@ export const data = {
     "count": 5
   },
   "price": 110,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator66.jpg'),
   "link": "https://www.amazon.ca/Skincare-Fridge-Personal-Portable-Electric/dp/B09DRLQRLS/ref=mp_s_a_1_50?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-50",
@@ -1718,7 +1718,7 @@ export const data = {
     "count": 72
   },
   "price": 472,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator67.jpg'),
   "link": "https://www.amazon.ca/Frigidaire-EFR840-BLACK-COM-Compact-Refrigerator-Black/dp/B07YT1RLZC/ref=mp_s_a_1_51?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-51",
@@ -1746,7 +1746,7 @@ export const data = {
     "count": 1
   },
   "price": 316.23,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator68.jpg'),
   "link": "https://www.amazon.ca/Cooluli-Concord-20-liter-Thermostat-Dual-Core/dp/B07JCBG524/ref=mp_s_a_1_52?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-52",
@@ -1771,7 +1771,7 @@ export const data = {
     "count": 84
   },
   "price": 69.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator69.jpg'),
   "link": "https://www.amazon.ca/Coca-Cola-KWC-4C-Portable-Beverages-Medications-Use/dp/B07YYXXJ5B/ref=mp_s_a_1_53?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-53",
@@ -1799,7 +1799,7 @@ export const data = {
     "count": 121
   },
   "price": 363.93,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator70.jpg'),
   "link": "https://www.amazon.ca/Koolatron-KCR40B-Hybrid-Refrigerator-Silver/dp/B003UV4IXG/ref=mp_s_a_1_54?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-54",
@@ -1827,7 +1827,7 @@ export const data = {
     "count": 6
   },
   "price": 399.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator71.jpg'),
   "link": "https://www.amazon.ca/Insignia-3-0-Cu-Mini-Fridge/dp/B07G6MP9GX/ref=mp_s_a_1_55?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167428&sprefix=refrigerator%2Caps%2C114&sr=8-55",
@@ -1855,7 +1855,7 @@ export const data = {
     "count": 7
   },
   "price": 36.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator72.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg4_1?ie=UTF8&adId=A0208780WORCZ846RB13&url=%2FWaterspecialist-Refrigerator-Replacement-SmartWater-Kenmore%2Fdp%2FB078W6NMRR%2Fref%3Dmp_s_a_1_56_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-56-spons%26psc%3D1&qualifier=1649167428&id=3421079867947206&widgetName=sp_phone_search_btf",
@@ -1879,7 +1879,7 @@ export const data = {
     "count": 2
   },
   "price": 43.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator73.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg4_1?ie=UTF8&adId=A0409072SLMKTHCQUG1D&url=%2FCAYOREPO-Container-Refrigerator-Vegetable-Dishwasher%2Fdp%2FB09PN8FZTL%2Fref%3Dmp_s_a_1_57_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167428%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-57-spons%26psc%3D1&qualifier=1649167428&id=3421079867947206&widgetName=sp_phone_search_btf",
@@ -1896,7 +1896,7 @@ export const data = {
     "count": 111
   },
   "price": 23.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator74.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_atf_next_aps_sr_pg5_1?ie=UTF8&adId=A05495751RRGGMKU7CKGS&url=%2FCabinet-Washable-Refrigerator-Kitchen-Bathroom%2Fdp%2FB09KL28CQT%2Fref%3Dmp_s_a_1_57_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167450%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-57-spons%26psc%3D1&qualifier=1649167450&id=3596812514470098&widgetName=sp_phone_search_atf_next",
@@ -1917,7 +1917,7 @@ export const data = {
     "count": 7
   },
   "price": null,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator75.jpg'),
   "link": "https://www.amazon.ca/RFR321-FR320-3-1-Cu-Fridge-Black/dp/B00P84EVMQ/ref=mp_s_a_1_58?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-58",
@@ -1945,7 +1945,7 @@ export const data = {
     "count": 321
   },
   "price": 168.59,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator76.jpg'),
   "link": "https://www.amazon.ca/Midea-WHS-87LB1-Compact-Reversible-Refrigerator/dp/B00MVVI1B6/ref=mp_s_a_1_59?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-59",
@@ -1973,7 +1973,7 @@ export const data = {
     "count": 225
   },
   "price": 519.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator77.jpg'),
   "link": "https://www.amazon.ca/Ivation-Compressor-Refrigerator-Freestanding-Temperature/dp/B08618MMP9/ref=mp_s_a_1_60?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-60",
@@ -1998,7 +1998,7 @@ export const data = {
   "title": "Outsunny 12 Volt Car Refrigerator, 42 Quart Portable Refrigerator, Dual Zone Fridge Freezer with 12/24V DC and 110-240V AC for Driving, Travel, Fishing, Outdoor",
   "rating": null,
   "price": 449.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator78.jpg'),
   "link": "https://www.amazon.ca/Outsunny-Refrigerator-Portable-Freezer-110-240V/dp/B09W221LSH/ref=mp_s_a_1_57?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-57",
@@ -2020,7 +2020,7 @@ export const data = {
     "count": 727
   },
   "price": 98.66,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator79.jpg'),
   "link": "https://www.amazon.ca/Portable-Mirrored-Personal-Fridge-Refrigerator/dp/B0855FQ2L7/ref=mp_s_a_1_58?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-58",
@@ -2048,7 +2048,7 @@ export const data = {
     "count": 619
   },
   "price": 107.01,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator80.jpg'),
   "link": "https://www.amazon.ca/Cooluli-K10LGA-Coca-Cola-Americana-Portable/dp/B07H9J3LNW/ref=mp_s_a_1_59?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-59",
@@ -2076,7 +2076,7 @@ export const data = {
     "count": 368
   },
   "price": 479,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator81.jpg'),
   "link": "https://www.amazon.ca/Danby-DAR044A4BDD-Compact-Refrigerator-Cubic/dp/B00O2MB4AC/ref=mp_s_a_1_60?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-60",
@@ -2104,7 +2104,7 @@ export const data = {
     "count": 1
   },
   "price": 24.5,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator82.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg5_1?ie=UTF8&adId=A0370097W772R7CX673H&url=%2FDigital-Refrigerator-Freezer-Thermometer-Function%2Fdp%2FB076ZXB263%2Fref%3Dmp_s_a_1_61_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167450%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-61-spons%26psc%3D1%26smid%3DA2MRYLEZXIRGV5&qualifier=1649167450&id=3596812514470098&widgetName=sp_phone_search_mtf",
@@ -2127,7 +2127,7 @@ export const data = {
     "count": 56
   },
   "price": 19.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator83.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg5_1?ie=UTF8&adId=A00892261IDNBXHFUP5DE&url=%2FSilicone-Nonslip-Resistant-Multi-Function-Kitchen%2Fdp%2FB08TQPQMT5%2Fref%3Dmp_s_a_1_62_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167450%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-62-spons%26psc%3D1&qualifier=1649167450&id=3596812514470098&widgetName=sp_phone_search_mtf",
@@ -2149,7 +2149,7 @@ export const data = {
     "count": 40
   },
   "price": 89.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator84.jpg'),
   "link": "https://www.amazon.ca/Koolatron-Mirrored-Cosmetics-Beverages-Medicines/dp/B0851F82H5/ref=mp_s_a_1_63?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-63",
@@ -2177,7 +2177,7 @@ export const data = {
     "count": 33
   },
   "price": 267.76,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator85.jpg'),
   "link": "https://www.amazon.ca/Professional-Smart-Skincare-Fridge-Liter/dp/B09HTWGHYG/ref=mp_s_a_1_64?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-64",
@@ -2205,7 +2205,7 @@ export const data = {
     "count": 2
   },
   "price": 499.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator86.jpg'),
   "link": "https://www.amazon.ca/COSTWAY-Refrigerator-100-240AC-Dual-zone-Traveling/dp/B09BZLC4DB/ref=mp_s_a_1_65?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-65",
@@ -2230,7 +2230,7 @@ export const data = {
     "count": 9
   },
   "price": 279.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator87.jpg'),
   "link": "https://www.amazon.ca/COSTWAY-Refrigerator-Adjustable-Temperature-Reversible/dp/B08S34R83H/ref=mp_s_a_1_66?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-66",
@@ -2254,7 +2254,7 @@ export const data = {
     "count": 102
   },
   "price": 154.97,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator88.jpg'),
   "link": "https://www.amazon.ca/Coca-Cola-CCR-12-Retro-Fridge/dp/B00B5U9MB2/ref=mp_s_a_1_67?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-67",
@@ -2278,7 +2278,7 @@ export const data = {
     "count": 90
   },
   "price": 799.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator89.jpg'),
   "link": "https://www.amazon.ca/COSTWAY-Portable-Refrigerator-Compressor-Operating/dp/B083QYHHTB/ref=mp_s_a_1_68?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-68",
@@ -2306,7 +2306,7 @@ export const data = {
     "count": 222
   },
   "price": 229.95,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator90.jpg'),
   "link": "https://www.amazon.ca/Primeco-Replacement-Motherboard-Refrigerator-WPW10312695/dp/B089M14RBJ/ref=mp_s_a_1_69?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167450&sprefix=refrigerator%2Caps%2C114&sr=8-69",
@@ -2327,7 +2327,7 @@ export const data = {
     "count": 35
   },
   "price": 51.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator91.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg5_1?ie=UTF8&adId=A08605422HYENAHMT98U0&url=%2FRefrigerator-Compatible-Frigidaire-Puresource3-242069601%2Fdp%2FB09KV5HWZN%2Fref%3Dmp_s_a_1_70_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167450%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-70-spons%26psc%3D1&qualifier=1649167450&id=3596812514470098&widgetName=sp_phone_search_btf",
@@ -2347,7 +2347,7 @@ export const data = {
     "count": 494
   },
   "price": 34.16,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator92.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg5_1?ie=UTF8&adId=A03699411BJ9SQ9LG8XM5&url=%2FPack-Refrigerator-Freezer-Thermometer-Large%2Fdp%2FB07ZDNP838%2Fref%3Dmp_s_a_1_71_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167450%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-71-spons%26psc%3D1&qualifier=1649167450&id=3596812514470098&widgetName=sp_phone_search_btf",
@@ -2367,7 +2367,7 @@ export const data = {
     "count": 1
   },
   "price": 859.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator93.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_atf_next_aps_sr_pg6_1?ie=UTF8&adId=A01358332K2POXRB011YP&url=%2FCompressor-Refrigerator-Portable-Electric-Lighting%2Fdp%2FB07WGC91B5%2Fref%3Dmp_s_a_1_71_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167525%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-71-spons%26psc%3D1&qualifier=1649167525&id=6765809854364210&widgetName=sp_phone_search_atf_next",
@@ -2390,7 +2390,7 @@ export const data = {
     "count": 222
   },
   "price": 229.95,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator94.jpg'),
   "link": "https://www.amazon.ca/Primeco-Replacement-Motherboard-Refrigerator-WPW10312695/dp/B089M14RBJ/ref=mp_s_a_1_72?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-72",
@@ -2408,7 +2408,7 @@ export const data = {
   "title": "Insignia 115-Can Beverage Cooler (NS-BC115SS9) Stainless Steel - New",
   "rating": null,
   "price": 379.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator95.jpg'),
   "link": "https://www.amazon.ca/Insignia-115-Can-Beverage-NS-BC115SS9-Stainless/dp/B07FPH8ZK7/ref=mp_s_a_1_73?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-73",
@@ -2434,7 +2434,7 @@ export const data = {
     "count": 225
   },
   "price": 519.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator96.jpg'),
   "link": "https://www.amazon.ca/Ivation-Compressor-Refrigerator-Freestanding-Temperature/dp/B08618MMP9/ref=mp_s_a_1_74?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-74",
@@ -2462,7 +2462,7 @@ export const data = {
     "count": 339
   },
   "price": null,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator97.jpg'),
   "link": "https://www.amazon.ca/BougeRV-Portable-Freezer-Refrigerator-110V-240V/dp/B0869NCSNH/ref=mp_s_a_1_71?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-71",
@@ -2487,7 +2487,7 @@ export const data = {
   "title": "Outsunny 12 Volt Car Refrigerator, 42 Quart Portable Refrigerator, Dual Zone Fridge Freezer with 12/24V DC and 110-240V AC for Driving, Travel, Fishing, Outdoor",
   "rating": null,
   "price": 449.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator98.jpg'),
   "link": "https://www.amazon.ca/Outsunny-Refrigerator-Portable-Freezer-110-240V/dp/B09W221LSH/ref=mp_s_a_1_72?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-72",
@@ -2509,7 +2509,7 @@ export const data = {
     "count": 121
   },
   "price": 27.11,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator99.jpg'),
   "link": "https://www.amazon.ca/General-Electric-WX08X10015-Refrigerator-Water/dp/B00MOCT9TA/ref=mp_s_a_1_73?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-73",
@@ -2530,7 +2530,7 @@ export const data = {
     "count": 1
   },
   "price": 69.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator100.jpg'),
   "link": "https://www.amazon.ca/Chefman-Mini-Portable-Personal-Fridge/dp/B09CHCKXW6/ref=mp_s_a_1_74?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-74",
@@ -2558,7 +2558,7 @@ export const data = {
     "count": 44
   },
   "price": 16.83,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator101.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg6_1?ie=UTF8&adId=A05324692HXX8S5YMBIQD&url=%2FCooper-Atkins-335-01-1-Refrigerator-Horizontal-Thermometer%2Fdp%2FB00125N8UQ%2Fref%3Dmp_s_a_1_75_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167525%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-75-spons%26psc%3D1&qualifier=1649167525&id=6765809854364210&widgetName=sp_phone_search_mtf",
@@ -2578,7 +2578,7 @@ export const data = {
     "count": 211
   },
   "price": 17.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator102.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_mtf_aps_sr_pg6_1?ie=UTF8&adId=A0370377P4TDCRRUG1WR&url=%2FPack-Fridge-Refrigerator-Freezer-Thermometer%2Fdp%2FB085G78G51%2Fref%3Dmp_s_a_1_76_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167525%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-76-spons%26psc%3D1%26smid%3DA2MRYLEZXIRGV5&qualifier=1649167525&id=6765809854364210&widgetName=sp_phone_search_mtf",
@@ -2597,7 +2597,7 @@ export const data = {
     "count": 103
   },
   "price": 72.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator103.jpg'),
   "link": "https://www.amazon.ca/Koolatron-KRT04-B-Portable-Cooler-Compact/dp/B07VGP5787/ref=mp_s_a_1_77?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-77",
@@ -2625,7 +2625,7 @@ export const data = {
     "count": 577
   },
   "price": null,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator104.jpg'),
   "link": "https://www.amazon.ca/Danby-DAR044A4BSLDD-6-Cu-Ft-Fridge-Stainless/dp/B07TL6CDHG/ref=mp_s_a_1_78?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-78",
@@ -2653,7 +2653,7 @@ export const data = {
     "count": 215
   },
   "price": 109.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator105.jpg'),
   "link": "https://www.amazon.ca/Koolatron-Portable-Personal-Skincare-Cosmetics/dp/B08P23XXCN/ref=mp_s_a_1_79?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-79",
@@ -2681,7 +2681,7 @@ export const data = {
     "count": 28
   },
   "price": 399.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator106.jpg'),
   "link": "https://www.amazon.ca/Koolatron-Dual-Cellar-Black-Bottle/dp/B01EJRL7OM/ref=mp_s_a_1_80?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-80",
@@ -2709,7 +2709,7 @@ export const data = {
     "count": 6
   },
   "price": 17.99,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator107.jpg'),
   "link": "https://www.amazon.ca/DA61-06796A-Refrigerator-Evaporator-Replacement-AP5579885/dp/B09JG88ZT6/ref=mp_s_a_1_81?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-81",
@@ -2726,7 +2726,7 @@ export const data = {
     "count": 45
   },
   "price": null,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator108.jpg'),
   "link": "https://www.amazon.ca/Danby-Designer-DAR016B1BM-6-Foot-Black-Fridge/dp/B07WG9PN6M/ref=mp_s_a_1_82?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-82",
@@ -2754,7 +2754,7 @@ export const data = {
     "count": 4
   },
   "price": 179.37,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator109.jpg'),
   "link": "https://www.amazon.ca/Cooluli-Infinity-White-Liter-Fridge/dp/B07Y8TXQHD/ref=mp_s_a_1_83?crid=PNHUGJX5H8A6&keywords=refrigerator&qid=1649167525&sprefix=refrigerator%2Caps%2C114&sr=8-83",
@@ -2779,7 +2779,7 @@ export const data = {
     "count": 1
   },
   "price": 31.98,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator110.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg6_1?ie=UTF8&adId=A064276416T28ZT7AUBLJ&url=%2FJINAMART-Stackable-Organizer-Container-Refrigerator%2Fdp%2FB097RYKR7K%2Fref%3Dmp_s_a_1_84_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167525%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-84-spons%26psc%3D1&qualifier=1649167525&id=6765809854364210&widgetName=sp_phone_search_btf",
@@ -2796,7 +2796,7 @@ export const data = {
     "count": 3
   },
   "price": 34.13,
-  "prime": true,
+  "prime": false,
   "freeShipping": true,
   "imageSrc": require('../assets/items/refrigerator111.jpg'),
   "link": "https://www.amazon.ca/gp/slredirect/picassoRedirect.html/ref=pa_sp_phone_search_btf_aps_sr_pg6_1?ie=UTF8&adId=A0370221CFT67JG0MLV9&url=%2FPack-Fridge-Refrigerator-Freezer-Thermometer%2Fdp%2FB07X53BCHR%2Fref%3Dmp_s_a_1_85_sspa%3Fcrid%3DPNHUGJX5H8A6%26keywords%3Drefrigerator%26qid%3D1649167525%26sprefix%3Drefrigerator%252Caps%252C114%26sr%3D8-85-spons%26psc%3D1&qualifier=1649167525&id=6765809854364210&widgetName=sp_phone_search_btf",

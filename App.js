@@ -35,7 +35,9 @@ export default function App() {
       addedItemsCount, setAddedItemsCount
     }}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+          initialRouteName={'Setup'}
+        >
           <Stack.Screen
             name="Setup"
             component={SetupScreen}

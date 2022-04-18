@@ -1,15 +1,14 @@
 import {Image, View} from "react-native";
+import { Sponsored } from '../Sponsored';
+import { Title } from '../Title';
+import { Rating } from '../../common/Rating';
+import { Price } from '../Price';
+import { Prime } from '../Prime';
+import { FreeShipping } from '../FreeShipping';
+import { TemporarilyOutOfStock } from '../TemporarilyOutOfStock';
 
-import { Title } from './../Title';
-import { Rating } from './../../common/Rating';
-import { Price } from './../Price';
-import { Prime } from './../Prime';
-import { FreeShipping } from './../FreeShipping';
-import { TemporarilyOutOfStock } from './../TemporarilyOutOfStock';
-import { Sponsored } from './../Sponsored';
 
-
-export function MediumEntry(props) {
+export function SmallLongEntry(props) {
   const {entry, style} = props;
   const {imageSrc, sponsored, title, rating, price, prime, freeShipping, temporarilyOutOfStock} = entry;
   
@@ -24,7 +23,7 @@ export function MediumEntry(props) {
     </View>
     <View style={styles.contentCtr}>
       {sponsored ? <Sponsored /> : null}
-      <Title>{title}</Title>
+      <Title numberOfLines={4}>{title}</Title>
       {rating ? <Rating {...rating} /> : null}
       {price ? <Price price={price} /> : null}
       {prime ? <Prime /> : null}
@@ -50,14 +49,15 @@ const styles = {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    flexGrow: 0.7,
+    flexGrow: 0.4,
     paddingHorizontal: 8,
-    backgroundColor: '#f8f8f8',
+    backgroundColor: '#fff',
     justifyContent: 'center',
   },
   img: {
     flex: 1,
-    maxHeight: 170,
+    minHeight: 100,
+    maxHeight: 100,
 
   },
   contentCtr: {
