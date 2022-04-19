@@ -4,7 +4,7 @@ import {HomeScreen} from "./screens/HomeScreen";
 import {constants} from './constants/constants';
 import {ProductScreen} from './screens/ProductScreen';
 import {Text, TouchableHighlight} from 'react-native';
-import {RecsScreen} from './screens/ResultsScreen';
+import {RecsScreen} from './screens/RecsScreen';
 import {createStackNavigator} from "@react-navigation/stack";
 import {SecretButton} from "./components/home/SecretButton";
 import {AppContext} from './context/AppContext';
@@ -16,6 +16,8 @@ import {SetupScreen} from './screens/SetupScreen';
 import {Interfaces} from './constants/Interfaces';
 import {AddedItemsCount} from "./components/common/AddedItemsCount";
 
+/* Tests */
+import './tests/data.test';
 
 const Stack = createStackNavigator();
 
