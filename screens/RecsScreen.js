@@ -4,14 +4,14 @@ import {data} from "../data/data";
 import {Entry} from "../components/results/Entry";
 import {Results} from '../components/results/Results';
 import {AppContext} from "../context/AppContext";
-import {LogAPI} from './../wrappers/LogAPI';
-import {Actions} from './../constants/Actions';
-import {convertStringToInt} from './../helpers/char.helpers';
-import {constants} from './../constants/constants';
-import {getInterfaceIndex} from './../helpers/interface.helpers';
+import {LogAPI} from '../wrappers/LogAPI';
+import {Actions} from '../constants/Actions';
+import {convertStringToInt} from '../helpers/char.helpers';
+import {constants} from '../constants/constants';
+import {getInterfaceIndex} from '../helpers/interface.helpers';
 import {getSlice} from '../helpers/list.helpers';
 
-export function ResultsScreen() {
+export function RecsScreen() {
   const {userId, taskId, sessionId, interfaceId, addedItemsCount} = useContext(AppContext);
 
   const viewConfigRef = useRef({

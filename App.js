@@ -4,7 +4,7 @@ import {HomeScreen} from "./screens/HomeScreen";
 import {constants} from './constants/constants';
 import {ProductScreen} from './screens/ProductScreen';
 import {Text, TouchableHighlight} from 'react-native';
-import {ResultsScreen} from './screens/ResultsScreen';
+import {RecsScreen} from './screens/ResultsScreen';
 import {createStackNavigator} from "@react-navigation/stack";
 import {SecretButton} from "./components/home/SecretButton";
 import {AppContext} from './context/AppContext';
@@ -84,7 +84,7 @@ export default function App() {
           />
           <Stack.Screen
             name={'Results'}
-            component={ResultsScreen}
+            component={RecsScreen}
             options={({navigation}) => ({
               headerLeft: () => (
                 <TouchableHighlight
