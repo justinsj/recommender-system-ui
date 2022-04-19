@@ -1,6 +1,6 @@
 export const data = {
   "refrigerator0": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COMFEE' 3.3 Cubic Feet Solo Series Retro Refrigerator Sleek Appearance HIPS Interior Energy Saving Adjustable Legs Temperature Thermostat Dial Removable Shelf Perfect for Home/Dorm/Garage [Red]",
     "rating": {
       "rating": 4,
@@ -28,7 +28,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31gZt5iAYAS._AC_SY580_.jpg"
   },
   "refrigerator1": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "AstroAI Portable Freezer 12 Volt Car Refrigerator 16 Quart Fridge for Car, RV, Van, Vehicle Portable Freezer 15L (-4\u2109~68\u2109) for Camping, Travel - 12/24V DC & 100/240V AC Gift for Men & Women",
     "rating": {
       "rating": 4,
@@ -56,7 +56,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51UWD8b8IJL._AC_SY580_.jpg"
   },
   "refrigerator2": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Whynter BR-130SB Beverage Refrigerator with Internal Fan, Stainless Steel",
     "rating": {
       "rating": 4,
@@ -84,7 +84,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/512SnKLcjSL._AC_SY580_.jpg"
   },
   "refrigerator3": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Midea WHS-65LB1 Compact Reversible Single Door Refrigerator and Freezer, 1.6 Cubic Feet, Black",
     "rating": {
       "rating": 4,
@@ -112,7 +112,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51+vxUeDiGL._AC_SY580_.jpg"
   },
   "refrigerator4": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby DBC026A1BSSDB 95 Can Beverage Center, 2.6 Cu.Ft Refrigerator for Basement, Dining, Living Room, Drink Cooler Perfect for Beer, Pop, Water, Black/Stainless-Steel",
     "rating": {
       "rating": 4,
@@ -129,7 +129,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/515tUBXiZjL._AC_SY580_.jpg"
   },
   "refrigerator5": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "CURTIS INTERNATIONAL EFR176-BLUE 1.6 Cu Ft Retro Bar Fridge with Side Bottle Opener, Blue",
     "rating": {
       "rating": 4,
@@ -157,7 +157,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41xh9KDcWfL._AC_SY1000_.jpg"
   },
   "refrigerator6": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "AstroAI Mini Fridge, 4 Liter/6 Can AC/DC Portable Thermoelectric Cooler & Warmer Refrigerators for Christmas Gifts, Skincare, Beverage, Food, Cosmetics, Home, Dorm, Office and Car, ETL Listed (White)",
     "rating": {
       "rating": 4,
@@ -185,7 +185,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31Av2nqI7KL._AC_SY780_.jpg"
   },
   "refrigerator7": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Nafort Mini Fridge with Freezer, 3.2Cu.ft 2-Door Compact Refrigerator with Reversible Door, Removable Glass Basket/Shelves & Recessed Handle for Home, Bedroom, Office, Dorm, Garage (Grey)",
     "rating": {
       "rating": 5,
@@ -211,7 +211,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41XYcRyxNhL._AC_SY580_.jpg"
   },
   "refrigerator8": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "ROYAL SOVEREIGN RMF-70W Refrigerator, White",
     "rating": {
       "rating": 4,
@@ -236,7 +236,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31-GeTQgZUL._AC_SY780_.jpg"
   },
   "refrigerator9": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Costway 3.4 cu. ft. 2 Door Compact Mini Refrigerator Freezer Cooler (White)",
     "rating": {
       "rating": 4,
@@ -264,7 +264,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31KyTByqmVL._AC_SY580_.jpg"
   },
   "refrigerator10": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "RCA 1.6 Cubic Foot Fridge, Black",
     "rating": {
       "rating": 4,
@@ -292,7 +292,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31O8SUpc6uL._AC_SY780_.jpg"
   },
   "refrigerator11": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Koolatron Compact Fridge with Freezer, 3.3 Cubic Feet (93 L) Capacity, for Snacks, Frozen Meals, Beverages, Juice, Beer, Den, Dorm, Office, Games Room, or RV, Black (BC88B)",
     "rating": {
       "rating": 3,
@@ -320,7 +320,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/216AYvYY5BS._AC_SY580_.jpg"
   },
   "refrigerator12": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "AstroAI Mini Fridge, 12 Can Skincare Fridge AC/DC Small Refrigerator Portable Thermoelectric Cooler and Warmer for Gift, Skincare, Beverage, Bedroom, ETL Listed (Black)",
     "rating": {
       "rating": 4,
@@ -348,7 +348,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41y+xDqnhIS._AC_SY580_.jpg"
   },
   "refrigerator13": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "RCA RMIS129-BLUE Mini Retro 6 Can Beverage Refrigerator-Blue",
     "rating": {
       "rating": 4,
@@ -373,7 +373,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31eqdh4YdfS._AC_SY580_.jpg"
   },
   "refrigerator14": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "AstroAI Mini Fridge, 15 Can 10L Digital Temperature Control Thermoelectric Coolers & Refrigerators for Gifts, Skincare, Cosmetics, Foods, AC/DC for Home and Travel (White)",
     "rating": {
       "rating": 4,
@@ -401,7 +401,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/418euryKY+S._AC_SY1000_.jpg"
   },
   "refrigerator15": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "BLACK+DECKER BCRK25V Compact Refrigerator Energy Star Single Door Mini Fridge with Freezer, 2.5 Cubic Ft, VCM",
     "rating": {
       "rating": 3,
@@ -429,7 +429,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31Y+ovnrEsL._AC_SY780_.jpg"
   },
   "refrigerator16": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COMFEE' 1.6 Cubic Feet Solo Series Retro Refrigerator Sleek Appearance HIPS Interior Energy Saving Adjustable Legs Temperature Thermostat Dial Removable Shelf Perfect for Home/Dorm/Garage [Red]",
     "rating": {
       "rating": 4,
@@ -457,7 +457,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31EhCe98stL._AC_SY580_.jpg"
   },
   "refrigerator17": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COMFEE' 3.3 Cubic Feet Solo Series Retro Refrigerator Sleek Appearance HIPS Interior Energy Saving Adjustable Legs Temperature Thermostat Dial Removable Shelf Perfect for Home/Dorm/Garage [Red]",
     "rating": {
       "rating": 4,
@@ -485,7 +485,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31gZt5iAYAS._AC_SY580_.jpg"
   },
   "refrigerator18": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COMFEE' 1.6 Cubic Feet Solo Series Retro Refrigerator Sleek Appearance HIPS Interior Energy Saving Adjustable Legs Temperature Thermostat Dial Removable Shelf Perfect for Home/Dorm/Garage [Red]",
     "rating": {
       "rating": 4,
@@ -513,7 +513,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31EhCe98stL._AC_SY580_.jpg"
   },
   "refrigerator19": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COSTWAY Compact Refrigerator, 3.2 cu ft. Unit 2-Door Mini Freezer Cooler Fridge with Reversible Door, Removable Glass Shelves, Mechanical Control, Recessed Handle for Dorm, Office, Apartment (Grey)",
     "rating": {
       "rating": 4,
@@ -541,7 +541,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/315MtMXeqsL._AC_SY580_.jpg"
   },
   "refrigerator20": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Equator-Midea REF 87L-24SS 2.4 cu.-Feet Mini Refrigerator in Stainless Steel",
     "rating": {
       "rating": 4,
@@ -569,7 +569,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/310uVHsb-+L._AC_SY580_.jpg"
   },
   "refrigerator21": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Frigidaire EFR376-WHITE 3.2 Cu Ft White Retro Bar Fridge with Side Bottle Opener",
     "rating": {
       "rating": 4,
@@ -597,7 +597,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31QMz0cmKGL._AC_SY780_.jpg"
   },
   "refrigerator22": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby 1.6 Cubic Feet Compact Refrigerator-White (DCR016A3WDB)",
     "rating": {
       "rating": 4,
@@ -625,7 +625,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/312D4cAWepL._AC_SY780_.jpg"
   },
   "refrigerator23": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "DORTALA Compact Refrigerator, 3.2 Cu Ft Mini Fridge, Separate Freezer with 2-Door Design, Wide Angle LED Light, Rapid Refrigeration, Energy Saving, Quiet Operation, Grey",
     "rating": {
       "rating": 4,
@@ -653,7 +653,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31zLO0CMyKL._AC_SY580_.jpg"
   },
   "refrigerator24": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Marshall Black 4.4 High Capacity Bar Fridge",
     "rating": {
       "rating": 4,
@@ -681,7 +681,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41k+k+hAIbL._AC_SY1000_.jpg"
   },
   "refrigerator25": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Costway 3.4 cu. ft. 2 Door Compact Mini Refrigerator Freezer Cooler (White)",
     "rating": {
       "rating": 4,
@@ -709,7 +709,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31KyTByqmVL._AC_SY580_.jpg"
   },
   "refrigerator26": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Easy Installation Adjustable Appliance Petite Ball Magnetic Rods Perfect for Narrow Spaces, 9 to 16 Inch, 1/2 Inch Diameter, Pewter Finish, 2 Packs",
     "rating": {
       "rating": 4,
@@ -730,7 +730,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41Wy4ppYUoL._AC_SY780_.jpg"
   },
   "refrigerator27": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Galanz Mini Retro Fridge/Refrigerator with Chiller Adjustable Mechanical Thermostat Control 2.5 Cubic Feet White GLR25MWER27",
     "rating": null,
     "price": 244.88,
@@ -755,7 +755,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/21vwaZcwX0L._AC_SY780_.jpg"
   },
   "refrigerator28": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "CURTIS INTERNATIONAL RFR321-WHITE 3.2 Cu Ft Fridge, White",
     "rating": {
       "rating": 4,
@@ -783,7 +783,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/21cR3q-xQsL._AC_SY780_.jpg"
   },
   "refrigerator29": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "CURTIS INTERNATIONAL EFR176-RED 1.6 Cu Ft Retro Bar Fridge with Side Bottle Opener, Red",
     "rating": {
       "rating": 4,
@@ -811,7 +811,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41tx4hh4zpL._AC_SY780_.jpg"
   },
   "refrigerator30": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "AstroAI Mini Fridge 6 Liter/8 Can Skincare Fridge AC/DC Thermoelectric Portable Beauty Fridge for Christmas Gift, Beverage, Cosmetics, Bedroom, ETL Listed (Mirror & Light)",
     "rating": {
       "rating": 4,
@@ -837,7 +837,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41t3YlzM-qL._AC_SY580_.jpg"
   },
   "refrigerator31": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Antarctic Star Mini Fridge Cooler - 60 Can Beverage Refrigerator Glass Door for Beer Soda or Wine \u2013 Glass Door Small Drink Dispenser Machine Clear Front Removable for Home, Office or Bar, 1.6cu.ft.",
     "rating": {
       "rating": 4,
@@ -865,7 +865,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51PYE5HmY9L._AC_SY580_.jpg"
   },
   "refrigerator32": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Reusable Hanging Storage Mesh Bag in Refrigerator, Washable Refrigerator Hanging Mesh Bag, Hygiene Fridge Side Door Organizer Bag for Home Kitchen Dorm Small Items Storage(White)",
     "rating": null,
     "price": 3.99,
@@ -879,7 +879,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51akQYCvcBL._AC_SY780_.jpg"
   },
   "refrigerator33": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Frigidaire EFR341, 3.2 cu ft 2 Door Fridge and Freezer, Platinum Series, Stainless Steel, Double",
     "rating": {
       "rating": 4,
@@ -904,7 +904,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31boEIJwIwL._AC_SY580_.jpg"
   },
   "refrigerator34": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "SAMMUA W10295370a Refrigerator Water Filter, Compatible with Water Filter Drop 1, W10295370, P4RFWB, EDR1RXD1, 46-9081, 46-9930, 3 Filters",
     "rating": null,
     "price": 35.99,
@@ -923,7 +923,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51pI7S2-KQL._AC_SY780_.jpg"
   },
   "refrigerator35": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "24\" Professional Style All Gas Range with Battery Spark",
     "rating": null,
     "price": 2.99,
@@ -941,7 +941,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41y7J0q7xWL._AC_SY1000_.jpg"
   },
   "refrigerator36": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COMFEE' 1.6 Cubic Feet Solo Series Retro Refrigerator Sleek Appearance HIPS Interior Energy Saving Adjustable Legs Temperature Thermostat Dial Removable Shelf Perfect for Home/Dorm/Garage [Black]",
     "rating": {
       "rating": 4,
@@ -969,7 +969,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/314GtouVLnS._AC_SY580_.jpg"
   },
   "refrigerator37": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Coca-Cola Polar Bear Portable 6 Can Thermoelectric Mini Fridge Cooler/Warmer, 4 L/4.2 qt, Red, 12V DC/110V AC for home, dorm, car, boat, beverages, snacks, skincare, cosmetics, medication",
     "rating": {
       "rating": 4,
@@ -997,7 +997,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41NJjImr8XL._AC_SY580_.jpg"
   },
   "refrigerator38": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "RCA Fridge, 1.6 Cubic Feet, Red",
     "rating": {
       "rating": 4,
@@ -1025,7 +1025,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31uqD73pz5L._AC_SY780_.jpg"
   },
   "refrigerator39": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Mini Fridge 4 Liter/6 Cans AC/DC Portable Refridgrator Thermoelectric Warmer and Cooler Small Fridge for Skincare Foods Beer Beverage Lightweight Portable Makeup Skincare Fridge for Bedroom Dorm Room Essentials Home Travel Office Car Fridge Bedroom Accessories Mini Fridge with Freezer",
     "rating": {
       "rating": 3,
@@ -1053,13 +1053,13 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31V+4hBXXaL._AC_SY780_.jpg"
   },
   "refrigerator40": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby DFF070B1BSLDB-6 7.0 Cubic Foot Mid-Size Refrigerator - Black Stainless Look",
     "rating": {
       "rating": 3,
       "count": 67
     },
-    "price": null,
+    "price": 950.81,
     "prime": false,
     "freeShipping": true,
     "imageSrc": require('../assets/items/refrigerator40.jpg'),
@@ -1081,7 +1081,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/215gx-czBeL._AC_SY780_.jpg"
   },
   "refrigerator41": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "FRIGIDAIRE EFMIS462-PINK 12 Can Retro Mini Portable Personal Fridge/Cooler for Home, Office or Dorm, Pink",
     "rating": {
       "rating": 4,
@@ -1106,7 +1106,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41G1Cf8yuYL._AC_SY580_.jpg"
   },
   "refrigerator42": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby DAR026A1BDD-6 2.6 Cu.Ft. Mini Fridge, Compact Countertop Refrigerator for Bedroom, Office, Bar, E-Star Rated",
     "rating": {
       "rating": 4,
@@ -1134,7 +1134,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/314PotdU0gL._AC_SY580_.jpg"
   },
   "refrigerator43": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "AstroAI Mini Fridge 6 Liter/8 Can Skincare Fridge, Mini Frigo with Temperature Control - AC/12V DC Portable Thermoelectric Cooler and Warmer for Bedroom, Make Up, White",
     "rating": {
       "rating": 3,
@@ -1162,7 +1162,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/418RTIFmPaL._AC_SY780_.jpg"
   },
   "refrigerator44": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Egg Holder Organizer Refrigerator Kitchen Egg Keeper Sorting Storage Box Egg Drawer Fridge Egg Tray with Handle Stackable Egg Bin Cabinet for Freezer,Reusable Plastic Icebox Egg Stand Display, White",
     "rating": {
       "rating": 4,
@@ -1179,7 +1179,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/313kVRIDfIL._AC_SY580_.jpg"
   },
   "refrigerator45": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Aimacro Stackable Clear Refrigerator Organizer Bins with Sealing Lid, Smell Proof and Keep Fresh, Unique Easy Slide Out Handles, Large Fridge Freezer Organizer for Food Storage (4 Pack)",
     "rating": {
       "rating": 4,
@@ -1196,7 +1196,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51-GW7NAApL._AC_SY780_.jpg"
   },
   "refrigerator46": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby Designer Two Door Mini Fridge, Stainless Steel Look",
     "rating": {
       "rating": 4,
@@ -1221,7 +1221,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/315TA61eR5L._AC_SY580_.jpg"
   },
   "refrigerator47": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "VBENLEM 45L Portable Car Refrigerator 48 Quart LG Compact RV Fridge 12/24V DC & 110-240V AC Vehicle Car Truck Boat Mini Electric Freezer for Driving Travel Fishing Outdoor and Home Use -4\u00b0F-50\u00b0F",
     "rating": {
       "rating": 4,
@@ -1249,7 +1249,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41f6DJspIXL._AC_SY580_.jpg"
   },
   "refrigerator48": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "XLEVE 20-Liter Compact Cooler/Warmer Mini Fridge/Wine Cooler with Digital Thermostat + Dual-Core Cooling for Cars, Road Trips, Homes, Offices & Dorms",
     "rating": null,
     "price": 92.02,
@@ -1267,7 +1267,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41p9iZwODcL._AC_SY780_.jpg"
   },
   "refrigerator49": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Alpicool C50 Portable Refrigerator 53 Quart(50 Liter) Vehicle, Car, Turck, RV, Boat, Mini Fridge Freezer for Travel, Outdoor and Home use -12/24V DC and 110-240 AC",
     "rating": {
       "rating": 4,
@@ -1292,7 +1292,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31LaBXdA7dL._AC_SY780_.jpg"
   },
   "refrigerator50": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "KOTEK 3.2 Cu Ft Compact Refrigerator, Mini Freezer Cooler Fridge w/2 Reversible Door, Removable Glass Shelves, Apartment Size Refrigerator with Freezer for Home, Office, Dorm (Black)",
     "rating": {
       "rating": 4,
@@ -1320,7 +1320,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31G5lDlSjMS._AC_SY580_.jpg"
   },
   "refrigerator51": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Cooluli Vibe Mini Fridge for Bedroom - With Cool Front Magnetic Blackboard - 15L Portable Small Refrigerator for Travel, Car & Office Desk - Plug In Cooler & Warmer for Food, Drinks & Skincare (Black)",
     "rating": {
       "rating": 4,
@@ -1345,7 +1345,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41-75Zae4HL._AC_SY580_.jpg"
   },
   "refrigerator52": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Coca-Cola Mini Portable Fridge with Bluetooth Speaker, 4L Capacity Compact Personal Cooler Warmer, Chills 6 12oz Cans, Includes Bonus 12V Car Adapter, Cute Desktop Accessory for Home Office Dorm Travel, Red",
     "rating": {
       "rating": 4,
@@ -1373,7 +1373,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51ZGIlYRWTL._AC_SY580_.jpg"
   },
   "refrigerator53": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "UKF8001 Refrigerator Water Filter Replacement, Compatible with Everydrop Filter 4, EDR4RXD1, UKF8001P, 4396395, 46-9006, UKF8001AXX-200, UKF8001AXX-750, Puriclean II by Bringpure, 3 Pack",
     "rating": {
       "rating": 4,
@@ -1396,7 +1396,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51+R3TRn2QL._AC_SY780_.jpg"
   },
   "refrigerator54": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "AQUACREST WF1CB Refrigerator Water Filter, Compatible with Frigidaire PureSource WFCB, RG100, NGRG2000, WF284, Kenmore 9910, 469906, 469910 (Pack of 6)",
     "rating": {
       "rating": 4,
@@ -1419,7 +1419,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51I-7HDIAFL._AC_SY780_.jpg"
   },
   "refrigerator55": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COMFEE' 1.6 Cubic Feet Solo Series Retro Refrigerator Sleek Appearance HIPS Interior Energy Saving Adjustable Legs Temperature Thermostat Dial Removable Shelf Perfect for Home/Dorm/Garage [Red]",
     "rating": {
       "rating": 4,
@@ -1447,7 +1447,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31EhCe98stL._AC_SY580_.jpg"
   },
   "refrigerator56": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Chefman Mini Portable Black Personal Fridge Cools Or Heats & Provides Compact Storage For Skincare, Snacks, Or 6 12oz Cans W/ A Lightweight 4-liter Capacity To Take On The Go",
     "rating": {
       "rating": 4,
@@ -1472,7 +1472,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31TeJay1IEL._AC_SY780_.jpg"
   },
   "refrigerator57": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "10 Liter Mini Fridge, AWOPEE 11 Can AC/DC Portable Cooler and Warmer Mini Refrigerator with Digital Display and Temperature Control, Compact Refrigerator for Drinks, Bedroom,Office",
     "rating": {
       "rating": 3,
@@ -1497,13 +1497,13 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/410Ch3ywUbS._AC_SY780_.jpg"
   },
   "refrigerator58": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Urban Series 12 Bottle Wine Cooler, Black, Thermoelectric Wine Fridge, 1 cu. ft. (28L), Freestanding Wine Cellar, Red, White and Sparkling Wine Storage for Small Kitchen, Apartment, Condo, RV",
     "rating": {
       "rating": 4,
       "count": 26
     },
-    "price": null,
+    "price": 245.70,
     "prime": false,
     "freeShipping": true,
     "imageSrc": require('../assets/items/refrigerator58.jpg'),
@@ -1525,7 +1525,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31mwHF7-MuL._AC_SY1000_.jpg"
   },
   "refrigerator59": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "DA97-12650A",
     "rating": {
       "rating": 4,
@@ -1542,7 +1542,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51sRE7JJxJL._AC_UY580_.jpg"
   },
   "refrigerator60": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "CURTIS INTERNATIONAL EFR176-CORAL 1.6 Cu Ft Retro Bar Fridge with Side Bottle Opener, Coral",
     "rating": {
       "rating": 4,
@@ -1570,7 +1570,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31dJ6u6u4KL._AC_SY1000_.jpg"
   },
   "refrigerator61": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Alpicool C20 Portable Refrigerator 21 Quart(20 Liter) Vehicle, Car, Turck, RV, Boat, Mini Fridge Freezer for Travel, Outdoor and Home use -12/24V DC and 110-240 AC",
     "rating": {
       "rating": 4,
@@ -1595,7 +1595,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41qdM70HkhL._AC_SY580_.jpg"
   },
   "refrigerator62": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "6 Pack - SimpleHouseware Freezer Storage Fridge Organizer",
     "rating": {
       "rating": 4,
@@ -1612,7 +1612,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/5151ar3ShpL._AC_SY780_.jpg"
   },
   "refrigerator63": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "DRINKCLEAR EPTWFU01 Refrigerator Water Filter, Replacement for Pure Source Ultra II, Frigidaire EPTWFU01, FPBC2277RF, FPBG2277RF, FGHB2868TP, FFHD2250TD, FGSC2335TF, FGSC2335TD, LGHD2369TF, FPBS2777RF, 3 Pack",
     "rating": {
       "rating": 4,
@@ -1632,7 +1632,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41zF+U6PhLL._AC_SY780_.jpg"
   },
   "refrigerator64": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Maxblue DA29-00020B Refrigerator Water Filter, Replacement for Samsung DA29-00020B, DA29-00020A, DA97-08006A, HAF-CIN/EXP, 46-9101, 469101, 9101, 4609101000, Pack of 3",
     "rating": {
       "rating": 4,
@@ -1655,7 +1655,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41DXbvgk1gL._AC_SY780_.jpg"
   },
   "refrigerator65": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Nutrichef 18 Bottle Wine Cooler Refrigerator - White Red Wine Fridge Chiller Countertop Wine Cooler - Freestanding Compact Mini Wine Fridge 18 Bottle w/Digital Control, Stainless Steel Door - PKCWC18",
     "rating": {
       "rating": 4,
@@ -1683,7 +1683,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41Bnvdodf5L._AC_SY780_.jpg"
   },
   "refrigerator66": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "MAKEUP FRIDGE Mini Skincare Fridge, 4 Liter/6 Can, Personal Portable Electric Cooler/Chiller and Warmer | Perfect for Home, Bedroom, Office & Car - Pink",
     "rating": {
       "rating": 3,
@@ -1711,7 +1711,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/214CeRSYAyL._AC_SY780_.jpg"
   },
   "refrigerator67": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Frigidaire EFR840-BLACK-COM Compact Refrigerator, 3.2, Black",
     "rating": {
       "rating": 4,
@@ -1739,7 +1739,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31jsRfJwXHL._AC_SY780_.jpg"
   },
   "refrigerator68": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Cooluli 20L Mini Fridge For Bedroom - Car, Office Desk & College Dorm Room - Glass Front & Digital Temperature Control - 12v Small Refrigerator for Food, Drinks, Skincare, Beauty & Breast Milk (White)",
     "rating": {
       "rating": 4,
@@ -1764,7 +1764,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/316ZXuBGfRL._AC_SY580_.jpg"
   },
   "refrigerator69": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Coca-Cola Classic Red Portable 6 Can Thermoelectric Mini Fridge Cooler/Warmer, 4 L/4.2 Quarts Capacity, 12V DC/110V AC for home, dorm, car, boat, beverages, snacks, skincare, cosmetics, medication",
     "rating": {
       "rating": 4,
@@ -1792,7 +1792,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41cAfi9RUdL._AC_SY580_.jpg"
   },
   "refrigerator70": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Koolatron KCR40B 1.7 Cubic Foot (48L) AC/DC Electric Heat Pipe Stainless Steel Thermoelectric Compact Fridge",
     "rating": {
       "rating": 3,
@@ -1820,7 +1820,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/3186SMhQdPS._AC_SY780_.jpg"
   },
   "refrigerator71": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Insignia - 3.0 Cu. Ft. Mini Fridge (NS-CF30SS9) Stainless Steel - New",
     "rating": {
       "rating": 3,
@@ -1848,7 +1848,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31u0WoIdEjL._AC_SY780_.jpg"
   },
   "refrigerator72": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Waterspecialist MWF Refrigerator Water Filter Replacement for GE MWF SmartWater, MWFA, MWFP, GWF, GWFA, Kenmore 9991, 46-9991, 469991, 3 Pack",
     "rating": {
       "rating": 4,
@@ -1872,7 +1872,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41UgLn4Lp9L._AC_SY780_.jpg"
   },
   "refrigerator73": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "CAYOREPO 3 Pack Fresh Container, Produce Saver Container for Refrigerator, Vegetable Fruit Storage Container, Fridge Storage Organizer Bins with Divider, Fridge Container Box\uff08Not Dishwasher Safe)",
     "rating": {
       "rating": 4,
@@ -1889,7 +1889,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51ipLYMSKhL._AC_SY580_.jpg"
   },
   "refrigerator74": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Shelf Liner Cabinet Liner, Washable Refrigerator Mats for Pantry Cabinet, Kitchen Drawer, Bathroom Shelves,Shoe Rack, Clear Cross Ribbed (17.5 Inch x 7 FT)",
     "rating": {
       "rating": 4,
@@ -1910,13 +1910,13 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41z58X55xQL._AC_SY780_.jpg"
   },
   "refrigerator75": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "RFR321-FR320/8 3.1 Cu Ft Fridge, Black",
     "rating": {
       "rating": 4,
       "count": 7
     },
-    "price": null,
+    "price": 527.76,
     "prime": false,
     "freeShipping": true,
     "imageSrc": require('../assets/items/refrigerator75.jpg'),
@@ -1938,7 +1938,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31wx+cwfkgL._AC_SY780_.jpg"
   },
   "refrigerator76": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Midea WHS-87LB1 Compact Reversible Single Door Refrigerator and Freezer, 2.4 Cubic Feet, Black",
     "rating": {
       "rating": 4,
@@ -1966,7 +1966,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/21oa-cvEL8L._AC_SY580_.jpg"
   },
   "refrigerator77": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Ivation 34 Bottle Compressor Wine Cooler Refrigerator w/Lock | Large Freestanding Wine Cellar For Red, White, Champagne or Sparkling Wine | 41f-64f Digital Temperature Control Fridge Glass Door Black",
     "rating": {
       "rating": 3,
@@ -1994,7 +1994,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41p1WqFc4PL._AC_SY780_.jpg"
   },
   "refrigerator78": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Outsunny 12 Volt Car Refrigerator, 42 Quart Portable Refrigerator, Dual Zone Fridge Freezer with 12/24V DC and 110-240V AC for Driving, Travel, Fishing, Outdoor",
     "rating": null,
     "price": 449.99,
@@ -2013,7 +2013,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41ZME2ZbwhL._AC_SY580_.jpg"
   },
   "refrigerator79": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Chefman Portable Mirrored Personal Fridge, 4 Liter Mini Refrigerator, Skin Care, Makeup Storage, Beauty, Serums And Face Masks, Small For Desktop Or Travel, Cool & Heat, Cosmetic Application, Black",
     "rating": {
       "rating": 4,
@@ -2041,7 +2041,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31Ux6YW8Z5L._AC_SY580_.jpg"
   },
   "refrigerator80": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Cooluli Retro Coca-Cola Mini Fridge for Bedroom - Car, Office Desk & College Dorm Room - 10L/12 Can Small Refrigerator - AC/DC 12V Portable Cooler & Warmer for Food, Drinks & Skincare (Coke, Vintage)",
     "rating": {
       "rating": 4,
@@ -2069,7 +2069,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51FXhr-ZGSL._AC_SY780_.jpg"
   },
   "refrigerator81": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby DAR044A4BDD Compact All Refrigerator, 4.4 Cubic Feet, Black",
     "rating": {
       "rating": 4,
@@ -2097,7 +2097,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31w92YSFqXL._AC_SY780_.jpg"
   },
   "refrigerator82": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "2 Pack Digital Refrigerator Freezer Thermometer,Max/Min Record Function with Large LCD Display",
     "rating": {
       "rating": 4,
@@ -2120,7 +2120,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51qGV38ZGbL._AC_SY780_.jpg"
   },
   "refrigerator83": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "2Pcs Silicone Dish Drying Mat for Multiple Usage,Easy Clean,Eco-Friendly,Heat-Resistant Silicone Mat for Kitchen Counter or Sink,Refrigerator or Drawer Liner- (16\"x12\") Blue&Grey",
     "rating": {
       "rating": 4,
@@ -2142,7 +2142,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51EbOYc17lS._AC_SY1000_.jpg"
   },
   "refrigerator84": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Mini Cosmetic Fridge with LED Lighted Makeup Mirror, 6L Compact Refrigerator for Skincare, Beauty Serums, Face Masks, Portable Design with Handle for Home, Travel, Dorm, Office, Cute Gift for Her",
     "rating": {
       "rating": 4,
@@ -2170,7 +2170,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41CsnwqK3oL._AC_SY580_.jpg"
   },
   "refrigerator85": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Professional Smart Mini Skincare Fridge 9 Liter - Portable Makeup Refrigerator for Skin Care with 'Smart Life' App - Cosmetic Beauty Fridge for Bedroom Desktop, Gift for Women, White",
     "rating": {
       "rating": 4,
@@ -2198,7 +2198,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31giNA064NL._AC_SY580_.jpg"
   },
   "refrigerator86": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COSTWAY Car Refrigerator, 58 Quarts DC12-24V, 100-240AC, -4\u00b0F To 50\u00b0F, Dual-zone RV Electric Freezer with LED Panel, Wheels, Handle, portable Car Fridge for Camping, Traveling (Grey)",
     "rating": {
       "rating": 5,
@@ -2223,7 +2223,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41XJ9M3iI6L._AC_SY580_.jpg"
   },
   "refrigerator87": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COSTWAY Compact Refrigerator, 2.6 CU.FT Single Door Mini Refrigerator with Adjustable Temperature 35\u2109 to 50\u2109, Large Capacity, Removable Shelf, Reversible Door (White)",
     "rating": {
       "rating": 3,
@@ -2247,7 +2247,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/31e6gqmnHwL._AC_SY580_.jpg"
   },
   "refrigerator88": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Coca-Cola Retro Design 18 Can Mini Fridge 12V DC/110V AC, 22 L/ 23 Quart thermoelectric for travel, camping, office, home, dorm, car, boat, beverages, snacks, skincare, cosmetics, medication",
     "rating": {
       "rating": 3,
@@ -2271,7 +2271,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41uWAEZhidL._AC_SY780_.jpg"
   },
   "refrigerator89": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COSTWAY Portable Car Refrigerator, -14.8\u00b0F to 50\u00b0F, 70-Quart Compressor Travel Fridge with Two-Way Open Door, Operating Panel, Groove Design, Compact RV Cooler and Freezer for Outdoor and Home Use",
     "rating": {
       "rating": 4,
@@ -2299,7 +2299,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/418VyKve4TL._AC_SY580_.jpg"
   },
   "refrigerator90": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Primeco W10312695, W10312695B Compatible Replacement Motherboard Refrigerator, WPW10312695, AP6019287, PS11752593",
     "rating": {
       "rating": 4,
@@ -2320,7 +2320,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41Csqc7pE+L._AC_SY580_.jpg"
   },
   "refrigerator91": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "WF3CB Refrigerator Water Filter Compatible with Frigidaire WF3CB, Puresource3, 242069601, 242086201 Water Filter, Pack of 3",
     "rating": {
       "rating": 4,
@@ -2340,7 +2340,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41HnD+umSTL._AC_SY780_.jpg"
   },
   "refrigerator92": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "12 Pack Refrigerator Freezer Thermometer Large Dial Thermometer",
     "rating": {
       "rating": 4,
@@ -2360,7 +2360,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/61gMIu2fpTL._AC_SY780_.jpg"
   },
   "refrigerator93": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "COSTWAY Car Freezer, 63 Quart Compressor Travel Refrigerator -0.4\u00b0F to 50\u00b0F, Portable & Compact Single Door Vehicle Electric Cooler Fridge, Refrigerator with LCD Display & Lighting Bulbs(63 Quart)",
     "rating": {
       "rating": 4,
@@ -2383,7 +2383,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/413IdoSFkHL._AC_SY780_.jpg"
   },
   "refrigerator94": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Primeco W10312695, W10312695B Compatible Replacement Motherboard Refrigerator, WPW10312695, AP6019287, PS11752593",
     "rating": {
       "rating": 4,
@@ -2404,7 +2404,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41Csqc7pE+L._AC_SY580_.jpg"
   },
   "refrigerator95": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Insignia 115-Can Beverage Cooler (NS-BC115SS9) Stainless Steel - New",
     "rating": null,
     "price": 379.99,
@@ -2427,7 +2427,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/519Vf2G-gbL._AC_SY780_.jpg"
   },
   "refrigerator96": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Ivation 34 Bottle Compressor Wine Cooler Refrigerator w/Lock | Large Freestanding Wine Cellar For Red, White, Champagne or Sparkling Wine | 41f-64f Digital Temperature Control Fridge Glass Door Black",
     "rating": {
       "rating": 3,
@@ -2455,13 +2455,13 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41p1WqFc4PL._AC_SY780_.jpg"
   },
   "refrigerator97": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "BougeRV 12V Portable Car Refrigerator, 53qt Freezer Fridge, Fast Cooling (-4\u2109~50\u2109) Car Freezer, 12V/24V DC RV Fridge for Camping Trip, Road Trip, Truck, Boat, Home 110V-240V AC",
     "rating": {
       "rating": 4,
       "count": 339
     },
-    "price": null,
+    "price": 509.99,
     "prime": false,
     "freeShipping": true,
     "imageSrc": require('../assets/items/refrigerator97.jpg'),
@@ -2483,7 +2483,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/418qPz7SZdL._AC_SY780_.jpg"
   },
   "refrigerator98": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Outsunny 12 Volt Car Refrigerator, 42 Quart Portable Refrigerator, Dual Zone Fridge Freezer with 12/24V DC and 110-240V AC for Driving, Travel, Fishing, Outdoor",
     "rating": null,
     "price": 449.99,
@@ -2502,7 +2502,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41ZME2ZbwhL._AC_SY580_.jpg"
   },
   "refrigerator99": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "General Electric WX08X10015 Refrigerator Water Line",
     "rating": {
       "rating": 4,
@@ -2523,7 +2523,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41K2TuWTsbL._AC_SY580_.jpg"
   },
   "refrigerator100": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Chefman Mini Portable Personal Fridge, Extra-Cold Or Warm, Compact Storage for Skin Care, Formula, Or Snacks, Fits 6 12-oz Cans, Lightweight 4-Liter Capacity, Black",
     "rating": {
       "rating": 5,
@@ -2551,7 +2551,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/3160ymAKejL._AC_SY780_.jpg"
   },
   "refrigerator101": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Cooper-Atkins 335-01-1 Refrigerator/Freezer Horizontal Glass Tube Thermometer",
     "rating": {
       "rating": 4,
@@ -2571,7 +2571,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41Bf7-Q3AGL._AC_SY580_.jpg"
   },
   "refrigerator102": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "12 Pack Fridge Refrigerator Freezer Thermometer",
     "rating": {
       "rating": 4,
@@ -2590,7 +2590,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/5197Nv7F+yL._AC_SY780_.jpg"
   },
   "refrigerator103": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Retro Mini Portable Fridge, 4L Compact Refrigerator for Skincare, Beauty Serum, Face Mask, Personal Cooler, Includes Bonus 12V Car Adapter, Cute Desktop Accessory for Home Office Dorm Travel, Black",
     "rating": {
       "rating": 4,
@@ -2618,13 +2618,13 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41lMNyXxDYL._AC_SY780_.jpg"
   },
   "refrigerator104": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby DAR044A4BSLDD-6 4.4 Cu.Ft. Mini Fridge In Stainless Steel Look - Compact All Fridge For Bedroom, Living Room, Bar, Dorm, Kitchen",
     "rating": {
       "rating": 4,
       "count": 577
     },
-    "price": null,
+    "price": 479.92,
     "prime": false,
     "freeShipping": true,
     "imageSrc": require('../assets/items/refrigerator104.jpg'),
@@ -2646,7 +2646,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41tDGQ0FnpL._AC_SY580_.jpg"
   },
   "refrigerator105": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Mini Cosmetic Fridge with LED Lighted Makeup Mirror, 6L Compact Refrigerator for Skincare, Beauty Serums, Face Masks, Portable Design with Handle for Home, Travel, Dorm, Office",
     "rating": {
       "rating": 4,
@@ -2674,7 +2674,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41jOjzozfpL._AC_SY1000_.jpg"
   },
   "refrigerator106": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Urban Series 24 Bottle Dual Zone Wine Cooler, Black Thermoelectric Wine Fridge, 2.4 cu. ft (68L), Freestanding Wine Cellar, Red, White, Sparkling Wine Storage for Home Bar, Kitchen, Apartment, Condo",
     "rating": {
       "rating": 4,
@@ -2702,7 +2702,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41xdWYsrHwL._AC_SY780_.jpg"
   },
   "refrigerator107": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "DA61-06796A Drain Clip for Samsung Refrigerator Defrost Drain Clip Evaporator Replacement Part Replaces AP5579885 PS4145120 2683162 (2Pcs)",
     "rating": {
       "rating": 3,
@@ -2719,13 +2719,13 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/312Wr5xYLYL._AC_SY580_.jpg"
   },
   "refrigerator108": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Danby Designer DAR016B1BM-6 1.6 Cubic Foot-Black All Fridge",
     "rating": {
       "rating": 4,
       "count": 45
     },
-    "price": null,
+    "price": 357.26,
     "prime": false,
     "freeShipping": true,
     "imageSrc": require('../assets/items/refrigerator108.jpg'),
@@ -2747,7 +2747,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/21NTg1JT9IL._AC_SY580_.jpg"
   },
   "refrigerator109": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "Cooluli 10L Mini Fridge for Bedroom - Car, Office Desk & College Dorm Room - 12v Portable Cooler & Warmer for Food, Drinks, Skincare, Beauty & Makeup - AC/DC Small Refrigerator with Glass Front, White",
     "rating": {
       "rating": 4,
@@ -2772,7 +2772,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/11TSJ4spvYL._AC_SY580_.jpg"
   },
   "refrigerator110": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "JINAMART (Set of 2) Egg Holder for Fridge 36 Eggs Stackable Plastic Eggs Organizer with Lid Egg Storage Container for Refrigerator (18 Eggs/2 PCS)",
     "rating": {
       "rating": 4,
@@ -2789,7 +2789,7 @@ export const data = {
     "imageSrcUrl": "https://m.media-amazon.com/images/I/41sGoNjvR4L._AC_SY780_.jpg"
   },
   "refrigerator111": {
-    "sponsored": true,
+    "sponsored": false,
     "title": "6 Pack Fridge Refrigerator Freezer Thermometer",
     "rating": {
       "rating": 4,

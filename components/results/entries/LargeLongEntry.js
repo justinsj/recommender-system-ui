@@ -24,7 +24,7 @@ export function LargeLongEntry(props) {
     <View style={styles.contentCtr}>
       {sponsored ? <Sponsored/> : null}
       <Title numberOfLines={5}>{title}</Title>
-      {rating ? <Rating {...rating} /> : null}
+      {/* {rating ? <Rating {...rating} /> : null} */}
       {price ? <Price price={price}/> : null}
       {prime ? <Prime/> : null}
       {freeShipping ? <FreeShipping/> : null}

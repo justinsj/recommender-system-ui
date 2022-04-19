@@ -33,7 +33,7 @@ export function ProductScreen(props) {
       <View style={styles.card}>
         <View style={styles.row}>
           <VisitStore>{storeText}</VisitStore>
-          <Rating {...rating}/>
+          {/* <Rating {...rating}/> */}
         </View>
         <ProductTitle
           style={styles.title}
