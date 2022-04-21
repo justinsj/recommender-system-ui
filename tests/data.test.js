@@ -20,7 +20,7 @@ function assertDataValid(data){
   - imageSrcUrl
   
   */
-  for (const [key,value] of data){
+  for (const [key,value] of Object.entries(data)){
     console.assert(isNotNullOrUndefined(value.sponsored))
     console.assert(isNotNullOrUndefined(value.title))
     // console.assert(isNotNullOrUndefined(value.rating))
@@ -40,4 +40,20 @@ function isNotNullOrUndefined(value){
   return value !== undefined && value !== null
 }
 
-assertDataValid(Object.entries(data));
+function assertUniqueProductIds(data){
+  /*
+  This function throws an error if any of the entry productIds in data are duplicated.
+  The function returns undefined otherwise.
+
+  */
+  const seenProductIds = new Set();
+  for (const [key,value] of Object.entries(data)){
+    console.assert(isNotNullOrUndefined(value.productId))
+    const {productId} = value;
+    console.assert(!seenProductIds.has(productId), 'Duplicate productId: ' + productId)
+    seenProductIds.add(productId)
+  }
+}
+
+assertDataValid(data);
+assertUniqueProductIds(data);

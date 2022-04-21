@@ -1,4 +1,5 @@
-export const data = {
+const {removeDuplicates} = require("../helpers/data.helpers");
+const data = {
   "refrigerator0": {
     "sponsored": false,
     "title": "COMFEE' 3.3 Cubic Feet Solo Series Retro Refrigerator Sleek Appearance HIPS Interior Energy Saving Adjustable Legs Temperature Thermostat Dial Removable Shelf Perfect for Home/Dorm/Garage [Red]",
@@ -2807,4 +2808,9 @@ export const data = {
     "productId": "B07X53BCHR",
     "imageSrcUrl": "https://m.media-amazon.com/images/I/51OqJlj2hWL._AC_SY780_.jpg"
   },
+}
+removeDuplicates(data, key = (obj)=>obj.productId )
+
+module.exports = {
+  data
 }

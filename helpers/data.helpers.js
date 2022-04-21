@@ -17,3 +17,16 @@ export function createId(length = 16) {
   }
   return result;
 }
+
+/**
+ * Mutates data. Removes duplicate entries using key function on the value.
+ * @param data
+ * @param key
+ */
+export function removeDuplicates(data, key){
+  const seenKeys = new Set();
+  for (const [k,v] of Object.entries(data)){
+    if (seenKeys.has(key(v))){ delete data[k]; }
+    seenKeys.add(key(v));
+  }
+}
