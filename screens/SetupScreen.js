@@ -7,6 +7,8 @@ import RNPickerSelect from 'react-native-picker-select';
 import {getInterfaces, Interfaces} from './../constants/Interfaces';
 import {convertStringToInt} from "../helpers/char.helpers";
 import {getTasks} from "../constants/tasks";
+import {getInterfaceIndex, getNextInterfaceIndex} from "../helpers/interface.helpers";
+import {Line} from "../components/common/Line";
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -18,23 +20,12 @@ export function SetupScreen() {
     interfaceId, setInterfaceId,
     sessionId, setSessionId,
     setAddedItemsCount,
+    interfaces, setInterfaces,
+    tasks, setTasks,
   } = useContext(AppContext);
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
 
   //TODO update interfaces when sessionId is updated
-
-  const [interfaces, setInterfaces] = useState([]);
-  const [tasks, setTasks] = useState([]);
-
-  useEffect(()=>{
-    const interfaces = getInterfaces(convertStringToInt(sessionId))
-    setInterfaceId(interfaces[0].value);
-    setInterfaces(interfaces);
-
-    const tasks = getTasks(convertStringToInt(sessionId));
-    setTaskId(tasks[0].value);
-    setTasks(tasks);
-  },[sessionId]);
 
   return (
 
@@ -94,6 +85,22 @@ export function SetupScreen() {
             value={interfaceId}
           />
         </View>
+        <TouchableHighlight
+          style={[styles.button, styles.spacerDown, styles.noHorizontal]}
+          underlayColor={'#fff'}
+          activeOpacity={0.5}
+          onPress={() => {
+            const nextIndex = getNextInterfaceIndex(interfaces, interfaceId);
+            const nextInterfaceId = interfaces[nextIndex].value;
+            setInterfaceId(nextInterfaceId);
+          }}
+        >
+          <View style={styles.main}>
+            <Text style={styles.prompt}>Next (
+              {getInterfaceIndex(interfaces, interfaceId) + 1}
+              /{interfaces.length})</Text>
+          </View>
+        </TouchableHighlight>
       </View>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>sessionId</Text></View>
@@ -119,7 +126,7 @@ export function SetupScreen() {
           <Text style={styles.prompt}>{prompt}</Text>
         </View>
       </TouchableHighlight>
-
+      <Line style={styles.line}/>
       <TouchableHighlight
         style={[styles.button, styles.spacerDown]}
         underlayColor={'#fff'}
@@ -132,6 +139,7 @@ export function SetupScreen() {
           <Text style={styles.prompt}>Reset Added Items</Text>
         </View>
       </TouchableHighlight>
+      <Line style={styles.line}/>
       <TouchableHighlight
         style={styles.button}
         underlayColor={'#fff'}
@@ -156,7 +164,7 @@ const styles = {
 
   },
   spacerDown: {
-    marignBottom: 48,
+    marginBottom: 8,
   },
   ctr: {
     backgroundColor: '#fff',
@@ -198,5 +206,13 @@ const styles = {
   title: {
     paddingTop: 16,
     paddingBottom: 8,
+  },
+  noHorizontal: {
+    paddingHorizontal: 0,
+    marginHorizontal: 0,
+  },
+  line: {
+    paddingTop: 4,
+    marginHorizontal: 12,
   },
 }

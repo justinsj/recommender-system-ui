@@ -12,7 +12,7 @@ import {getInterfaceIndex} from '../helpers/interface.helpers';
 import {getSlice} from '../helpers/list.helpers';
 
 export function RecsScreen() {
-  const {userId, taskId, sessionId, interfaceId, addedItemsCount} = useContext(AppContext);
+  const {userId, taskId, sessionId, interfaceId, addedItemsCount, interfaces} = useContext(AppContext);
 
   const viewConfigRef = useRef({
     itemVisiblePercentThreshold: 1,
@@ -54,7 +54,7 @@ export function RecsScreen() {
 
   const results = getSlice(
     Object.values(data),
-    (convertStringToInt(sessionId) + getInterfaceIndex(interfaceId)) % constants.numInterfaces,
+    (convertStringToInt(sessionId) + getInterfaceIndex(interfaces, interfaceId)) % constants.numInterfaces,
     constants.numInterfaces,
   );
 

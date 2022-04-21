@@ -25,5 +25,6 @@ const baseInterfaces = [
 ];
 
 export function getInterfaces(seed){
-  return shuffle(baseInterfaces, seed);
+  const array = JSON.parse(JSON.stringify(baseInterfaces));
+  return shuffle(array, seed);
 }

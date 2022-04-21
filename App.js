@@ -9,15 +9,17 @@ import {createStackNavigator} from "@react-navigation/stack";
 import {SecretButton} from "./components/home/SecretButton";
 import {AppContext} from './context/AppContext';
 import {createId} from "./helpers/data.helpers";
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {LogAPI} from "./wrappers/LogAPI";
 import {Actions} from './constants/Actions';
 import {SetupScreen} from './screens/SetupScreen';
-import {Interfaces} from './constants/Interfaces';
+import {getInterfaces, Interfaces} from './constants/Interfaces';
 import {AddedItemsCount} from "./components/common/AddedItemsCount";
 
 /* Tests */
 import './tests/data.test';
+import {convertStringToInt} from "./helpers/char.helpers";
+import {getTasks} from "./constants/tasks";
 
 const Stack = createStackNavigator();
 
@@ -28,13 +30,29 @@ export default function App() {
   const [interfaceId, setInterfaceId] = useState(Interfaces.control);
   const [sessionId, setSessionId] = useState(createId());
   const [addedItemsCount, setAddedItemsCount] = useState(0);
+
+  const [interfaces, setInterfaces] = useState(getInterfaces(convertStringToInt(sessionId)));
+  const [tasks, setTasks] = useState(getTasks(convertStringToInt(sessionId)));
+
+  useEffect(()=>{
+    const interfaces = getInterfaces(convertStringToInt(sessionId))
+    setInterfaceId(interfaces[0].value);
+    setInterfaces(interfaces);
+
+    const tasks = getTasks(convertStringToInt(sessionId));
+    setTaskId(tasks[0].value);
+    setTasks(tasks);
+  },[sessionId]);
+
   return (
     <AppContext.Provider value={{
       userId, setUserId,
       taskId, setTaskId,
       interfaceId, setInterfaceId,
       sessionId, setSessionId,
-      addedItemsCount, setAddedItemsCount
+      addedItemsCount, setAddedItemsCount,
+      interfaces, setInterfaces,
+      tasks, setTasks,
     }}>
       <NavigationContainer>
         <Stack.Navigator
