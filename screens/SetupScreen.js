@@ -6,6 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 import RNPickerSelect from 'react-native-picker-select';
 import {getInterfaces, Interfaces} from './../constants/Interfaces';
 import {convertStringToInt} from "../helpers/char.helpers";
+import {getTasks} from "../constants/tasks";
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -23,11 +24,16 @@ export function SetupScreen() {
   //TODO update interfaces when sessionId is updated
 
   const [interfaces, setInterfaces] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   useEffect(()=>{
     const interfaces = getInterfaces(convertStringToInt(sessionId))
     setInterfaceId(interfaces[0].value);
     setInterfaces(interfaces);
+
+    const tasks = getTasks(convertStringToInt(sessionId));
+    setTaskId(tasks[0].value);
+    setTasks(tasks);
   },[sessionId]);
 
   return (
@@ -69,9 +75,7 @@ export function SetupScreen() {
             placeholder={{label: "Set task id", value: ''}}
             onValueChange={setTaskId}
             itemKey={'value'}
-            items={[
-              {label: 'Refrigerator', value: 'refrigerator'},
-            ]}
+            items={tasks}
             value={taskId}
           />
         </View>
