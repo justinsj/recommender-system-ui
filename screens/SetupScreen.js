@@ -1,10 +1,11 @@
 import {Text, TextInput, TouchableHighlight, View} from "react-native";
-import {useContext, useState} from 'react';
+import {useContext, useState, useEffect} from 'react';
 import {AppContext} from './../context/AppContext';
 import {createId} from "../helpers/data.helpers";
 import {useNavigation} from '@react-navigation/native';
 import RNPickerSelect from 'react-native-picker-select';
-import {Interfaces} from './../constants/Interfaces';
+import {getInterfaces, Interfaces} from './../constants/Interfaces';
+import {convertStringToInt} from "../helpers/char.helpers";
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -18,6 +19,16 @@ export function SetupScreen() {
     setAddedItemsCount,
   } = useContext(AppContext);
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
+
+  //TODO update interfaces when sessionId is updated
+
+  const [interfaces, setInterfaces] = useState([]);
+
+  useEffect(()=>{
+    const interfaces = getInterfaces(convertStringToInt(sessionId))
+    setInterfaceId(interfaces[0].value);
+    setInterfaces(interfaces);
+  },[sessionId]);
 
   return (
 
@@ -75,13 +86,7 @@ export function SetupScreen() {
             placeholder={{label: "Set interface id", value: ''}}
             onValueChange={setInterfaceId}
             itemKey={'value'}
-            items={[
-              {label: 'Control', value: Interfaces.control},
-              {label: 'Small Image, Short Text', value: Interfaces.small_short},
-              {label: 'Small Image, Long Text', value: Interfaces.small_long},
-              {label: 'Large Image, Short Text', value: Interfaces.large_short},
-              {label: 'Large Image, Long Text', value: Interfaces.large_long},
-            ]}
+            items={interfaces}
             value={interfaceId}
           />
         </View>

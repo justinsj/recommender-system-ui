@@ -136,7 +136,7 @@ const styles = {
     alignItems: 'center',
     flexGrow: 1,
     // paddingHorizontal: 8,
-    backgroundColor: '#f8f8f8',
+    backgroundColor: '#fff',
     justifyContent: 'center',
     height: 300,
     maxHeight: 300,

@@ -55,7 +55,7 @@ const styles = {
     flex: 1,
   },
   main: {
-    // flex: 1,
+    flex: 1,
     // background: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
