@@ -2,11 +2,11 @@ import {Text, View} from "react-native";
 import {FORMAT} from './../../helpers/format.helpers';
 
 export function Price(props) {
-  const {price} = props;
+  const {price, style} = props;
 
   const [whole, decimal] = price.toString().split(".")
   return (
-    <View style={styles.ctr}>
+    <View style={[styles.ctr, style]}>
       <Text style={styles.dollar}>$</Text>
       <Text style={styles.whole}>{FORMAT.commaFormat(whole)}</Text>
       <Text style={styles.decimal}>{decimal}</Text>
