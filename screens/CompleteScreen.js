@@ -1,15 +1,6 @@
-import {FlatList, View, TouchableHighlight, Linking, Text, StyleSheet} from "react-native";
+import {Linking, StyleSheet, Text, TouchableHighlight, View} from "react-native";
 import {useContext, useRef} from 'react';
-import {data} from "../data/data";
-import {Entry} from "../components/results/Entry";
-import {Results} from '../components/results/Results';
 import {AppContext} from "../context/AppContext";
-import {LogAPI} from '../wrappers/LogAPI';
-import {Actions} from '../constants/Actions';
-import {convertStringToInt} from '../helpers/char.helpers';
-import {constants} from '../constants/constants';
-import {getInterfaceIndex} from '../helpers/interface.helpers';
-import {getSlice} from '../helpers/list.helpers';
 import {generateLink} from "../wrappers/GoogleForm";
 
 export function CompleteScreen() {

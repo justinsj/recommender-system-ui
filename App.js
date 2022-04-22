@@ -106,7 +106,7 @@ export default function App() {
             })}
           />
           <Stack.Screen
-            name={'Results'}
+            name={'Recs'}
             component={RecsScreen}
             options={({navigation}) => ({
               headerLeft: () => (

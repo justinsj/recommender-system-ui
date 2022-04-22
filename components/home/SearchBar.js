@@ -14,7 +14,7 @@ export function SearchBar(props) {
     const loweredText = text.toLowerCase();
 
     if (loweredText.includes('ref') || loweredText.includes('fridge')) {
-      navigation.navigate('Results');
+      navigation.navigate('Recs');
       onSucceed();
     } else {
       onFail();
