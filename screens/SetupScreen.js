@@ -163,7 +163,9 @@ export function SetupScreen() {
           Linking.openURL(generateLink(userId, sessionId, taskId, interfaceId))
         }}
       >
-        <Text style={styles.text}>Open Survey Link</Text>
+        <View style={styles.main}>
+          <Text style={styles.prompt}>Open Survey Link</Text>
+        </View>
       </TouchableHighlight>
       <Line style={styles.line}/>
       <TouchableHighlight

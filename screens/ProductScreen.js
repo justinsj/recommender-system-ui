@@ -1,7 +1,7 @@
 import {Image, ScrollView, View} from "react-native";
 import {Rating} from './../components/common/Rating';
 import {Details} from './../components/product/Details';
-import {useRoute} from "@react-navigation/native";
+import {useNavigation, useRoute} from "@react-navigation/native";
 import {VisitStore} from './../components/product/VisitStore';
 import {ProductTitle} from './../components/product/ProductTitle';
 import {ProductInformation} from './../components/product/ProductInformation';
@@ -12,6 +12,7 @@ import {LogAPI} from "../wrappers/LogAPI";
 import {AppContext} from './../context/AppContext';
 import {Actions} from './../constants/Actions';
 import {useContext} from 'react';
+import {constants} from "../constants/constants";
 
 //https://www.sitepoint.com/amazon-product-api-exploration-lets-build-a-product-search/
 //https://rapidapi.com/ZombieBest/api/amazon-products1/
@@ -28,6 +29,8 @@ export function ProductScreen(props) {
     price, temporarilyOutOfStock,
     imageSrc, details, productId,
   } = entry;
+
+  const navigation = useNavigation();
 
   return (
     <ScrollView>
@@ -78,6 +81,11 @@ export function ProductScreen(props) {
             });
             setAddedItemsCount(addedItems.size);
             setAddedItems(addedItems);
+            if (addedItems.size < constants.requiredAddCount){
+              navigation.goBack();
+            } else {
+              navigation.navigate('Complete');
+            }
           }}
           onBuyNow={() => {
             addedItems.add(productId);
@@ -96,6 +104,11 @@ export function ProductScreen(props) {
             });
             setAddedItemsCount(addedItems.size);
             setAddedItems(addedItems);
+            if (addedItems.size < constants.requiredAddCount){
+              navigation.goBack();
+            } else {
+              navigation.navigate('Complete');
+            }
           }}
           style={styles.PurchaseOptions}
 

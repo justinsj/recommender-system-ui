@@ -15,7 +15,6 @@ export function PurchaseOptions(props) {
         underlayColor={styles.primaryButton.backgroundColor}
         onPress={() => {
           onAddToCart();
-          navigation.goBack();
         }}
         style={[styles.button, styles.primaryButton]}
       >
@@ -28,7 +27,6 @@ export function PurchaseOptions(props) {
         underlayColor={styles.secondaryButton.backgroundColor}
         onPress={() => {
           onBuyNow();
-          navigation.goBack();
         }}
         style={[
           styles.button,

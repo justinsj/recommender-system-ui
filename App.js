@@ -20,6 +20,7 @@ import {AddedItemsCount} from "./components/common/AddedItemsCount";
 import './tests/data.test';
 import {convertStringToInt} from "./helpers/char.helpers";
 import {getTasks} from "./constants/tasks";
+import {CompleteScreen} from "./screens/CompleteScreen";
 
 const Stack = createStackNavigator();
 
@@ -58,7 +59,7 @@ export default function App() {
     }}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName={'Results'}
+          initialRouteName={'Setup'}
         >
           <Stack.Screen
             name="Setup"
@@ -166,6 +167,32 @@ export default function App() {
               headerTitle: constants.companyName,
               headerStyle: {
                 backgroundColor: '#232f3e',
+              },
+              headerRight: () => (
+                <AddedItemsCount
+                  style={styles.headerRight}
+                  count={addedItemsCount}
+                />
+              ),
+              headerTintColor: '#fff',
+            })}
+          />
+          <Stack.Screen
+            name={'Complete'}
+            component={CompleteScreen}
+            options={({navigation}) => ({
+              headerLeft: () => {
+              },
+              headerTitle: () => (<SecretButton
+                minTouches={6}
+                durationThresholdSeconds={2}
+                onPress={() => {
+                  navigation.navigate('Setup')
+                }}
+              ><Text style={styles.title}>{constants.companyName}</Text></SecretButton>),
+              headerStyle: {
+                backgroundColor: '#232f3e',
+                borderBottomWidth: 0,
               },
               headerRight: () => (
                 <AddedItemsCount
