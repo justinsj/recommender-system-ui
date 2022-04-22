@@ -6,7 +6,6 @@ export function AddedItemsCount(props) {
     <View style={[styles.ctr, style]}>
       <Text style={styles.text}>{count}</Text>
     </View>
-
   )
 }
 

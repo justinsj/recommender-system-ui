@@ -1,4 +1,4 @@
-import {Text, TextInput, TouchableHighlight, View} from "react-native";
+import {Text, TextInput, TouchableHighlight, View, ScrollView, Linking} from "react-native";
 import {useContext, useState, useEffect} from 'react';
 import {AppContext} from './../context/AppContext';
 import {createId} from "../helpers/data.helpers";
@@ -9,6 +9,7 @@ import {convertStringToInt} from "../helpers/char.helpers";
 import {getTasks} from "../constants/tasks";
 import {getInterfaceIndex, getNextIndex} from "../helpers/interface.helpers";
 import {Line} from "../components/common/Line";
+import {generateLink} from "../wrappers/GoogleForm";
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -29,7 +30,7 @@ export function SetupScreen() {
 
   return (
 
-    <View style={styles.ctr}>
+    <ScrollView style={styles.ctr}>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>userId</Text></View>
         <TextInput
@@ -158,6 +159,15 @@ export function SetupScreen() {
       <Line style={styles.line}/>
       <TouchableHighlight
         style={styles.button}
+        onPress={()=>{
+          Linking.openURL(generateLink(userId, sessionId, taskId, interfaceId))
+        }}
+      >
+        <Text style={styles.text}>Open Survey Link</Text>
+      </TouchableHighlight>
+      <Line style={styles.line}/>
+      <TouchableHighlight
+        style={styles.button}
         underlayColor={'#fff'}
         activeOpacity={0.5}
         onPress={() => {
@@ -168,7 +178,7 @@ export function SetupScreen() {
           <Text style={styles.prompt}>Start</Text>
         </View>
       </TouchableHighlight>
-    </View>
+    </ScrollView>
   );
 }
 

@@ -18,7 +18,8 @@ import {useContext} from 'react';
 export function ProductScreen(props) {
   const {
     userId, taskId, interfaceId, sessionId,
-    addedItemsCount, setAddedItemsCount
+    addedItemsCount, setAddedItemsCount,
+    addedItems, setAddedItems,
   } = useContext(AppContext);
   const route = useRoute();
   const {entry} = route && route.params ? route.params : {entry: data.refrigerator};
@@ -62,6 +63,7 @@ export function ProductScreen(props) {
         </View>
         <PurchaseOptions
           onAddToCart={() => {
+            addedItems.add(productId);
             LogAPI.put({
               logs: [{
                 userId,
@@ -70,13 +72,16 @@ export function ProductScreen(props) {
                 interfaceId,
                 sessionId,
                 productId,
-                addedItemsCount: addedItemsCount + 1,
+                addedItemsCount: addedItems.size,
                 action: Actions.addToCart,
               }],
             });
-            setAddedItemsCount(addedItemsCount + 1);
+            setAddedItemsCount(addedItems.size);
+            setAddedItems(addedItems);
           }}
           onBuyNow={() => {
+            addedItems.add(productId);
+
             LogAPI.put({
               logs: [{
                 userId,
@@ -85,11 +90,12 @@ export function ProductScreen(props) {
                 interfaceId,
                 sessionId,
                 productId,
-                addedItemsCount: addedItemsCount + 1,
+                addedItemsCount: addedItems.size,
                 action: Actions.buyNow,
               }],
             });
-            setAddedItemsCount(addedItemsCount + 1);
+            setAddedItemsCount(addedItems.size);
+            setAddedItems(addedItems);
           }}
           style={styles.PurchaseOptions}
 

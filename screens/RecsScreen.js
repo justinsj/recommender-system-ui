@@ -1,4 +1,4 @@
-import {FlatList} from "react-native";
+import {FlatList, View, TouchableHighlight, Linking, Text, StyleSheet} from "react-native";
 import {useContext, useRef} from 'react';
 import {data} from "../data/data";
 import {Entry} from "../components/results/Entry";
@@ -10,6 +10,7 @@ import {convertStringToInt} from '../helpers/char.helpers';
 import {constants} from '../constants/constants';
 import {getInterfaceIndex} from '../helpers/interface.helpers';
 import {getSlice} from '../helpers/list.helpers';
+import {generateLink} from "../wrappers/GoogleForm";
 
 export function RecsScreen() {
   const {userId, taskId, sessionId, interfaceId, addedItemsCount, interfaces} = useContext(AppContext);
@@ -59,20 +60,38 @@ export function RecsScreen() {
   );
 
   return (
-    <FlatList
-      style={styles.listCtr}
-      // contentContainerStyle={{flex: 1}}
-      ListHeaderComponent={<Results/>}
-      data={results}
-      keyExtractor={(item, index) => index}
-      renderItem={({item, index}) => (<Entry
-        style={styles.entry}
-        entry={item}
-        index={index}
-      />)}
-      onViewableItemsChanged={onViewableItemsChangedRef.current}
-      viewabilityConfig={viewConfigRef.current}
-    />
+    <View style={{flex: 1}}>
+      {
+        addedItemsCount < constants.requiredAddCount ?
+          <FlatList
+            style={styles.listCtr}
+            // contentContainerStyle={{flex: 1}}
+            ListHeaderComponent={<Results/>}
+            data={results}
+            keyExtractor={(item, index) => index}
+            renderItem={({item, index}) => (<Entry
+              style={styles.entry}
+              entry={item}
+              index={index}
+            />)}
+            onViewableItemsChanged={onViewableItemsChangedRef.current}
+            viewabilityConfig={viewConfigRef.current}
+          /> :
+          (<View style={styles.overlay}>
+            <Text style={[styles.text]}>Task Complete!</Text>
+            <TouchableHighlight
+              style={styles.button}
+              onPress={()=>{
+                Linking.openURL(generateLink(userId, sessionId, taskId, interfaceId))
+              }}
+            >
+              <Text style={styles.text}>Click Here</Text>
+            </TouchableHighlight>
+          </View>)
+      }
+
+    </View>
+
   );
 }
 
@@ -83,9 +102,32 @@ const styles = {
     // position: 'fixed',
     flexGrow: 1,
     // flex: 1,
+
   },
   entry: {
     marginHorizontal: 8,
     marginVertical: 4,
-  }
+  },
+  overlay: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 12,
+    backgroundColor: 'rgba(0,0,0,0.35)',
+    ...StyleSheet.absoluteFillObject,
+  },
+  button: {
+    borderRadius: 8,
+    backgroundColor: '#fcbb6a',
+    padding: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    bottom: 24,
+  },
+  text: {
+    color: '#fff',
+    fontSize: 24,
+    fontWeight: '500',
+  },
 }

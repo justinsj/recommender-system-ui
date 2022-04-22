@@ -3,7 +3,7 @@ import {NavigationContainer} from "@react-navigation/native";
 import {HomeScreen} from "./screens/HomeScreen";
 import {constants} from './constants/constants';
 import {ProductScreen} from './screens/ProductScreen';
-import {Text, TouchableHighlight} from 'react-native';
+import {Linking, Text, TouchableHighlight} from 'react-native';
 import {RecsScreen} from './screens/RecsScreen';
 import {createStackNavigator} from "@react-navigation/stack";
 import {SecretButton} from "./components/home/SecretButton";
@@ -30,6 +30,7 @@ export default function App() {
   const [interfaceId, setInterfaceId] = useState(Interfaces.control);
   const [sessionId, setSessionId] = useState(createId());
   const [addedItemsCount, setAddedItemsCount] = useState(0);
+  const [addedItems, setAddedItems] = useState(new Set());
 
   const [interfaces, setInterfaces] = useState(getInterfaces(convertStringToInt(sessionId)));
   const [tasks, setTasks] = useState(getTasks(convertStringToInt(sessionId)));
@@ -51,12 +52,13 @@ export default function App() {
       interfaceId, setInterfaceId,
       sessionId, setSessionId,
       addedItemsCount, setAddedItemsCount,
+      addedItems, setAddedItems,
       interfaces, setInterfaces,
       tasks, setTasks,
     }}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName={'Setup'}
+          initialRouteName={'Results'}
         >
           <Stack.Screen
             name="Setup"
