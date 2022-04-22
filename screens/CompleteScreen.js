@@ -22,7 +22,7 @@ export function CompleteScreen() {
 
   return (
     <View style={styles.overlay}>
-      <Text style={[styles.text]}>Task Complete!</Text>
+      <Text style={[styles.text, styles.black]}>Task Complete!</Text>
       <TouchableHighlight
         style={styles.button}
         onPress={()=>{
@@ -41,17 +41,21 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     padding: 12,
-    backgroundColor: 'rgba(0,0,0,0.35)',
+    backgroundColor: '#fff',
     ...StyleSheet.absoluteFillObject,
   },
   button: {
     borderRadius: 8,
     backgroundColor: '#fcbb6a',
     padding: 12,
+    margin: 24,
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
-    bottom: 24,
+    bottom: 0,
+  },
+  black: {
+    color: '#000',
   },
   text: {
     color: '#fff',
