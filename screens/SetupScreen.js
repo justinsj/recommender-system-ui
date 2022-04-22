@@ -7,7 +7,7 @@ import RNPickerSelect from 'react-native-picker-select';
 import {getInterfaces, Interfaces} from './../constants/Interfaces';
 import {convertStringToInt} from "../helpers/char.helpers";
 import {getTasks} from "../constants/tasks";
-import {getInterfaceIndex, getNextInterfaceIndex} from "../helpers/interface.helpers";
+import {getInterfaceIndex, getNextIndex} from "../helpers/interface.helpers";
 import {Line} from "../components/common/Line";
 
 const DEFAULT_PROMPT = 'Randomize';
@@ -70,6 +70,22 @@ export function SetupScreen() {
             value={taskId}
           />
         </View>
+        <TouchableHighlight
+          style={[styles.button, styles.spacerDown, styles.noHorizontal]}
+          underlayColor={'#fff'}
+          activeOpacity={0.5}
+          onPress={() => {
+            const nextIndex = getNextIndex(tasks, taskId);
+            const nextId = tasks[nextIndex].value;
+            setTaskId(nextId);
+          }}
+        >
+          <View style={styles.main}>
+            <Text style={styles.prompt}>Next (
+              {getInterfaceIndex(tasks, taskId) + 1}
+              /{tasks.length})</Text>
+          </View>
+        </TouchableHighlight>
       </View>
       <View style={styles.inputCtr}>
         <View><Text style={styles.title}>interfaceId</Text></View>
@@ -90,7 +106,7 @@ export function SetupScreen() {
           underlayColor={'#fff'}
           activeOpacity={0.5}
           onPress={() => {
-            const nextIndex = getNextInterfaceIndex(interfaces, interfaceId);
+            const nextIndex = getNextIndex(interfaces, interfaceId);
             const nextInterfaceId = interfaces[nextIndex].value;
             setInterfaceId(nextInterfaceId);
           }}
