@@ -1,5 +1,5 @@
 # Recommender System UI
-This project is a prototype for evaluating the effects different explainability interfaces in recommender systems 
+This project is a prototype for evaluating the effects different interfaces in recommender systems for mobile devices. 
 
 <p>
   <!-- iOS -->
