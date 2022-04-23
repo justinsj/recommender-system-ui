@@ -10,6 +10,14 @@ This project is a prototype for evaluating the effects different interfaces in r
   <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
 </p>
 
+<div style="display: flex; flex: 100%; flex-direction: row; align-items: flex-start; flex-wrap: wrap; position: relative;">
+  <img src="assets/screens/home.jpg" alt="Home screen" height="400"/>
+  <img src="assets/screens/recs-control.jpg" alt="Recommendations screen" height="400"/>
+  <img src="assets/screens/product.jpg" alt="Product screen" height="400"/>
+  <img src="assets/screens/complete.jpg" alt="Complete screen" height="400"/>
+  <img src="assets/screens/setup.jpg" alt="Setup screen" height="400"/>
+</div>
+
 ## Related repositories
 
 - [recommender-system-analysis](https://github.com/justinsj/recommender-system-analysis): Scripts to perform metric computations 
