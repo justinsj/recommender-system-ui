@@ -6,7 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 import RNPickerSelect from 'react-native-picker-select';
 import {getInterfaceIndex, getNextIndex} from "../helpers/interface.helpers";
 import {Line} from "../components/common/Line";
-import {generateInterfaceSurveyLink, generateOverallSurveyLink} from "../wrappers/GoogleForm";
+import {generateInterfaceSurveyLink, generateTaskSurveyLink} from "../wrappers/GoogleForm";
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -161,18 +161,18 @@ export function SetupScreen() {
         }}
       >
         <View style={styles.main}>
-          <Text style={styles.prompt}>Open Survey Link</Text>
+          <Text style={styles.prompt}>Open Interface Survey Link</Text>
         </View>
       </TouchableHighlight>
       <Line style={styles.line}/>
       <TouchableHighlight
         style={styles.button}
         onPress={()=>{
-          Linking.openURL(generateOverallSurveyLink(userId, sessionId, taskId))
+          Linking.openURL(generateTaskSurveyLink(userId, sessionId, taskId))
         }}
       >
         <View style={styles.main}>
-          <Text style={styles.prompt}>Open Overall Survey Link</Text>
+          <Text style={styles.prompt}>Open Task Survey Link</Text>
         </View>
       </TouchableHighlight>
       <Line style={styles.line}/>

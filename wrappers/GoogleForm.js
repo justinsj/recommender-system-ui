@@ -4,6 +4,6 @@ export function generateInterfaceSurveyLink(userId, sessionId, taskId, interface
   return SECRETS.getFormUrl(userId, sessionId, taskId, interfaceId);
 }
 
-export function generateOverallSurveyLink(userId, sessionId, taskId){
+export function generateTaskSurveyLink(userId, sessionId, taskId){
   return SECRETS.getOverallFormUrl(userId, sessionId, taskId)
 }
