@@ -1,7 +1,7 @@
 import {Linking, StyleSheet, Text, TouchableHighlight, View} from "react-native";
 import {useContext, useRef} from 'react';
 import {AppContext} from "../context/AppContext";
-import {generateLink} from "../wrappers/GoogleForm";
+import {generateInterfaceSurveyLink} from "../wrappers/GoogleForm";
 
 export function CompleteScreen() {
   const {userId, taskId, sessionId, interfaceId} = useContext(AppContext);
@@ -17,7 +17,7 @@ export function CompleteScreen() {
       <TouchableHighlight
         style={styles.button}
         onPress={()=>{
-          Linking.openURL(generateLink(userId, sessionId, taskId, interfaceId))
+          Linking.openURL(generateInterfaceSurveyLink(userId, sessionId, taskId, interfaceId))
         }}
       >
         <Text style={styles.text}>Click Here</Text>

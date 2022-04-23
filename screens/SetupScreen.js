@@ -1,15 +1,12 @@
-import {Text, TextInput, TouchableHighlight, View, ScrollView, Linking} from "react-native";
-import {useContext, useState, useEffect} from 'react';
+import {Linking, ScrollView, Text, TextInput, TouchableHighlight, View} from "react-native";
+import {useContext, useState} from 'react';
 import {AppContext} from './../context/AppContext';
 import {createId} from "../helpers/data.helpers";
 import {useNavigation} from '@react-navigation/native';
 import RNPickerSelect from 'react-native-picker-select';
-import {getInterfaces, Interfaces} from './../constants/Interfaces';
-import {convertStringToInt} from "../helpers/char.helpers";
-import {getTasks} from "../constants/tasks";
 import {getInterfaceIndex, getNextIndex} from "../helpers/interface.helpers";
 import {Line} from "../components/common/Line";
-import {generateLink} from "../wrappers/GoogleForm";
+import {generateInterfaceSurveyLink, generateOverallSurveyLink} from "../wrappers/GoogleForm";
 
 const DEFAULT_PROMPT = 'Randomize';
 
@@ -160,11 +157,22 @@ export function SetupScreen() {
       <TouchableHighlight
         style={styles.button}
         onPress={()=>{
-          Linking.openURL(generateLink(userId, sessionId, taskId, interfaceId))
+          Linking.openURL(generateInterfaceSurveyLink(userId, sessionId, taskId, interfaceId))
         }}
       >
         <View style={styles.main}>
           <Text style={styles.prompt}>Open Survey Link</Text>
+        </View>
+      </TouchableHighlight>
+      <Line style={styles.line}/>
+      <TouchableHighlight
+        style={styles.button}
+        onPress={()=>{
+          Linking.openURL(generateOverallSurveyLink(userId, sessionId, taskId))
+        }}
+      >
+        <View style={styles.main}>
+          <Text style={styles.prompt}>Open Overall Survey Link</Text>
         </View>
       </TouchableHighlight>
       <Line style={styles.line}/>
