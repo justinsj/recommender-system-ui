@@ -30,7 +30,6 @@ export default function App() {
   const [taskId, setTaskId] = useState('refrigerator');
   const [interfaceId, setInterfaceId] = useState(Interfaces.control);
   const [sessionId, setSessionId] = useState(createId());
-  const [addedItemsCount, setAddedItemsCount] = useState(0);
   const [addedItems, setAddedItems] = useState(new Set());
 
   const [interfaces, setInterfaces] = useState(getInterfaces(convertStringToInt(sessionId)));
@@ -52,7 +51,6 @@ export default function App() {
       taskId, setTaskId,
       interfaceId, setInterfaceId,
       sessionId, setSessionId,
-      addedItemsCount, setAddedItemsCount,
       addedItems, setAddedItems,
       interfaces, setInterfaces,
       tasks, setTasks,
@@ -73,7 +71,7 @@ export default function App() {
               headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
-                  count={addedItemsCount}
+                  count={addedItems.size}
                 />
               ),
               headerTintColor: '#fff',
@@ -99,7 +97,7 @@ export default function App() {
               headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
-                  count={addedItemsCount}
+                  count={addedItems.size}
                 />
               ),
               headerTintColor: '#fff',
@@ -128,7 +126,7 @@ export default function App() {
               headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
-                  count={addedItemsCount}
+                  count={addedItems.size}
                 />
               ),
               headerTintColor: '#fff',
@@ -151,7 +149,7 @@ export default function App() {
                         interfaceId,
                         sessionId,
                         productId,
-                        addedItemsCount,
+                        addedItemsCount: addedItems.size,
                         action: Actions.clickedReverse,
                       }],
                     });
@@ -171,7 +169,7 @@ export default function App() {
               headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
-                  count={addedItemsCount}
+                  count={addedItems.size}
                 />
               ),
               headerTintColor: '#fff',
@@ -197,7 +195,7 @@ export default function App() {
               headerRight: () => (
                 <AddedItemsCount
                   style={styles.headerRight}
-                  count={addedItemsCount}
+                  count={addedItems.size}
                 />
               ),
               headerTintColor: '#fff',

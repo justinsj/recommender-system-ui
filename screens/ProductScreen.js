@@ -19,7 +19,6 @@ import {constants} from "../constants/constants";
 export function ProductScreen(props) {
   const {
     userId, taskId, interfaceId, sessionId,
-    addedItemsCount, setAddedItemsCount,
     addedItems, setAddedItems,
   } = useContext(AppContext);
   const route = useRoute();
@@ -79,7 +78,6 @@ export function ProductScreen(props) {
                 action: Actions.addToCart,
               }],
             });
-            setAddedItemsCount(addedItems.size);
             setAddedItems(addedItems);
             if (addedItems.size < constants.requiredAddCount){
               navigation.goBack();
@@ -102,7 +100,6 @@ export function ProductScreen(props) {
                 action: Actions.buyNow,
               }],
             });
-            setAddedItemsCount(addedItems.size);
             setAddedItems(addedItems);
             if (addedItems.size < constants.requiredAddCount){
               navigation.goBack();

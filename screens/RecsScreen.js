@@ -12,7 +12,7 @@ import {getInterfaceIndex} from '../helpers/interface.helpers';
 import {getSlice} from '../helpers/list.helpers';
 
 export function RecsScreen() {
-  const {userId, taskId, sessionId, interfaceId, addedItemsCount, interfaces} = useContext(AppContext);
+  const {userId, taskId, sessionId, interfaceId, addedItems, interfaces} = useContext(AppContext);
 
   const viewConfigRef = useRef({
     itemVisiblePercentThreshold: 1,
@@ -31,7 +31,7 @@ export function RecsScreen() {
             interfaceId,
             sessionId,
             productId,
-            addedItemsCount,
+            addedItemsCount: addedItems.size,
             action: Actions.viewed,
           }]
         })
@@ -44,7 +44,7 @@ export function RecsScreen() {
             interfaceId,
             sessionId,
             productId,
-            addedItemsCount,
+            addedItemsCount: addedItems.size,
             action: Actions.viewedReverse,
           }]
         })

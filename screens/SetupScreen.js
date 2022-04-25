@@ -17,7 +17,7 @@ export function SetupScreen() {
     taskId, setTaskId,
     interfaceId, setInterfaceId,
     sessionId, setSessionId,
-    setAddedItemsCount,
+    setAddedItems,
     interfaces, setInterfaces,
     tasks, setTasks,
   } = useContext(AppContext);
@@ -146,7 +146,7 @@ export function SetupScreen() {
         underlayColor={'#fff'}
         activeOpacity={0.5}
         onPress={() => {
-          setAddedItemsCount(0);
+          setAddedItems(new Set());
         }}
       >
         <View style={styles.main}>
