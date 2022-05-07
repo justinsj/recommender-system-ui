@@ -1,5 +1,5 @@
 # Recommender System UI
-This project is a prototype for evaluating the effects different interfaces in recommender systems for mobile devices. 
+This project is a prototype for evaluating the effects different interfaces in recommender systems for mobile devices.
 
 <p>
   <!-- iOS -->
@@ -17,6 +17,8 @@ This project is a prototype for evaluating the effects different interfaces in r
   <img src="assets/screens/complete.jpg" alt="Complete screen" height="400"/>
   <img src="assets/screens/setup.jpg" alt="Setup screen" height="400"/>
 </div>
+
+Check out [the report](Final Report.pdf) for more details.
 
 ## Related repositories
 
