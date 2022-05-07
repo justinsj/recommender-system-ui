@@ -18,7 +18,7 @@ This project is a prototype for evaluating the effects different interfaces in r
   <img src="assets/screens/setup.jpg" alt="Setup screen" height="400"/>
 </div>
 
-Check out [the report](Final Report.pdf) for more details.
+Check out [the report](Final&#32;Report.pdf) for more details.
 
 ## Related repositories
 
@@ -35,4 +35,3 @@ Check out [the report](Final Report.pdf) for more details.
 
 This app logs interactions to an AWS DynamoDB.
 Press the title in the header `6 times in 2 seconds` to enter the `Setup Screen`.
-
