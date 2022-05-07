@@ -35,3 +35,17 @@ Check out [the report](Final&#32;Report.pdf) for more details.
 
 This app logs interactions to an AWS DynamoDB.
 Press the title in the header `6 times in 2 seconds` to enter the `Setup Screen`.
+
+## Cite
+
+To cite this project, please consider using the following bibtex:
+```
+@misc{recommender-system-ui,
+  author = {San Juan, Justin and Chambers, Owen},
+  title = {Tailoring Product Recommendations for Mobile Devices},
+  year = {2022},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/justinsj/recommender-system-ui}},
+}
+```
